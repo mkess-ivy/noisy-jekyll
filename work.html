@@ -1,0 +1,19 @@
+---
+layout: black_bg
+title: Work
+permalink: /work/
+--- 
+
+<div class="work_wrapper clearfix">
+	<div class="work_page-title">{{ page.title }}</div>
+	
+	<!-- Work Items -->
+	{% for work in site.work %}
+	<div class="work-item_wrapper">
+		<div class="work-item_date">{{ work.date-var }}</div>
+		<div class="work-item_title"><a href="#">{{ work.title }}</a></div>
+		<div class="work-item_description">{{ work.description }}</div>
+	</div>
+	{% endfor %}
+	
+</div>

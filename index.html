@@ -5,37 +5,63 @@ layout: hero_bg
 <div class="nt-slider clearfix">
 
 
-
+  {% assign features = site.work | where:"featured", "yes" | sort:"featured-rank" %}
+  {% for work in features limit: 3 %}
+  
+  {% if work.slide == "slide1" %}
   <!-- Slide 1 -->
   <div class="slide">
+
     <div class="slide_img-wrapper">
-      <img src="img/noisy_burger.png" class="slide_img" />  
+      <img src="{{ work.img-path }}" class="slide_img" />  
     </div>
     <div class="slide_text">
-      Pop-up restaurants designed and executed by students at Mervo&nbsp;H.S.
+      {{ work.description }}
     </div>
-    <a href="#">
+    <a href="{{ work.url }}">
       <div class="slide_cta">
-    	 Read More
+       Read More
       </div>
     </a>
+  
   </div><!-- #Slide 1 -->
+  {% endif %}
 
+  {% if work.slide == "slide2" %}
   <!-- Slide 2 -->
   <div class="slide" id="slide2_top">
     <div class="slide_date">May 4, 2017 @ <div class="mobile-block">The Charles Theatre</div></div>
     <div class="slide_img-wrapper">
-      <img src="img/revenge_emmett.png" class="slide2_img" />  
+      <img src="{{ work.img-path }}" class="slide2_img" />  
     </div>
     <div class="slide_text">
-      A night of fundraising around&nbsp;film
+      {{ work.description }}
     </div>
-    <div class="slide_cta">
-    	Read More
-    </div>
+    <a href="{{ work.url }}">
+      <div class="slide_cta">Read More</div>
+    </a>
   </div><!-- #Slide2 -->
+  {% endif%}
 
-</div><!-- #.nt-slider -->
+  {% endfor %}
+
+  
+  
+
+</div><!-- nt-slider -->
+
+<!-- Testing -->
+
+  <!-- {% for post in site.posts %}
+  <div class="work-item_wrapper">
+    <div class="work-item_date">{{ post.date }}</div>
+    <div class="work-item_title"><a href="#">{{ post.title }}</a></div>
+    <div class="work-item_description">{{ content }}</div>
+    <div>hello</div>
+  </div>
+  {% endfor %} -->
+
+  
 
 
     

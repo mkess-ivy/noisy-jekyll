@@ -215,9 +215,21 @@ body.noScroll { /* ...or body.dialogShowing */
 .slide1 {
 	margin-bottom: 35px;
 }
+.slide_cta {
+	background-color: #e44d4e;
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 9px;
+	width: 100px;
+}
+.slide a {
+	text-decoration: none;
+	color: #fff;
+}
 .slide_date {
 	font-size: 18px;
-	width: 65%;
+	margin: 0 auto;
+	text-align: center;
 }
 .slide_img {
 	margin: 15px auto 0;
@@ -231,6 +243,9 @@ body.noScroll { /* ...or body.dialogShowing */
 .slide_text {
 	font-size: 18px;
 	font-style: italic;
+	margin: 0 auto 30px;
+	text-align: center;
+	
 }
 .slide_text .option2 {
 	font-style: italic;
@@ -253,13 +268,18 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 .slide2_img {
 	margin-top: 10px;
-	width: 300px;
+	width: 100%;
 }
 
 /* Slick Properties */
 .slick-dots {
 	left: 1px;
 	bottom: 10px;
+	width: 100%;
+	text-align: right;
+}
+.slick-dots li {
+	margin: 0 2px;
 }
 .slick-dots li button:before {
 	color: rgba(230,79,76,0.95);
@@ -392,7 +412,8 @@ body.noScroll { /* ...or body.dialogShowing */
 		width: 370px;
 	}
 	.slide2_img {
-		width: 350px;
+		
+		margin: 0 auto;
 	}
 	.slide_text.slide_text-option {
 		margin: 0 auto;
@@ -448,6 +469,10 @@ body.noScroll { /* ...or body.dialogShowing */
 		margin-bottom: 250px !important;
 	}
 
+	.slide_text {
+		/*width: 50%;*/
+	}
+
 	/* Footer */
 	.copy {
 		width: 60%;
@@ -488,15 +513,15 @@ body.noScroll { /* ...or body.dialogShowing */
 
 	/* Slider */
 	.nt-slider {
-		width: 700px;
+		width: 475px;
 	}
 	.slide_img {
-		margin: 0;
+		margin: auto;
 		width: 300px;
-	}
+	}/*
 	.slide_img-wrapper {
 		float: left;
-	}
+	}*/
 	.slide_text-option {
 		float: right;
 		width: 50%;
@@ -523,7 +548,7 @@ body.noScroll { /* ...or body.dialogShowing */
 	}
 	.slide2_img {
 		margin-top: 15px;
-		width: 300px;
+		/*width: 100%;*/
 	}
 
 	/* Work */
@@ -546,8 +571,11 @@ body.noScroll { /* ...or body.dialogShowing */
 	}
 
 	/* Slider */
-	.nt-slider {
+	/*.nt-slider {
 		width: 800px;
+	}*/
+	.slick-dots li {
+		width: 10px;
 	}
 	.slide_meta {
 		bottom: 40px;
@@ -557,8 +585,7 @@ body.noScroll { /* ...or body.dialogShowing */
 		width: 40%;
 	}
 	.slide_text {
-		padding-right: 70px;
-		width: 40%;
+		width: 300px;
 	}
 	.slide_text.slide_text-option {
 		font-size: 24px;
@@ -589,7 +616,10 @@ body.noScroll { /* ...or body.dialogShowing */
 		opacity: 0;
 	}
 	.slide2_img {
-		width: 450px;
+		/*width: 450px;*/
+	}
+	.nt-slider {
+		width: 525px;
 	}
 
 	/* Work */

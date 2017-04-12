@@ -330,6 +330,65 @@ body.noScroll { /* ...or body.dialogShowing */
 	font-weight: lighter;
 	font-size: 13px;
 }
+
+/*
+# About
+*/
+.nt-slider_about {
+	width: 300px;
+	margin: 3em auto;
+	height: calc(100vh - 110px);
+}
+.nt-slider_img img {
+	width: 100%;
+}
+
+/*
+# Contact
+*/
+
+.noisy-hero {
+	height: calc(100vh - 50px);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+}
+.noisy-text_wrapper {
+	margin-bottom: 4em;
+}
+.noisy-text_wrapper a {
+	text-decoration: none;
+	color: #e44d4e;
+}
+.noisy-text_wrapper a:hover {
+	border-bottom: 1px solid;
+}
+.noisy-wrapper {
+	margin: 2em;
+}
+input {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;
+	color: #fff;
+}
+input[type="submit"] {
+	border: 2px solid #fff;
+	padding: 8px;
+	text-transform: uppercase;
+}
+#input-message {
+	margin-bottom: 4em;
+}
 /* 
 # Footer Menu
 */
@@ -449,6 +508,11 @@ body.noScroll { /* ...or body.dialogShowing */
 	}
 	.work_page-title {
 		margin-left: 16px;
+	}
+
+	.noisy-wrapper {
+		margin: 5em auto;
+		max-width: 350px;
 	}
 }
 

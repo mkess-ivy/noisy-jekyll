@@ -1,0 +1,6 @@
+<div class="noisy-credits_title">special thanks</div>
+<ul class="noisy-credits" id="double">
+	{% for person in site.data.[page.creditList] %}
+	<li>{{ person.name }}</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,56 @@
+/* 
+# Black_BG.html Template
+*/
+.hero-bg-black {
+	background-color: #000000 !important;
+	background: none;
+	height: auto;
+	margin-bottom: 8em;
+}
+
+/* Video-Layout.html Template */
+.play-btn a {
+	cursor: pointer;
+}
+.noisy-values {
+	text-align: center;
+	text-transform: initial;
+	margin-bottom: 7em;
+}
+.value-icon {}
+.value-icon img {
+	width: 20%;
+}
+.value-title {
+	font-size: 24px;
+	letter-spacing: 0.1px;
+}
+.value-text {
+	font-size: 14px;
+	font-weight: normal;
+}
+.value-margin {
+	margin-bottom: 2em;
+}
+
+/* Credits.html Template */
+.noisy-credits {
+	margin: 0 auto 40px;
+	overflow: hidden;
+	padding: 0;
+	width: 75%;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.noisy-credits li {
+	line-height: 1.5em;
+	float: left;
+	display: inline;
+	margin-bottom: 5px;
+	padding-right: 8px;
+}
+
+#double li {
+	width: 45%;
+}

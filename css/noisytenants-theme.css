@@ -177,16 +177,6 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 
 /* 
-# White BG Layout Template
-*/
-.hero-bg-black {
-	background-color: #000000 !important;
-	background: none;
-	height: auto;
-	margin-bottom: 8em;
-}
-
-/* 
 # Slider
 */
 .nt-slider {
@@ -245,7 +235,6 @@ body.noScroll { /* ...or body.dialogShowing */
 	font-style: italic;
 	margin: 0 auto 30px;
 	text-align: center;
-	
 }
 .slide_text .option2 {
 	font-style: italic;
@@ -405,6 +394,7 @@ input[type="submit"] {
 #input-message {
 	margin-bottom: 4em;
 }
+
 /* 
 # Footer Menu
 */
@@ -476,123 +466,7 @@ input[type="submit"] {
 	padding-bottom: 30px;
 }
 
-/* Template Layouts - Video Hero */
-.play {
-  width: 70px;
-  height: 70px;
-  background: #222;
-  display: block;
-  margin: 0 auto;
-  /* Important for :after */
-  position: relative;
-  /* Makes a circle */
-  border-radius: 50%;
-}
 
-.play:hover {
-  background: #333;
-  cursor: pointer;
-}
-
-.play:after {
-  position: absolute;
-  content: "";
-  /* Centering */
-  top: 50%;
-  margin-top: -15px;
-  left: 50%;
-  margin-left:  -8px;
-  /* CSS Triangle */
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 20px;
-  border-color: transparent transparent transparent #ffffff;
-}
-
-/* Fullscreen Overlay */
-.video-overlay {
-  width: 100%;
-  height: 100vh;
-  /* 50% opacity black */
-  background: rgba(0,0,0,.5);
-  /* Stays locked on scroll */
-  position: fixed;
-  /* On top of the rest*/
-  z-index: 2;
-  /* Hidden */
-  opacity: 0;
-  /* No interference */
-  left: -100%;
-  /* CSS3 Transition */
-  transition: opacity .5s;
-  -webkit-transition: opacity .5s;
-}
-
-/* 90% width container */
-.video-container {
-  width: 90%;
-  /*width: 100%;*/
-  /* Centering */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-.close {
-  width: 20px;
-  fill: white;
-  position: absolute;
-  right: 0;
-  /* Bring above video */
-  top: -30px;
-}
-
-.close:hover {
-  /* 50% opacity white */
-  fill: rgba(255,255,255,0.5);
-  cursor: pointer;
-}
-
-/* End of Video On Click Stuff */
-
-/* Video Template */
-.play-btn a {
-	cursor: pointer;
-}
-
-/* Class to fade in overlay */
-.show {
-  opacity: 1;
-}
- .video-video {
-  width: 100%;
-  height: 100vh;
-  color: white;
-  background: #2980b9;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-display: flex;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-}
-.video-wrapper {
-	width: 100%;
-  height: 100vh;
-  color: white;
-  background: #2980b9;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-display: flex;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-}
 /* 
 # Media Queries
 */
@@ -788,11 +662,6 @@ input[type="submit"] {
 	.menu-content {
 		width: 30% !important;
 	}
-
-	/* Slider */
-	/*.nt-slider {
-		width: 800px;
-	}*/
 	.slick-dots li {
 		width: 10px;
 	}
@@ -834,9 +703,6 @@ input[type="submit"] {
 	.hideme {
 		opacity: 0;
 	}*/
-	.slide2_img {
-		/*width: 450px;*/
-	}
 	.nt-slider {
 		width: 525px;
 	}

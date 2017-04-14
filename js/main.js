@@ -23,17 +23,6 @@ $(document).ready(function(){
     cssEase: 'linear'
 	});
 
-  $('.nt-slider_about').slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: false,
-    infinite: true,
-    fade: true,
-    speed: 500,
-    dots: true,
-    cssEase: 'linear'
-  })
-
   // site preloader -- also uncomment the div in the header and the css style for #preloader
 	$(window).load(function(){
 		$('#preloader').fadeOut('slow',function(){$(this).remove();});

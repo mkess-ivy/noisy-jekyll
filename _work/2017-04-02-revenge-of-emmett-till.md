@@ -1,5 +1,5 @@
 ---
-layout: black_bg
+layout: video-layout
 
 title: "The Revenge of Emmett Till"
 description: "A night of fundraising around&nbsp;film"

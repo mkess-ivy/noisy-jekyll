@@ -11,7 +11,7 @@ permalink: /work/
 	{% for work in site.work reversed %}
 	<div class="work-item_wrapper">
 		<div class="work-item_date">{{ work.date | date: '%-m-%-d-%y' }}</div>
-		<div class="work-item_title"><a href="#">{{ work.title }}</a></div>
+		<div class="work-item_title"><a href="{{ work.url }}">{{ work.title }}</a></div>
 		<div class="work-item_description">{{ work.description }}</div>
 	</div>
 	{% endfor %}

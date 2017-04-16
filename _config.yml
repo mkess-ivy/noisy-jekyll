@@ -11,13 +11,13 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-
+permalink: /post/:title/
 
 
 collections:
   work:
     output: true
-    permalink: /work/:path
+    permalink: /work/:title
 
 
 # Extra Misc Stuff

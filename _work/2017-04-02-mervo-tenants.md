@@ -1,11 +1,13 @@
 ---
 layout: video_layout
-creditList: "mervo-credits"
+
 title: "Mervo Tenants"
 description: "need description here"
 hero-img: /img/mervo-hero.png
 video-url: "https://player.vimeo.com/video/198145423?api=1"
 
+creditList: "mervo-credits"
+galleryList: "mervo-gallery"
 ---
 
 <div class="template_wrapper">
@@ -19,8 +21,9 @@ video-url: "https://player.vimeo.com/video/198145423?api=1"
 
 	{% include credits.html %}
 	
-	{% include gallery.html %}
-	
 </div>
+{% include gallery.html %}
+
+{% include template-footer.html %}
 
 

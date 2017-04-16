@@ -43,6 +43,16 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/slick/slick.min.js"></script>
 
+    <!-- Javascript Function for Luminous Gallery -->
+    <script>
+      // new Luminous(document.querySelector('.simple-demo'));
+      new LuminousGallery(document.querySelectorAll('.gallery-demo'), {}, {
+        caption: function(trigger) {
+          return trigger.querySelector('img').getAttribute('alt');
+        }
+      });
+    </script>
+
     <!-- Google Analytics -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

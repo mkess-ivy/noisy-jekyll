@@ -1,6 +1,9 @@
-<div class="noisy-credits_title">special thanks</div>
-<ul class="noisy-credits" id="double">
-	{% for person in site.data.[page.creditList] %}
-	<li>{{ person.name }}</li>
-	{% endfor %}
-</ul>
+<div class="credits_wrapper">
+	<div class="noisy-credits_margin"><img src="/img/noisy-logo_credits.png" width="40" /></div>
+	<div class="noisy-credits_title noisy-credits_margin">Special Thanks</div>
+	<ul class="noisy-credits" id="double">
+		{% for person in site.data.[page.creditList] %}
+		<li>{{ person.name }}</li>
+		{% endfor %}
+	</ul>
+</div>

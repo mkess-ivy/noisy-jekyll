@@ -1,0 +1,7 @@
+<div class="gallery_wrapper">
+	<ul class="noisy-gallery" id="double">
+		{% for person in site.data.[page.creditList] %}
+		<li>{{ person.name }}</li>
+		{% endfor %}
+	</ul>
+</div>

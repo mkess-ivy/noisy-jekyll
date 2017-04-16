@@ -19,7 +19,7 @@
 }
 .value-icon {}
 .value-icon img {
-	width: 20%;
+	width: 57px;
 }
 .value-title {
 	font-size: 24px;
@@ -42,15 +42,36 @@
 	font-size: 12px;
 	font-weight: normal;
 }
-
 .noisy-credits li {
 	line-height: 1.5em;
 	float: left;
 	display: inline;
 	margin-bottom: 5px;
-	padding-right: 8px;
+	margin-right: 10px;
 }
-
 #double li {
 	width: 45%;
+}
+.noisy-credits_title {
+	text-transform: initial;
+}
+.noisy-credits_margin {
+	text-align: center;
+	margin-bottom: 2em;
+}
+.credits-wrapper {
+	max-width: 400px;
+}
+
+
+
+.template_wrapper {
+	margin: 100px 20px;
+}
+
+@media screen and (min-width: 500px) {
+	.template_wrapper {
+		margin: 100px auto;
+		max-width: 450px;
+	}
 }

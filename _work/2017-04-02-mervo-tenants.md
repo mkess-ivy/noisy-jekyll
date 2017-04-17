@@ -24,6 +24,7 @@ galleryList: "mervo-gallery"
 </div>
 {% include gallery.html %}
 
+<div class="footer-line"></div>
 {% include template-footer.html %}
 
 

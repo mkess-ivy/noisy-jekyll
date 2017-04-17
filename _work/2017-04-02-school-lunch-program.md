@@ -1,6 +1,6 @@
 ---
 layout: black_bg
 
-title: "Bus Stop Buddies"
+title: "School Lunch Program"
 description: "need description here"
 ---

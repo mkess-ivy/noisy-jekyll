@@ -1,0 +1,18 @@
+---
+layout: black_bg
+--- 
+
+<div class="noisy-hero noisy-hero_film" style="background-image: url('{{ page.hero-img }}');">
+	<div class="film-wrapper">
+		<span class="film-text">{{ page.title }}</span>
+		<span class="film-spacer"></span>
+		<span class="film-text">{{ page.film-date }}</span>
+		<span class="film-spacer"></span>
+		<span class="film-text">{{ page.film-location }}</span>
+		<span class="film-spacer"></span>
+		<span><a href="{{ page.film-location }}">tickets</a></span>
+	</div>
+</div>
+
+
+{% include template-footer.html %}

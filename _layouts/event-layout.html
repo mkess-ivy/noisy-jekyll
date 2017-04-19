@@ -3,20 +3,13 @@ layout: black_bg
 --- 
 
 <div class="noisy-hero noisy-hero_event" style="background-color: {{ page.hero-color }};">
-	<div class="noisy-event_icon">
-		<img src="/img/noisy-logo_small.png" width="25" />
-	</div>
-	<div class="noisy-event_title">
-		<img src="{{ page.event-title }}" width="{{ page.event-title_width }}" />
-	</div>
-	<div class="noisy-event_text">{{ page.event-description }}</div>
 	<div class="noisy-event_spacer"><img src="{{ page.event-picture }}" width="{{ page.event-picture_width }}" /></div>
-	<div class="noisy-event_spacer"><img src="{{ page.event-date }}" width="{{ page.event-date_width }}" /></div>
+	<div class="noisy-event_text">{{ page.event-description }}</div>
+	<div class="noisy-event_spacer">{{ page.event-date }}</div>
 
 	<div class="noisy-event_location">{{ page.location-name }}</div>
 	<div class="noisy-event_location">{{ page.location-address }}</div>
 	<div class="noisy-event_location">{{ page.locale }}</div>
-
 </div>
 
 {{ content }}

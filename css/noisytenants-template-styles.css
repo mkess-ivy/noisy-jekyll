@@ -8,6 +8,14 @@
 	margin-bottom: 8em;
 }
 
+/* Red Template */
+.hero-bg-red {
+	background-color: #e44d4e !important;
+	background: none;
+	height: auto;
+	margin-bottom: 8em;
+}
+
 /* Video-Layout.html Template */
 .play-btn a {
 	cursor: pointer;
@@ -158,7 +166,7 @@
 .noisy-event_text {
 	text-align: center;
 	font-size: 16px;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 }
 .noisy-event_icon {
 	margin-bottom: 20px;
@@ -167,10 +175,26 @@
 	margin-bottom: 30px;
 }
 .noisy-event_spacer {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .noisy-event_location {
 	font-size: 12px;
+}
+.event-cta-text-wrapper {
+	width: 80%;
+	margin: 40px auto;
+	color: #000;
+	clear: both;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.event-cta-text {
+	margin-bottom: 40px;
+	text-transform: initial;
+}
+.event-cta-link a {
+	color: #e44d4e;
+	text-decoration: none;
 }
 
 /* Menu.html */
@@ -197,8 +221,6 @@
 .menu-list_description {
 	font-size: 13px;
 }
-
-
 .template_wrapper {
 	margin: 100px 20px;
 }
@@ -214,6 +236,9 @@
 }
 .testimonial-space {
 	padding-top: 75px;
+}
+.testimonial-item {
+	margin-bottom: 75px;
 }
 .testimonial-item-wrapper {
 	width: 90%;
@@ -233,6 +258,116 @@
 	font-size: 15px;
 	text-transform: initial;
 }
+
+/* Signup Template */
+.signup-wrapper {
+	margin: 10px auto;
+}
+#mc_embed_signup_scroll label {
+	color: #000 !important;
+	margin-bottom: 25px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#mc_embed_signup {
+	background: #e7e6e6 !important;
+	padding: 100px 30px;
+}
+#mc_embed_signup_scroll .email {
+	background: #fff !important;
+	border-color: #fff !important;
+	width: 75% !important;
+	border-radius: 0 !important;
+}
+#mc_embed_signup_scroll .button {
+	text-decoration: none !important;
+	background-color: #e44d4e !important;
+	color: #fff !important;
+	font-size: 12px !important;
+	padding: 0 4px !important;
+	width: 40% !important;
+	line-height: 24px !important;
+	height: 24px !important;
+	border-radius: 0 !important;
+}
+#mc_embed_signup_scroll #mce-EMAIL {
+	font-size: 12px !important;
+	font-weight: normal !important;
+	color: #e44d4e !important;
+}
+
+/* Thank You Template */
+.thank-you-wrapper {
+	height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+.thank-you-title {
+	font-size: 36px;
+	margin-bottom: 35px;
+}
+.thank-you-text {
+	text-transform: initial;
+	margin-bottom: 40px;
+}
+.btn-cta {
+	/*padding: 3px 9px;*/
+}
+.btn-cta a {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	height: 25px;
+	padding: 3px;
+}
+/*.thank-you-cta:hover,*/
+.btn-cta a:hover {
+	background: #fff;
+	color: #e44d4e;
+	height: 25px;
+	text-decoration: none;
+	border: 1px solid #fff;
+}
+
+.btn-black a:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.primary-text {
+	display: block;
+	margin-bottom: 50px;
+}
+
+/* Reusable Elements */
+.full-height-wrapper {
+	height: calc(100vh - 50px);
+}
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.return-previous {
+	margin: auto;
+	margin: 70px;
+	text-align: center;
+}
+
+
+
+.white-rooster-logo {
+	margin-bottom: 75px;
+	width: 32px;
+}
+
+
 
 @media screen and (min-width: 500px) {
 	.template_wrapper {

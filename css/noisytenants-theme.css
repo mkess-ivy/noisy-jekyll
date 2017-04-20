@@ -286,14 +286,7 @@ body.noScroll { /* ...or body.dialogShowing */
 	width: 70%;
 	max-width: 250px;
 }
-.work_page-title {
-	border-bottom: 1px solid;
-	font-size: 32px;
-	margin-bottom: 100px;
-	margin-top: 40px;
-	padding-bottom: 10px;
-	width: 50px;
-}
+
 .work-item_wrapper {
 	margin-bottom: 3em;
 	width: 200px;
@@ -464,6 +457,16 @@ input[type="submit"] {
 	height: 100%;
 	background-image: url('../img/explore.jpg');
 	padding-bottom: 30px;
+}
+
+/* Reusable Elements */
+.site_page-title {
+	border-bottom: 1px solid;
+	font-size: 32px;
+	margin-bottom: 100px;
+	margin-top: 40px;
+	padding-bottom: 10px;
+	width: 50px;
 }
 
 

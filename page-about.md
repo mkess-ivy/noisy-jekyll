@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div class="noisy_wrapper">
-	<div class="work_page-title">{{ page.title }}</div>
+	<div class="site_page-title">{{ page.title }}</div>
 	<div class="noisy_wrapper-member clearfix">
 		<div class="member_bio_text">
 			<div class="member_bio_title">Jay Nwachu, Director of Development and Communications</div>

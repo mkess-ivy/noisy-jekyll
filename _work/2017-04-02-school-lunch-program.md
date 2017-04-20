@@ -1,5 +1,5 @@
 ---
-layout: black_bg
+layout: coming-soon
 
 title: "School Lunch Program"
 description: "need description here"

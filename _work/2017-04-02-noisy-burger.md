@@ -24,4 +24,10 @@ locale: "Baltimore, MD 21211"
 ---
 
 {% include menu.html %}
+<div class="white-bg">
 {% include testimonial.html %}
+{% include event-cta-text.html %}
+{% include signup.html %}
+</div>
+
+

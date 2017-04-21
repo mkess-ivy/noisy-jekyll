@@ -15,14 +15,10 @@ layout: hero_bg
     <div class="slide_img-wrapper">
       <img src="{{ work.img-path }}" class="slide_img" />  
     </div>
-    <div class="slide_text">
+    <div class="headline">
       {{ work.description }}
     </div>
-    <a href="{{ work.url }}">
-      <div class="slide_cta">
-       Read More
-      </div>
-    </a>
+    {% include btn.html btn_color='on_red' url-location='work/noisy-burger' url-text="read more" %}
   
   </div><!-- #Slide 1 -->
   {% endif %}
@@ -30,16 +26,14 @@ layout: hero_bg
   {% if work.slide == "slide2" %}
   <!-- Slide 2 -->
   <div class="slide" id="slide2_top">
-    <div class="slide_date">{{ work.date | date: '%B %d, %Y' }} @ <div class="mobile-block">{{ work.location }}</div></div>
+    <div class="headline">{{ work.date | date: '%B %d, %Y' }} @ <div class="mobile-block">{{ work.location }}</div></div>
     <div class="slide_img-wrapper">
       <img src="{{ work.img-path }}" class="slide2_img" />  
     </div>
-    <div class="slide_text">
+    <div class="headline">
       {{ work.description }}
     </div>
-    <a href="{{ work.url }}">
-      <div class="slide_cta">Read More</div>
-    </a>
+    {% include btn.html btn_color='on_red' url-location='work/revenge-of-emmett-till' url-text="read more" %}
   </div><!-- #Slide2 -->
   {% endif%}
 

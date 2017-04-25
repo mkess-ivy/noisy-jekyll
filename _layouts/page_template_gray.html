@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  	<!-- Preloader -->
+  	<div id="preloader"></div>
+  	
+    <div class="container clear">
+      <div class="hero-bg-gray clearfix">
+    		{% include header.html %}
+
+        <div class="noisy_wrapper">
+          <div class="page_title black_text">{{ page.title }}</div>
+      	
+      	   {{ content }}
+
+        </div>
+      </div><!-- .hero-bg -->
+    </div> <!-- .container -->
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

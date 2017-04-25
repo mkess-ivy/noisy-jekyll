@@ -1,11 +1,12 @@
-<div class="gallery_wrapper">
+<div>
 	<ul class="noisy-gallery clearfix">
 		{% for gallery-item in site.data.[page.galleryList] %}
 		<li>
 	    <a class="gallery-demo" href="{{ gallery-item.image }}?w=1600">
-        <img src="{{ gallery-item.image }}?w=100" alt="{{ gallery-item.caption }}">
+        <img src="{{ gallery-item.image }}?w=100" alt="{{ gallery-item.caption }}" class="gallery_img">
       </a>
   </li>
 		{% endfor %}
 	</ul>
 </div>
+

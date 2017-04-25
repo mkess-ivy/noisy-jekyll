@@ -1,15 +1,14 @@
 ---
-layout: black_bg
+layout: page_template
 title: Work
 permalink: /work/
 --- 
 
-<div class="noisy_wrapper clearfix"><!-- removed work_wrapper, cleaning code-->
-	<div class="page-title">{{ page.title }}</div>
+
 	
 	<!-- Work Items -->
 	{% for work in site.work reversed %}
-	<div class="work-item_wrapper">
+	<div class="work_item_wrapper">
 		<div class="default_text_sm">{{ work.date | date: '%-m-%-d-%y' }}</div>
 		<div class="default_initial"><a href="{{ work.url }}">{{ work.title }}</a></div>
 		<div class="default_text_sm">{{ work.description }}</div>

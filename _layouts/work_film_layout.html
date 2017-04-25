@@ -2,7 +2,7 @@
 layout: black_bg
 --- 
 
-<div class="noisy-hero noisy-hero_film" style="background-image: url('{{ page.hero-img }}');">
+<div class="noisy_hero flex noisy-hero_film" style="background-image: url('{{ page.hero-img }}');">
 	<div class="film-wrapper">
 		<span class="film-text">{{ page.title }}</span>
 		<span class="film-spacer"></span>
@@ -14,7 +14,7 @@ layout: black_bg
 	</div>
 </div>
 
-{% include btn.html url-location='work' url-text="return to work" %}
+{% include btn.html btn_color='on_brand_light' url-location='work' url-text="return to work" %}
 
 <div class="footer-line"></div>
 {% include template-footer.html %}

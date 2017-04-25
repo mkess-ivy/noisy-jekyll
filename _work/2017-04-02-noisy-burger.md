@@ -1,6 +1,7 @@
 ---
-layout: event-layout
+layout: work_event_layout
 
+color-text: "#000"
 hero-color: "#FFF"
 title: "Noisy Burger"
 description: "a pop up restaurant designed and executed with students at Mervo High School"
@@ -23,7 +24,7 @@ location-address: "301 W. 29th Street"
 locale: "Baltimore, MD 21211"
 ---
 
-{% include menu.html %}
+{% include foodmenu.html %}
 <div class="white-bg">
 {% include testimonial.html %}
 {% include event-cta-text.html %}

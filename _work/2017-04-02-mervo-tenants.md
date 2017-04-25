@@ -1,5 +1,5 @@
 ---
-layout: video_layout
+layout: work_video_layout
 
 title: "Mervo Tenants"
 description: "need description here"

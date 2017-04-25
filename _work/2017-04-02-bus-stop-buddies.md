@@ -1,5 +1,5 @@
 ---
-layout: film_layout
+layout: work_film_layout
 
 title: "Bus Stop Buddies: A Short Film"
 description: "need description here"

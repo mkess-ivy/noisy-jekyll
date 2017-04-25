@@ -12,7 +12,7 @@ $(document).ready(function(){
   });
 
 	// Slick Slider
-	$('.nt-slider').slick({
+	$('.nt_slider').slick({
     autoplay: true,
     autoplaySpeed: 4000,
     arrows: false,

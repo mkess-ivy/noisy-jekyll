@@ -8,10 +8,15 @@
   	<div id="preloader"></div>
   	
     <div class="container clear">
-      <div class="hero-bg-red clearfix">
+      <div class="hero-bg-black clearfix">
     		{% include header.html %}
+
+        <div class="noisy_wrapper">
+          <div class="page_title">{{ page.title }}</div>
       	
-      	{{ content }}
+      	   {{ content }}
+
+        </div>
       </div><!-- .hero-bg -->
     </div> <!-- .container -->
 

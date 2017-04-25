@@ -2,8 +2,7 @@
 layout: hero_bg
 --- 
 <!-- Slider -->
-<div class="nt-slider clearfix">
-
+<div class="nt_slider clearfix">
 
   {% assign features = site.work | where:"featured", "yes" | sort:"featured-rank" %}
   {% for work in features limit: 3 %}
@@ -12,48 +11,34 @@ layout: hero_bg
   <!-- Slide 1 -->
   <div class="slide">
 
-    <div class="slide_img-wrapper">
+    <div class="slide_img_wrapper">
       <img src="{{ work.img-path }}" class="slide_img" />  
     </div>
     <div class="headline">
       {{ work.description }}
     </div>
-    {% include btn.html btn_color='on_red' url-location='work/noisy-burger' url-text="read more" %}
+    {% include btn.html btn_color='on_brand_dark' url-location='work/noisy-burger' url-text="read more" %}
   
   </div><!-- #Slide 1 -->
   {% endif %}
 
   {% if work.slide == "slide2" %}
   <!-- Slide 2 -->
-  <div class="slide" id="slide2_top">
+  <div class="slide">
     <div class="headline">{{ work.date | date: '%B %d, %Y' }} @ <div class="mobile-block">{{ work.location }}</div></div>
-    <div class="slide_img-wrapper">
+    <div class="slide_img_wrapper">
       <img src="{{ work.img-path }}" class="slide2_img" />  
     </div>
     <div class="headline">
       {{ work.description }}
     </div>
-    {% include btn.html btn_color='on_red' url-location='work/revenge-of-emmett-till' url-text="read more" %}
+    {% include btn.html btn_color='on_brand_dark' url-location='work/revenge-of-emmett-till' url-text="read more" %}
   </div><!-- #Slide2 -->
   {% endif%}
 
   {% endfor %}
 
-  
-  
-
 </div><!-- nt-slider -->
-
-<!-- Testing -->
-
-  <!-- {% for post in site.posts %}
-  <div class="work-item_wrapper">
-    <div class="work-item_date">{{ post.date }}</div>
-    <div class="work-item_title"><a href="#">{{ post.title }}</a></div>
-    <div class="work-item_description">{{ content }}</div>
-    <div>hello</div>
-  </div>
-  {% endfor %} -->
 
   
 

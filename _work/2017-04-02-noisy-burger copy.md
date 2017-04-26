@@ -7,8 +7,6 @@ title: "Noisy <br />Burger"
 description: "a pop up restaurant designed and executed with students at Mervo High School"
 img-path: "/img/noisy_burger.png"
 
-featured: "yes"
-featured-rank: "1"
 slide: "slide1"
 
 event-title: /img/event-title_noisy-burger.png

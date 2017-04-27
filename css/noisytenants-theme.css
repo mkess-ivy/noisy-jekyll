@@ -11,6 +11,7 @@
 * Header
 * - Mobile Menu
 * - Overlay Responsive Menu
+* - Back to top Icon
 * Hero
 * - Slider
 * - Slick Slider Properties
@@ -338,6 +339,27 @@ a.link:hover {
 	width: 88% !important;
 }
 
+/* Back to Top Icon */
+.backtop-icon { 
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.55);
+  box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.55);
+  padding: 0.4em 0.8em;
+  background: white;
+  position: fixed;
+  bottom: 2em; 
+  right: 0em;
+  z-index: 200;
+  border-radius: 34px;
+  margin-right: 0.3em;
+ }
+ .backtop-icon:hover {
+  background: #e44d4e;
+ }
+ .backtop-icon a:hover, .backtop-icon:hover a {
+  color: white;
+ }
+
 /* Hero */
 .noisy_hero {
 	background: url('../img/bg.jpg') top center;
@@ -513,13 +535,7 @@ a.link:hover {
 	margin: 0 auto;
 	list-style: none;
 }
-/*.noisy-gallery li {
-	width: 100%;
-	margin-bottom: 7px;
-}*/
-.noisy-gallery li img {
-	/*width: 100%;*/
-}
+
 /* - Values */
 .noisy-values {
 	text-align: center;

@@ -1,5 +1,19 @@
 $(document).ready(function(){
 	
+  // Smooth Scroll
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+  
   // Overlay Menu Functionality
 	$("#overlay-menu").click(function() {
     $(".overlay").addClass("overlay-open");
@@ -41,6 +55,17 @@ $(document).ready(function(){
         $(this).animate({'opacity':'1'},700);
       }     
     }); 
+  });
+
+   // Reveal Back to top icon after certain scroll height
+  $('#js-backtop').hide();
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $('#js-backtop').fadeIn("slow");
+    }
+    else {
+      $('#js-backtop').fadeOut("fast");
+    }
   });
 
   // Reveal Footer

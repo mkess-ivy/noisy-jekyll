@@ -4,7 +4,7 @@ email: info@noisytenants.com
 description: > # this means to ignore newlines until "baseurl:"
   The Leasing Office - Your Community Agency
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://noisytenants.svncrwns.com" # the base hostname & protocol for your site, e.g. http://example.com
 port: 4000
 twitter_username: noisytenants
 github_username:  jekyll
@@ -17,7 +17,7 @@ permalink: /post/:title/
 collections:
   work:
     output: true
-    permalink: /work/:title
+    permalink: /work/:title/
 
 
 # Extra Misc Stuff

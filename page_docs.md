@@ -1,6 +1,6 @@
 ---
 layout: page_template_gray
-title: Docs
+title: FEWD Docs
 permalink: /docs/
 ---
 <style>
@@ -220,6 +220,16 @@ This is a placeholder web page. This is for the instance that you want to list p
 
 The ABOUT, WORK and CONTACT pages use this template. This template sets a wrapper for this page, as well as lists the page title at the very top of the page. Helps to keep all three of these pages uniform in styling.
 
+If any additional pages need to be created for the site, make sure to use this layout.  To be sure you are using the right layout, check out some front-matter from a page file like contact.html:
+
+```
+---
+layout: page_template
+title: Contact
+permalink: /contact/
+--- 
+```
+
 ---
 
 <div id="black"></div>
@@ -246,7 +256,42 @@ This template layout file changed the default background color of the website fr
 <div id="event"></div>
 ### work_event_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
 
-This template layout file is used for projects that are events like the Noisy Burger Pop Up Restaurant. This template layout is controlled mostly from the project file, instead of from the template layout file work_event_layout.html. The idea behind this: If there is another event project, it can be modified based on parameters added to the single project file (ex: 2017-04-02-noisy-burger.md). Parameters that can be added: hero section, foodmenu, testimonials, text and Call-to-action buttons and newsletter signup. At the bottom of the content for the project, there is a RETURN TO WORK cta so the user can easily return to the list of projects on the WORK page. Other parameters can be easily added to this list as well.
+This template layout file is used for projects that are events like the Noisy Burger Pop Up Restaurant. This template layout is controlled mostly from the project file, instead of from the template layout file work_event_layout.html. The idea behind this: If there is another event project, it can be modified based on parameters added to the single project file and the layout can be reused for other projects(ex: 2017-04-02-noisy-burger.md). Parameters that can be added: hero section, foodmenu, testimonials, text and Call-to-action buttons and newsletter signup. At the bottom of the content for the project, there is a RETURN TO WORK cta so the user can easily return to the list of projects on the WORK page. Other parameters can be easily added to this list as well.
+
+List of variables used in work_event_layout.html:
++ hero-color
++ color-text
++ event-picture
++ event-picture_width
++ event-description
++ etc.
+
+So the front-matter of the project file will include these variables. Once the variables are loaded, an html file will generate.  Project files work closely with Layout files.
+
+```
+---
+layout: black_bg
+--- 
+
+<div class="noisy_hero flex" style="background: none; background-color: {% raw %}{{ page.hero-color }}{% endraw %}; color: {% raw %}{{ page.color-text }}{% endraw %};">
+	<div class="wrapper_30"><img src="{% raw %}{{ page.event-picture }}{% endraw %}" width="{% raw %}{{ page.event-picture_width }}{% endraw %}" /></div>
+	<div class="wrapper_30 pull_center pull_tight">{% raw %}{{ page.event-description }}{% endraw %}</div>
+	<div class="wrapper_30">{% raw %}{{ page.event-date }}{% endraw %}</div>
+
+	<div class="default_text_micro">{% raw %}{{ page.location-name }}{% endraw %}</div>
+	<div class="default_text_micro">{% raw %}{{ page.location-address }}{% endraw %}</div>
+	<div class="default_text_micro">{% raw %}{{ page.locale }}{% endraw %}</div>
+</div>
+
+{% raw %}{{ content }}{% endraw %}
+
+{% raw %}{% include btn.html btn_color='on_brand_light' url-location='work' url-text="return to work" %}{% endraw %}
+
+<div class="footer-line"></div>
+{% raw %}{% include template-footer.html %}{% endraw %}
+```
+
+Where {% raw %}{{ content }}{% endraw %} is, this is where the information from the project site AFTER the front-matter section goes.  This is where the additional sections like foodmenu, testimonials, text and CTA buttons can be added on the project file.
 
 ---
 
@@ -255,12 +300,58 @@ This template layout file is used for projects that are events like the Noisy Bu
 
 This template layout file is used for projects that are films like the BUS STOP BUDDIES SHORT FILM. This template layout is controlled mostly from the project file, instead of from the template layout file work_film_layout.html. This layout consists of a hero background that extends 100% in height. There is also some text overlays for the hero section that include the name of the film, date of screening, screening locations and a section to purchase tickets. Other parameters can be easily added to this list as well.
 
+Code from work_film_layout.html - 
+
+```
+---
+layout: black_bg
+--- 
+
+<div class="noisy_hero flex noisy-hero_film" style="background-image: url('{% raw %}{{ page.hero-img }}{% endraw %}');">
+	<div class="film-wrapper">
+		<span class="film-text">{% raw %}{{ page.title }}{% endraw %}</span>
+		<span class="film-spacer"></span>
+		<span class="film-text">{% raw %}{{ page.film-date }}{% endraw %}</span>
+		<span class="film-spacer"></span>
+		<span class="film-text">{% raw %}{{ page.film-location }}{% endraw %}</span>
+		<span class="film-spacer"></span>
+		<span><a href="{% raw %}{{ page.film-url }}{% endraw %}">tickets</a></span>
+	</div>
+</div>
+
+{% raw %}{% include btn.html btn_color='on_brand_light' url-location='work' url-text="return to work" %}{% endraw %}
+
+<div class="footer-line"></div>
+{% raw %}{% include template-footer.html %}{% endraw %}
+```
+
+As you can see, here are some of the variables being used in this layout:
++ hero-img
++ title
++ film-date
++ film-location
++ film-url
+
+This layout doesn't have a {% raw %}{{ content }}{% endraw %} listed because of the way this layout is intended to be used.  There isn't much content to this layout, just a hero image, and text overlays.  No need for additional content to be used on this layout.
+
 ---
 
 <div id="video"></div>
 ### work_video_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
 
 This template layout file is used for projects that have video hero sections like MERVO TENANTS. This template layout is controlled mostly from the project file, instead of from the template layout file work_video_layout.html. This layout consists of a set of values, testimonials, and a gallery lightbox. Other parameters can be easily added to this list as well.
+
+The most important code for this layout file is:
+
+```
+<div class="noisy_hero flex" style="background-image: url('{{ page.hero-img }}');">
+	<div class="play-btn">
+		<a href="#"><img src="/img/play-btn.png" width="95" /></a>
+	</div>
+</div>
+```
+
+Basically this code is saying - use a background image for the hero section, and then overlay a play button on top of the hero section.  All the other elements added to this page are controlled from the individual project files.
 
 ---
 
@@ -271,12 +362,154 @@ THINGS TO KNOW - PROJECTS
 
 This project site uses the work_event_layout.html template layout file. 
 
+The most important directories for project files are:
+
+```
+|-- noisy-jekyll
+    |-- _includes
+    |-- _layouts
+    |-- _work
+        
+```
+
+the items in the _includes folder are code fragments that are reusable all throughout the site.  It helps with keeping DRY (do not repeat yourself) code.  For example - the header and footer for this website are actually code fragments stored in the _includes folder.
+
+For this particular project file - the layout section in the front-matter will determine which layout needs to be used, like : 
+
+```
+---
+layout: work_event_layout
+---
+```
+
+After the variables have been satisfied for the layout, in the {% raw %}{{ content }}{% endraw %} section, we can call include statements to grab those fragments from the _includes folder, like (this is all the code to fill out the entire page for NOISY BURGER) :
+
+```
+---
+layout: work_event_layout
+
+color-text: "#000"
+hero-color: "#FFF"
+title: "Noisy <br />Burger"
+description: "a pop up restaurant designed and executed with students at Mervo High School"
+img-path: "/img/noisy_burger.png"
+
+featured: "yes"
+featured-rank: "1"
+slide: "slide1"
+
+event-title: /img/event-title_noisy-burger.png
+event-title_width: 260
+event-description: "a mervo tenants x noisy tenants collaboration"
+event-picture: /img/event_noisy-burger_img.jpg
+event-picture_width: 200
+event-date: "April 26, 2017 - May 2, 2017"
+event-date_width: 200
+
+location-name: "R. House - Pop Up Stall"
+location-address: "301 W. 29th Street"
+locale: "Baltimore, MD 21211"
+---
+
+{% raw %}{% include foodmenu.html %}{% endraw %}
+<div class="white-bg">
+{% raw %}{% include testimonial.html %}{% endraw %}
+{% raw %}{% include event-cta-text.html %}{% endraw %}
+{% raw %}{% include signup.html %}{% endraw %}
+</div>
+
+```
+
+After the three dashes to end the front-matter section, this is technically the content section.  Here we can see that we are adding the foodmenu, testimonials, event cta, and signup. To reuse the include fragments, it's best to use variables within those code fragments as well.  Here is the code for foodmenu.html - there aren't any variables here:
+
+```
+<div class="section_wrapper pull_center">
+	<div class="default_text_grande">menu</div>
+	<ul class="menu_list food_menu_wrapper">
+		<li>healthy turkey burger<br />
+		<span class="default_text_micro">turkey burger, alfafa sprouts, avocado spread, swiss cheese on brioche bun</span>
+		</li>
+		<li>dnd burger<br />
+		<span class="default_text_micro">angus burger, lettuce, tomato, cheddar cheese, ketchup, mustard on brioche bun</span>
+		</li>
+		<li>the noisy burger<br />
+		<span class="default_text_micro">angus burger, lettuce, tomato, onion, special loud sauce, cheddar cheese on brioche bun</span>
+		</li>
+		<li>hawaiian burger<br />
+		<span class="default_text_micro">angus burger, pepper jack cheese, teriyaki sauce, pineapple, canadian ham</span>
+		</li>
+		<li>hand cut fries</li>
+	</ul>
+</div>
+```
+
+value.html code fragment from the _includes folder is used for a different project, here is what the code looks like with variables - 
+
+```
+<div class="noisy-values">
+	<div class="brand_icon brand_icon_short value-margin"><img src="{% raw %}{{ include.value-icon }}{% endraw %}" width="50" /></div>
+	<div class="headline_lg wrapper_30">{% raw %}{{ include.value-title }{% endraw %}</div>
+	<div class="default_text_med wrapper_30">{% raw %}{{ include.value-text }}{% endraw %}</div>
+</div>
+```
+
+The variables are:
++ value-icon
++ value-title
++ value-text
+
+To call this fragment, we use the following code in one of our project files like this:
+
+```
+{% raw %}{% include value.html value-icon='/img/rooster-icon.png' value-title='Noisy Tenants &amp; Mervo High School' value-text='<p>Mervo is a trade school in Baltimore City and one of the largest schools in the city at that. They feature trades like nursing, accounting, culinary arts, and welding just to name a few, and they thrive to offer an experience that impacts students live forever.</p>  <p>After meeting with the principal we were able to design a program plan that pushed the school’s agenda for the year, access to our network of resources and created opportunities for students to gain entrepreneurial&nbsp;skills.</p>' %}{% endraw %}
+```
+
+Here, all we're doing is filling in the variables with actual content.
+
 ---
 
 <div id="mervotenants"></div>
 ### 2017-04-02-mervo-tenants.md ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
 
 This project site uses the work_video_layout.html template layout file, since the hero section is a video.
+
+This project file operates similar to NOISY BURGER.  The difference is how the include statements are used.
+
+```
+---
+layout: work_video_layout
+
+creditList: "mervo-credits"
+galleryList: "mervo-gallery"
+---
+
+{% raw %}{% include credits.html %}{% endraw %}
+{% raw %}{% include gallery.html %}{% endraw %}
+```
+
+For credits.html, because we want to reuse the credits.html include fragment over and over for other project files, we use a list of variables to fill in our content for us.  Instead of listing each variable like how we do for value.html, instead we introduce the _data folder.
+
+```
+|-- noisy-jekyll
+    |-- _data
+        
+```
+
+Code for the credit.html file:
+
+```
+<div>
+	<div class="wrapper_30 pull_center"><img src="/img/noisy-logo_credits.png" width="40" /></div>
+	<div class="default_initial pull_center wrapper_30">Special Thanks</div>
+	<ul class="noisy-credits" id="double">
+		{% raw %}{% for person in site.data.[page.creditList] %}{% endraw %}
+		<li>{% raw %}{{ person.name }}{% endraw %}</li>
+		{% raw %}{% endfor %}{% endraw %}
+	</ul>
+</div>
+```
+
+page.creditList is the most important piece of code, because we also call that variable in the front-matter for MERVO-TENANTS.html.  Because the value associated with this variable is mervo-credits, we can look for that file in the _data folder.  It's an itemized list that can easily be duplicated or copied to fill in credits for another project.
 
 ---
 
@@ -285,5 +518,16 @@ This project site uses the work_video_layout.html template layout file, since th
 
 This project site uses the work_film_layout.html template layout file.
 
+This is a very limited project file because it uses the work_film_layout.  There isn't much content, so just the hero, and text overlays.
+
 ---
+
+RESOURCES
+---------
+
++ [Jekyll Docs Site](http://www.jekyllrb.com)
++ [Stack Overflow, Jekyll Thread](http://stackoverflow.com/questions/tagged/jekyll)
++ [My Github Repo](https://github.com/mkess-ivy?tab=repositories)
+
+
 {% include btn.html btn_color='on_brand_dark' url-location='index.html' url-text="return home" %}

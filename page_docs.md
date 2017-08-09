@@ -411,37 +411,15 @@ location-address: "301 W. 29th Street"
 locale: "Baltimore, MD 21211"
 ---
 
-{% raw %}{% include foodmenu.html %}{% endraw %}
+
 <div class="white-bg">
 {% raw %}{% include testimonial.html %}{% endraw %}
-{% raw %}{% include event-cta-text.html %}{% endraw %}
-{% raw %}{% include signup.html %}{% endraw %}
+
 </div>
 
 ```
 
-After the three dashes to end the front-matter section, this is technically the content section.  Here we can see that we are adding the foodmenu, testimonials, event cta, and signup. To reuse the include fragments, it's best to use variables within those code fragments as well.  Here is the code for foodmenu.html - there aren't any variables here:
-
-```
-<div class="section_wrapper pull_center">
-	<div class="default_text_grande">menu</div>
-	<ul class="menu_list food_menu_wrapper">
-		<li>healthy turkey burger<br />
-		<span class="default_text_micro">turkey burger, alfafa sprouts, avocado spread, swiss cheese on brioche bun</span>
-		</li>
-		<li>dnd burger<br />
-		<span class="default_text_micro">angus burger, lettuce, tomato, cheddar cheese, ketchup, mustard on brioche bun</span>
-		</li>
-		<li>the noisy burger<br />
-		<span class="default_text_micro">angus burger, lettuce, tomato, onion, special loud sauce, cheddar cheese on brioche bun</span>
-		</li>
-		<li>hawaiian burger<br />
-		<span class="default_text_micro">angus burger, pepper jack cheese, teriyaki sauce, pineapple, canadian ham</span>
-		</li>
-		<li>hand cut fries</li>
-	</ul>
-</div>
-```
+After the three dashes to end the front-matter section, this is technically the content section.  Here we can see that we are adding the foodmenu, testimonials, event cta, and signup. To reuse the include fragments, it's best to use variables within those code fragments as well.  
 
 value.html code fragment from the _includes folder is used for a different project, here is what the code looks like with variables - 
 

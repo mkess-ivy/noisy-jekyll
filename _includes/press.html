@@ -1,0 +1,15 @@
+<section class="content_wrapper">
+	<div class="section_title">{{ include.press-title }}</div>
+	<div>
+		<ul class="press_list clearfix">
+			{% for press in site.data.[include.pressList] %}
+			<li class="clearfix">
+				<div class="press_thumbnail">
+					<a href="{{ include.press-url }}"><img src="{{ press.thumbnail }}" /></a>
+				</div>
+				
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

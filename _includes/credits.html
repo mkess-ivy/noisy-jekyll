@@ -1,9 +1,8 @@
-<div>
-	<div class="wrapper_30 pull_center"><img src="/img/noisy-logo_credits.png" width="40" /></div>
-	<div class="default_initial pull_center wrapper_30">Special Thanks</div>
+<section class="content_wrapper clearfix">
+	<div class="section_title float_left">Special Thanks</div>
 	<ul class="noisy-credits" id="double">
-		{% for person in site.data.[page.creditList] %}
+		{% for person in site.data.[page.data-creditList] %}
 		<li>{{ person.name }}</li>
 		{% endfor %}
 	</ul>
-</div>
+</section>

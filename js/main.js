@@ -28,7 +28,7 @@ $(document).ready(function(){
 	// Slick Slider
 	$('.nt_slider').slick({
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2500,
     arrows: false,
     infinite: true,
     fade: true,
@@ -36,6 +36,25 @@ $(document).ready(function(){
     dots: true,
     cssEase: 'linear'
 	});
+
+
+  $('.slick-play').on('click',function() {
+    // alert('hi');
+    $('.nt_slider').slick('slickNext');
+    // console.log('helllo');
+  });
+
+
+  // Content Slider
+  $('.content_slider').slick({
+    autoplay: false,
+    arrows: true,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    dots: false,
+    cssEase: 'linear'
+  });
 
   // site preloader -- also uncomment the div in the header and the css style for #preloader
 	$(window).load(function(){
@@ -70,5 +89,33 @@ $(document).ready(function(){
 
   // Reveal Footer
   $('footer').footerReveal({ shadow: false, zIndex: -101 });
+
+  // View Work Hover Feature
+  $(".js-background-trigger").hover(function(){
+   $(".js-background-receiver", this).addClass('hover');
+  }
+  , 
+  function(){
+     $(".js-background-receiver", this).removeClass('hover');
+  });
+
+
+  // Noise on Background Images 
+  // $('.slide_bg').grained({
+  //   var options = {
+  //     animate:true;
+  //   }
+  // });
+  var options = {
+    "animate": true,
+    "patternWidth": 10,
+    "patternHeight": 10,
+    "grainOpacity": 0.05,
+    "grainDensity": 10,
+    "grainWidth": 10,
+    "grainHeight": 1
+  }
+  grained("#noise-filter", options);
+
 
 }); // Close of jQuery

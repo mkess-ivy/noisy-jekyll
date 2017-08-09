@@ -1,11 +1,12 @@
 ---
-layout: work_film_layout
+[//]: # (Meta Info)
+layout 					: coming_soon
+title 					: "Bus Stop Buddies: A Short Film"
 
-title: "Bus Stop Buddies: A Short Film"
-description: "a pop up restaurant designed and executed with students at Mervo High School"
+[//]: # (Project Info)
+project-hero 			: /img/hero-bus-stop-buddies.png
 
-hero-img: /img/hero-bus-stop-buddies.png
-film-date: "May 4, 2017 6:00 P.M."
-film-location: "Charles Theater"
-film-url: "http://www.google.com"
+[//]: # (Slide Info)
+slide-description 		: "A community initiative in Greenmount West where adults stand with elementary youth each morning in an effort to provide a positive start to their days."
 ---
+

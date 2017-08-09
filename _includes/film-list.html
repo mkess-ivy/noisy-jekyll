@@ -1,0 +1,16 @@
+<div class="film_item clearfix">
+	<div class="film_item_thumbnail">
+		<img src="{{ film.thumbnail }}">
+	</div>
+	<div class="film_item_text">
+		<div class="film_title pull_left title_underline">{{ film.title }}</div>
+		<div class="production_text">
+			{{ film.name-title }}: {{ film.producer }}<br/>
+			Run Time: {{ film.runtime }}<br/>
+			<br/>
+		</div>
+	</div>
+	<div class="film_item_excerpt">
+		{{ film.description }}
+	</div>
+</div>

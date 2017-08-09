@@ -1,0 +1,172 @@
+/* Header */
+.logo {
+	float: left;
+	font-size: 13px;
+	padding-top: 13px;
+	position: relative;
+	z-index: 600;
+}
+.logo a {
+	color: #FFF;
+	text-decoration: none;
+}
+.logo_text {
+	padding-left: 10px;
+}
+.site_header {
+	background: black;
+	height: 50px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 203;
+
+	@include tablet {
+		padding: 0 50px;
+	}
+
+	@include tv {
+		margin: 0 auto;
+		padding: 0 40px;
+	}
+}
+.site_header_wrapper {
+	padding: 0 20px;
+
+	@include tv {
+		max-width: 1450px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+/* - Mobile Menu */
+.menu {
+	float: right;
+}
+
+/* - Overlay Responsive Menu */
+#menu-container { 
+	height: 50px; 
+	position: relative; 
+	width: 50px;
+}
+.menuButton { 
+	background: transparent !important;
+	border: none !important; 
+	color: #fff !important;
+	font-size: 48px !important;
+	height: 100% !important;
+	position: relative !important; 
+	width: 100% !important; 
+	margin-top: -12px;
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+}
+.menuButton:active { 
+	position: relative; 
+	top: 1px; 
+}
+.menuButton:hover { 
+	-o-transition:.75s;
+    -ms-transition:.75s; 
+    -moz-transition:.75s; 
+    -webkit-transition:.75s; 
+    transition:.75s;
+}
+.menu-icons { 
+	padding-top: 2%; 
+}
+.menu-icons img { 
+	width: 3%; 
+}
+.overlay { 
+	background-color: rgba(230,79,76,0.97); 
+	height: 100%; 
+	left: 0; 
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	z-index: 500;
+}
+.overlay nav { 
+	height: 45%;
+	position: relative; 
+	top: 5%;
+}
+.overlay ul { 
+	display: inline-block;
+	height: 100%; 
+	list-style: none;
+	margin-left: 50px;
+	margin-top: 30px;
+	padding: 0;
+	position: relative;
+
+	@include tv {
+		margin-left: 45px;
+	}
+}
+.overlay ul li { 
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+.overlay ul li a { 
+	color: #fff; 
+	font-size: 34px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.overlay ul li a:hover { 
+	color: black;
+	border-bottom: 1px solid #000;
+}
+.overlay-close { 
+	background: url('../img/close-v2.png') no-repeat center center !important;
+	background-size: contain !important;
+	border: none !important;
+	color: transparent !important;
+	height: 35px !important;
+	outline: none;
+	overflow: hidden !important;
+	position: absolute !important;
+	right: 33px !important;
+	text-indent: 200% !important;
+	top: 10px !important;
+	width: 25px !important;
+	z-index: 100 !important;
+	@include tablet {
+		right: 53px !important;
+	}
+	@include tv {
+		// right: 53px;
+	}
+}
+.overlay-data { 
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-open { 
+	opacity: 1;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	visibility: visible;
+}
+.menu-content {
+	bottom: 40px;
+	font-size: 19px;
+	font-weight: bold;
+	opacity: 0.7;
+	position: fixed;
+	width: 88% !important;
+
+	@include tablet {
+		width: 40% !important;
+	}
+
+	@include desktop {
+		width: 30% !important;
+	}
+}

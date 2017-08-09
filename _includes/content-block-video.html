@@ -1,0 +1,33 @@
+<div class="content_wrapper">
+	<div class="content_primary">
+		
+		<div class="noisy_video_overlay">
+		  	<div class="video_container">
+
+			    <!-- Fontawesome Close (X) Icon -->
+			    <span class="html5_close">close video</span>
+
+		    	<!-- Embedded video -->
+		    	<iframe id="video" src="{{ include.video-content-url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+		  	</div>
+		</div>
+		
+
+		<div class="video_onclick" style="background-image: url('{{ include.video-content-image }}');">
+			
+			<div>
+				<span class="play"></span>
+			</div>
+		  
+		</div>
+	</div>
+	<div class="content_text_wrapper clearfix">
+		<div class="content_title">
+			{{ include.video-content-title }}
+		</div>
+		<div class="content_text">
+			{{ include.video-content-text }}
+		</div>
+	</div>
+</div>

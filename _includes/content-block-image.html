@@ -1,0 +1,27 @@
+<div class="content_wrapper">
+	<div class="content_primary">
+		<div class="content_bg_image" style="background-image: url( {{ include.content-image }} );"></div>
+	</div>
+	<div class="content_text_wrapper clearfix">
+		<div class="content_title">
+			{{ include.content-title }}
+		</div>
+		<div class="content_text">
+			{{ include.content-text }}
+
+			{% if include.content-menuList %}
+				<ul class="menu-list">
+				{% for items in site.data.[include.content-menuList] %}
+					<li>
+						<span class="menu-item-name">{{ items.name }} </span><br/>
+						{{ items.description }}
+					</li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+
+
+
+	</div>
+</div>

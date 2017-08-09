@@ -1,3 +1,4 @@
+
     <!-- Footer -->
     <footer class="site_footer clearfix">
       <div>
@@ -5,13 +6,112 @@
         <!-- .hideme is for the slow reveal animation of the footer-menu content -->
         <div class="footer1 hideme">
           <ul class="wrapper_15 footer-menu">
-            <li><a href="{{site.baseurl}}/work">work</a></li>
-            <li><a href="{{ site.baseurl}}/about">about</a></li>
-            <li><a href="{{ site.baseurl }}/contact">contact us</a></li>
+            
+            <li><a href="{{ site.baseurl}}/our-team">our team <span><img src="/img/icon-ourteam.png" width="20" /></span></a></li>
+            
           </ul>
-          <p class="footer-paragraph">
-            Noisy Tenants are agents for community. We actively seek projects that all point back to community. We aim to connect businesses, schools, neighborhoods and all that good stuff in creative projects that have the capacity to give back and be built upon way after the initial project ends.  We look to be a neighborhood&nbsp;institition. 
-          </p>
+          <div class="newsletter">
+            join our mailing list
+          </div>
+          <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+              #mc_embed_signup{background: transparent; clear:left; font:14px Helvetica,Arial,sans-serif; }
+              #mc_embed_signup_scroll label {
+                color: #000 !important;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                line-height: 24px;
+                padding-bottom: 0px;
+              }
+              #mc_embed_signup_scroll .email {
+                background: #fff !important;
+                border-color: #fff !important;
+                width: 75% !important;
+                border-radius: 0 !important;
+              }
+              #mc_embed_signup input.email {
+                border-radius: 0;
+                background-color: #fff !important;
+                border-color: #fff !important;
+                width: 70%;
+                margin: 10px auto;
+                color: #e44d4e;
+
+                
+              }
+              #mc_embed_signup_scroll .button {
+                text-decoration: none !important;
+                background-color: transparent; !important;
+                color: #000 !important;
+                font-size: 12px !important;
+                padding: 0 4px !important;
+                width: 40% !important;
+                line-height: 24px !important;
+                height: 30px !important;
+                border-radius: 0 !important;
+                margin: 0 auto !important;
+                max-width: 150px !important;
+                border: 1px solid #000 !important;
+                text-transform: uppercase !important;
+                font-weight: bolder;
+              }
+              #mc_embed_signup .button {
+                clear: none;
+              }
+              #mc_embed_signup input.button {
+                
+                width: 15%;
+                border-radius: 0 !important;
+                background-color: #e44d4e !important;
+                color: #fff !important;
+                text-transform: uppercase;
+                margin: 0 auto 20px;
+                
+              }
+              #mc_embed_signup_scroll .button:hover {
+                background-color: #000 !important;
+                color: #fff !important;
+              }
+
+
+              #mc_embed_signup_scroll #mce-EMAIL {
+                font-size: 12px !important;
+                font-weight: normal !important;
+                color: #e44d4e !important;
+              }
+              #mc_embed_signup form {
+                padding: 0 !important;
+              }
+              @media screen and (min-width: 750px) {
+                #mc_embed_signup input.email {
+                  width: 50%;
+                  max-width: 285px;
+                  float: left;
+                  margin: 0 10px 10px 0 !important;  
+                }
+                #mc_embed_signup input.button {
+                  display: inline !important;  
+                }
+                #mc_embed_signup {
+                  margin: 0 0 0 20px; 
+                }
+              }
+            </style>
+          <div id="mc_embed_signup" style="background-color: {{ include.signup-bgcolor }} !important;">
+            <form action="http://noisytenants.com/thank-you/" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll clearfix">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0db703f6939fa4c15f327f636_b9d07cadc8" tabindex="-1" value=""></div>
+                <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+            </form>
+          </div>
+          <div class="contact_info">Let's talk! &nbsp;&nbsp;<a href="mailto:info@noisytenants.com">info@noisytenants.com</a></div>
+          <!-- <p class="footer-paragraph">
+            Noisy Tenants are entrepreneurs and creatives that invest their talent in the community. We connect businesses. schools, and neighborhoods through projects that have capacity for positive change and mutual benefit. We challenge traditional approaches and view each project as an opportunity to spark positive change. We strive to be a positive institution within our community.
+          </p> -->
         </div>
         <div class="footer2">
           <div class="footer_logo">
@@ -21,9 +121,9 @@
             housed in <br>greenmount west<br>Baltimore Md
           </div>
           <div class="social-icons">
-            <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-            <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-            <a href="http://www.facebook.com"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+            <a href="http://www.instagram.com/noisytenants"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+            <a href="http://www.twitter.com/noisytenants"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com/noisytenants"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
           </div>
           <div class="copy">
             &copy; 2017 Noisy Tenants<br>All Rights Reserved.
@@ -31,6 +131,7 @@
         </div>
       </div>
     </footer><!-- #Footer -->
+  
 
     <!-- Javascript -->
     <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -52,6 +153,9 @@
         }
       });
     </script>
+
+    <!-- Javascript Source for Noise on Background -->
+    <script type="text/javascript" src="{{ site.baseurl }}/js/grained.js"></script>
 
     <!-- Google Analytics -->
     <script>

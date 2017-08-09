@@ -3,42 +3,53 @@ layout: hero_bg
 --- 
 <!-- Slider -->
 <div class="nt_slider clearfix">
-
-  {% assign features = site.work | where:"featured", "yes" | sort:"featured-rank" %}
-  {% for work in features limit: 3 %}
   
-  {% if work.slide == "slide1" %}
-  <!-- Slide 1 -->
-  <div class="slide">
-
-    <div class="slide_img_wrapper">
-      <img src="{{ work.img-path }}" class="slide_img" />  
+  <!-- Slide Primary -->
+  <div class="slide slide_bg" id="noise-filter" style="background-image: url(/img/hero_1.jpg);">
+    <div class="frow direction-column wrap_my_slide_primary">
+      <div class="headline1">
+        Noisy Tenants are a collective of <span class="red_span">entrepreneurs</span> and <span class="red_span">creatives</span> that invest their talent in the community.
+      </div>
+      <div class="headline2">
+        We connect businesses and community entities through <span class="red_span">projects</span> that challenge traditional approaches to spark reimagined communities.
+      </div>
+      <div class="slide_primary_link">
+        <button class="slick-play">
+          <img src="/img/icon-slide-primary.png" width="45" />
+        </button>
+      </div>
     </div>
-    <div class="headline">
-      {{ work.description }}
-    </div>
-    {% include btn_30.html btn_color='on_brand_dark' url-location='work/noisy-burger' url-text="read more" %}
+  </div>
+   <!-- #Slide Primary -->
   
-  </div><!-- #Slide 1 -->
-  {% endif %}
+  {% for work in site.work %}
+  
+    {% if work.slide-template == "slide1" %}
+    
+    <div class="slide slide_bg" id="noise-filter" style="background-image: url({{ work.slide-bg }});">
 
-  {% if work.slide == "slide2" %}
-  <!-- Slide 2 -->
-  <div class="slide">
-    <div class="headline">{{ work.date | date: '%B %d, %Y' }} @ <div class="mobile-block">{{ work.location }}</div></div>
-    <div class="slide_img_wrapper">
-      <img src="{{ work.img-path }}" class="slide2_img" />  
+      <div class="frow centered-column wrap_my_slide">
+        
+        <div class="slide_img_wrapper">
+          <img src="{{ work.slide-img }}" class="slide_img" />  
+        </div>
+        <div class="slide_headline">
+          {{ work.slide-description }}
+        </div>
+        <div class="btn_wrapper_30">
+          <div class="btn_cta on_brand_dark">
+            <a href="{{ work.url }}">read more</a>
+          </div>
+        </div>
+      
+      </div>
+    
     </div>
-    <div class="headline">
-      {{ work.description }}
-    </div>
-    {% include btn_30.html btn_color='on_brand_dark' url-location='work/revenge-of-emmett-till' url-text="read more" %}
-  </div><!-- #Slide2 -->
-  {% endif%}
+    {% endif %} 
 
   {% endfor %}
 
-</div><!-- nt-slider -->
+</div><!-- nt_slider -->
   
 
 

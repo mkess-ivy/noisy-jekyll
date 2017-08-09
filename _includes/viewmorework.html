@@ -1,0 +1,14 @@
+<div class="viewwork_wrapper clearfix">
+	<div class="template_wrapper">
+		<div class="viewwork_title">view <br/>more <br/>work</div>
+		<ul class="viewwork_list">
+			{% for project in site.data.viewworkprojects %}
+				<li class="js-background-trigger">
+					<a href="{{ project.url }}" class="visited">{{ project.name }}</a>
+					<div class="js-background-receiver" style="background-image: url('{{ project.image }}');"></div>
+				</li>
+			{% endfor %}
+			
+		</ul>
+	</div>
+</div>

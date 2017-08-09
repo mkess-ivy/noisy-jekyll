@@ -1,0 +1,24 @@
+- name       : "First name"
+  thumbnail  : "/img/testimonial-1.png" 
+  class      : "c/o 2017"
+  copy       : "A quick blurb about the student, an insight into what the contributed to the overall"
+
+- name       : "First name"
+  thumbnail  : "/img/testimonial-2.png" 
+  class      : "c/o 2017"
+  copy       : "A quick blurb about the student, an insight into what the contributed to the overall"
+
+- name       : "First name"
+  thumbnail  : "/img/testimonial-3.png" 
+  class      : "c/o 2017"
+  copy       : "A quick blurb about the student, an insight into what the contributed to the overall"
+
+- name       : "First name"
+  thumbnail  : "/img/testimonial-1.png" 
+  class      : "c/o 2017"
+  copy       : "A quick blurb about the student, an insight into what the contributed to the overall"
+
+- name       : "First name"
+  thumbnail  : "/img/testimonial-2.png" 
+  class      : "c/o 2017"
+  copy       : "A quick blurb about the student, an insight into what the contributed to the overall"

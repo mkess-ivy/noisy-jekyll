@@ -24,17 +24,27 @@ slide-description 		: "a pop up restaurant designed and executed with students a
 
 		content-block-image.html 
 		
-		content-image="/img/mervo-menu-image.jpg" 
+		content-image="/img/noisyburger-menu-image.jpg" 
+		content-title="The Concept" 
+		content-text="@NoisyBurger was developed with students in the commercial baking trade at Mergenthaler Vocational Technical High School. This project was student led and designed. Noisy Tenants guided students through all phased of the project including concept development, marketing, and operation logistics." 
+	%}
+
+	<!-- Image Content Block w/menu -->
+	{% include
+
+		content-block-image.html 
+		
+		content-image="/img/gallery-noisyburger3.png" 
 		content-title="menu" 
 		content-menuList="noisyburger-menu" 
 	%}
 
-	<!-- Slideshow -->
-	{% include 
+	<!-- Image Content Block w/menu -->
+	{% include
 
-		content-block-slider.html
-
-		content-slideList="noisyburger-slide"
+		content-block-image.html 
+		
+		content-image="/img/gallery-noisyburger5.png" 
 	%}
 
 	<!-- Testimonial Block -->
@@ -43,27 +53,7 @@ slide-description 		: "a pop up restaurant designed and executed with students a
 		content-block-testimonial.html 
 
 		data-testimonialList='noisyburger2017-testimonials' 
-		testimonial-title='c/o 2017 Mervo Tenants' 
-
-	%}
-
-	<!-- Testimonial Block -->
-	{% include 
-
-		content-block-testimonial.html
-
-		data-testimonialList='noisyburger2018-testimonials'
-		testimonial-title='c/o 2018 Mervo Tenants'
-
-	%}
-
-	<!-- Testimonial Block -->
-	{% include 
-
-		content-block-testimonial.html 
-
-		data-testimonialList='noisyburger2019-testimonials' 
-		testimonial-title='c/o 2019 Mervo Tenants' 
+		testimonial-title='What We Heard' 
 
 	%}
 

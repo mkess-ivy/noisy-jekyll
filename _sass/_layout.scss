@@ -7,6 +7,9 @@ body {
 	text-transform: uppercase;
 	overflow-x: hidden;
 }
+body.font-black {
+	color: $black;
+}
 body.noScroll { /* ...or body.dialogShowing */
   	overflow: hidden;
 }

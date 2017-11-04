@@ -1,0 +1,83 @@
+/* - Text Components */
+.headline {
+	font-size: 18px;
+	margin: 0 auto 30px;
+	text-align: center;
+}
+.headline_lg {
+	font-size: 24px;
+	letter-spacing: 0.1px;
+	text-align: center;
+	text-transform: initial;
+}
+.page_title {
+	font-size: 32px;
+}
+.page_title::after {
+	content: '';
+	width: 50px;
+	border-bottom: 1px solid;
+	display: block;
+	padding-bottom: 10px;
+}
+.page_title_wrapper {
+	padding: 0 20px;
+	background: #000;
+	margin: 40px 0 100px 0;
+}
+.page_title_alt {
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+.default_text_micro {
+	font-size: 12px;
+}
+.default_text_sm {
+	font-size: 13px;
+	font-weight: lighter;
+	text-transform: initial;
+	margin-bottom: 5px;
+
+	@include tv {
+		font-size: 15px;
+	}
+}
+.default_text_med {
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 10px;
+
+	@include tv {
+		font-size: 17px;
+	}
+}
+.default_text_lg {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: initial;
+	margin-bottom: 10px;
+
+	@include tv {
+		font-size: 24px;
+	}
+}
+.default_text_grande {
+	font-size: 36px;
+	margin-bottom: 35px;
+}
+.default_initial {
+	text-transform: initial;
+	margin-bottom: 5px;
+
+	@include tv {
+		font-size: 20px;
+	}
+}
+.default_initial a {
+	text-decoration: none;
+	color: #fff;
+}
+.default_initial a:hover {
+	color: #e44d4e;
+	border-bottom: 1px solid #e44d4e;
+}

@@ -3,12 +3,22 @@
 
   {% include head.html %}
 
+  {% if page.title == 'Our Team' %}
+  <body class="font-black">
+  {% else %}
   <body>
+  {% endif %}
   	<!-- Preloader -->
   	<div id="preloader"></div>
   	
     <div class="container clear">
-      <div class="hero-bg-black clearfix">
+      
+      {% if page.title == 'Our Team' %}
+        <div class="hero-bg-white clearfix">
+      {% else %}
+        <div class="hero-bg-black clearfix">
+      {% endif %}
+
     		{% include header.html %}
         <div class="page_title_wrapper">
           <div class="page_title">{{ page.title }}</div>

@@ -15,6 +15,12 @@
 	@include tv {
 		max-width: 1450px;
 	}
+
+	@include tv-1650 {
+		max-width: 1650px;
+	}
+
+	
 }
 .footer1 {
 	@include tablet {
@@ -47,6 +53,7 @@
 	margin: 0 auto;
 	text-align: center;
 	width: 40%;
+	color: $white;
 }
 .social-icons {
 	padding: 20px 0;
@@ -67,6 +74,7 @@
 	margin: 0 auto 20px;
 	text-align: center;
 	width: 50%;
+	color: $white;
 
 	@include tablet {
 		width: 60%;

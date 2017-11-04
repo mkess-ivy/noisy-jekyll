@@ -37,6 +37,10 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
   margin: 30px auto;
   text-align: center;
 }
+.btn_wrapper_primary {
+  margin: 30px 0;
+  // text-align: center;
+}
 .btn_cta a,
 .btn_cta a:visited {
   text-decoration: none;
@@ -124,29 +128,26 @@ a.link:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
+  transition: height 999999s;
 }
 .noisy_hero_icon {
   background-size: cover;
   height: 100vh;
   width: 100%;
   z-index: 200;
-  
   background-repeat: no-repeat;
   background-position: left top;
-  // background-color: red;
   position: absolute;
   overflow-x: hidden;
-
-  right: -75px;
+  transition: height 999999s;
 
   @include tablet {
-    right: -300px;
-    width: 80%;
+    right: 0px;
+    width: 60%;
   }
 
   @include laptop {
     width: 50%;
-    right: -100px;
   }
 }
 .hero-bg {
@@ -172,6 +173,13 @@ a.link:hover {
   background: none;
   height: auto;
   margin-bottom: 8em;
+}
+.hero-bg-white {
+  background-color: #fff !important;
+  background: none;
+  height: auto;
+  margin-bottom: 8em;
+  min-height: 100vh;
 }
 
 /* - Food Menu 
@@ -330,12 +338,17 @@ a.link:hover {
 
 /* Section Title */
 .section_title {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 58px;
   text-transform: uppercase;
   margin-bottom: 50px;
-  width: 45%;
+  width: 75%;
   max-width: 390px;
+
+  @include palm {
+    font-size: 60px;
+    width: 45%;
+  }
 
   @include tablet {
     margin-left: 25px;
@@ -407,12 +420,20 @@ a.link:hover {
   padding-right: 10px;
   font-size: 26px;
   width: 500px;
+
+  @include tv {
+    font-size: 36px;
+  }
 }
 .subtitle_project {
   color: #000;
-  font-size: 44px;
+  font-size: 35px;
   margin-top: 35px;
   margin-left: 10px;
+
+  @include small {
+    font-size: 50px;
+  }
 
   @include palm {
     font-size: 60px;
@@ -428,7 +449,7 @@ a.link:hover {
 
 
   @include tv {
-    font-size: 75px;
+    font-size: 90px;
     width: 850px;
   }  
 }
@@ -452,11 +473,10 @@ a.link:hover {
 .home_fixed {
   font-size: 18px;
   position: fixed;
-  bottom: 125px;
+  bottom: 15px;
   left: 20px;
 
   @include tablet {
-    bottom: 15px;
     left: 60px;
   }
 }
@@ -491,12 +511,16 @@ a.link:hover {
 
 /* View More Work */
 .viewwork_title {
-  font-size: 60px;
-  line-height: 58px;
+  font-size: 50px;
+  line-height: 55px;
   position: relative;
   z-index: 800;
   width: 55%;
 
+  @include palm {
+    font-size: 60px;
+    line-height: 58px;
+  }
   @include tablet {
     float: left;
     width: 43%;  
@@ -631,7 +655,11 @@ a.visited:visited {
 .film_item img {
   width: 100%;
   margin-bottom: 25px;
-  height: 450px;
+  height: auto;
+
+  @include tablet {
+    height: 450px;
+  }
 
   @include desktop {
     height: 550px;
@@ -660,11 +688,24 @@ a.visited:visited {
     margin-right: 30px;
     font-size: 19px;
   }
+  @include tv {
+    font-size: 24px;
+  }
 }
 .film_title {
-  font-size: 60px;
-  line-height: 58px;
+  font-size: 50px;
+  line-height: 55px;
   text-transform: uppercase;
+
+  @include palm {
+    font-size: 60px;
+    line-height: 58px;
+  }
+
+  @include tv {
+    font-size: 75px;
+    line-height: 75px;
+  }
 }
 .film_item_text {
   @include tablet {
@@ -676,17 +717,23 @@ a.visited:visited {
 
 /* Image Content Block */
 .content_bg_image {
-  background-size: cover;
-  height: 450px;
+  background-size: contain;
+  height: 200px;
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
+
+  @include palm {
+    background-size: cover;
+    height: 450px;
+  }
   @include tablet {
     height: 550px;
   }
-  @include tv-1920 {
-    height: 600px;
+  @include laptop {
+    height: 650px;
   }
+  
 }
 
 /* Production Credits */
@@ -695,6 +742,11 @@ a.visited:visited {
   text-transform: initial;
   margin-top: 15px;
   line-height: 16px;
+
+  @include tv {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 
@@ -713,10 +765,12 @@ a.visited:visited {
 /* Video Content Block */
 .content_title {
   margin-bottom: 25px;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 58px;
   text-transform: uppercase;
-
+  @include small {
+    font-size: 60px;
+  }
   @include palm {
     width: 65%;
   }
@@ -744,7 +798,12 @@ a.visited:visited {
     width: 43%;
     float: right;
     margin-right: 20px;
-    
+  }
+  @include desktop {
+    margin-right: 50px;
+  }
+  @include tv {
+    font-size: 24px;
   }
 }
 

@@ -28,21 +28,22 @@ $(document).ready(function(){
 	// Slick Slider
 	$('.nt_slider').slick({
     autoplay: true,
-    autoplaySpeed: 2500,
-    arrows: false,
+    autoplaySpeed: 4500,
+    arrows: true,
     infinite: true,
     fade: true,
-    speed: 500,
+    speed: 900,
     dots: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    prevArrow: $('#mypreviousbutton'),
+    nextArrow: $('#mynextbutton')
 	});
 
 
-  $('.slick-play').on('click',function() {
-    // alert('hi');
-    $('.nt_slider').slick('slickNext');
-    // console.log('helllo');
-  });
+  // This adds a next button to the first slide on home page
+  // $('.slick-play').on('click',function() {
+  //   $('.nt_slider').slick('slickNext');
+  // });
 
 
   // Content Slider
@@ -99,21 +100,14 @@ $(document).ready(function(){
      $(".js-background-receiver", this).removeClass('hover');
   });
 
-
-  // Noise on Background Images 
-  // $('.slide_bg').grained({
-  //   var options = {
-  //     animate:true;
-  //   }
-  // });
   var options = {
-    "animate": true,
-    "patternWidth": 10,
-    "patternHeight": 10,
-    "grainOpacity": 0.05,
-    "grainDensity": 10,
-    "grainWidth": 10,
-    "grainHeight": 1
+  "animate": true,
+  "patternWidth": 350.4,
+  "patternHeight": 500,
+  "grainOpacity": 0.17,
+  "grainDensity": 1.5,
+  "grainWidth": 1,
+  "grainHeight": 1
   }
   grained("#noise-filter", options);
 

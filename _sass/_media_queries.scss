@@ -9,6 +9,7 @@ $on-tv-1650         : 1650px;
 $on-tv-1920         : 1920px;
 
 // Media Query Mixins
+
 @mixin small {
   @media screen and (min-width: #{$on-small}) {
     @content;

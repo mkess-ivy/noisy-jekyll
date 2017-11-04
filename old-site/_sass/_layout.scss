@@ -1,0 +1,158 @@
+body {
+	background: $black;
+	color: #ffffff;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	overflow-x: hidden;
+}
+body.noScroll { /* ...or body.dialogShowing */
+  	overflow: hidden;
+}
+ul,li {
+	list-style: none;
+}
+.black-bg {
+	background: #000;
+}
+
+/* - Global Wrappers */
+.noisy_wrapper {
+	margin: 0 20px 100px 20px;
+
+	@include palm {
+		margin: 0 auto 100px;
+		max-width: 470px;
+	}
+
+	@include tablet {
+		max-width: 715px;
+	}
+
+	@include desktop {
+		max-width: 1000px;
+	}
+
+	@include widescreen {
+		max-width: 1200px;
+	}
+
+	@include tv {
+		max-width: 1450px;
+	}
+}
+.full_height_wrapper {
+	height: calc(100vh - 50px);
+}
+.wrapper_15 {
+	margin-bottom: 15px;
+}
+.wrapper_30 {
+	margin-bottom: 30px;
+}
+.wrapper_50 {
+	margin-bottom: 50px;
+}
+.element_wrapper {
+	margin-bottom: 80px;
+}
+.section_wrapper {
+	padding-top: 50px;
+}
+.template_wrapper {
+	margin: 0px 20px 100px 20px;
+
+	@include palm {
+		margin: 0;
+		width: 500px;
+		float: right;
+	}
+
+	@include tablet {
+		width: 650px;
+	}
+
+	@include laptop {
+		width: 800px;
+	}
+
+	@include desktop {
+		width: 950px;
+	}
+	@include widescreen {
+		width: calc(100% - 120px);
+	}
+	@include tv-1920 {
+		width: calc(100% - 450px);
+	}
+}
+.project_layout_wrapper {
+	background: #fff;
+	width: 100%;
+	padding: 100px 0;
+	color: $black;
+}
+.viewwork_wrapper {
+	background: $white;
+  	color: #000;
+  	padding-bottom: 50px;
+  	position: relative;
+}
+.viewwork_inner_wrapper {
+	@include tablet {
+		width: 715px;
+		margin: 0 auto;
+	}
+}
+.content_wrapper {
+	margin-bottom: 125px;
+}
+.no-margin {
+	margin: 0 auto !important;
+}
+.image_center {
+	text-align: center;
+	margin: 50px 0;
+}
+.normal_text {
+	font-weight: normal;
+}
+
+/* - Flex */
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* - Floats */
+.pull_center {
+	text-align: center;
+}
+.pull_left {
+	text-align: left !important;
+}
+.pull_tight {
+	@include palm {
+		width: 60%;
+	}
+
+	@include tablet {
+		width: 40%;
+	}
+}
+.half_float_left {
+	@include tablet {
+		float: left;
+		width: 50%;
+	}
+}
+.float_left {
+	@include tablet {
+		float: left;	
+	}
+	
+}
+

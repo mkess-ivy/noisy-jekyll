@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
   // Smooth Scroll
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
@@ -13,7 +13,7 @@ $(document).ready(function(){
           window.location.hash = target;
       });
   });
-  
+
   // Overlay Menu Functionality
 	$("#overlay-menu").click(function() {
     $(".overlay").addClass("overlay-open");
@@ -64,17 +64,17 @@ $(document).ready(function(){
 
 	/* Slow Reveal -- Every time the window is scrolled, since we are also using the Reveal Footer, this might not actually be activated ... */
   $(window).scroll( function(){
-    
+
     /* Check the location of each desired element */
-    $('.hideme').each( function(i){     
+    $('.hideme').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
+
       /* If the object is completely visible in the window, fade it in */
-      if( bottom_of_window > bottom_of_object ){  
+      if( bottom_of_window > bottom_of_object ){
         $(this).animate({'opacity':'1'},700);
-      }     
-    }); 
+      }
+    });
   });
 
    // Reveal Back to top icon after certain scroll height
@@ -89,16 +89,30 @@ $(document).ready(function(){
   });
 
   // Reveal Footer
-  $('footer').footerReveal({ shadow: false, zIndex: -101 });
+  // $('footer').footerReveal({ shadow: false, zIndex: -101 });
 
   // View Work Hover Feature
   $(".js-background-trigger").hover(function(){
    $(".js-background-receiver", this).addClass('hover');
   }
-  , 
+  ,
   function(){
      $(".js-background-receiver", this).removeClass('hover');
   });
+
+
+  // Work Page Hover Feature
+  $(".js_hover_trigger").hover(function(){
+      $(".js_bg_receiver_work", this).addClass('hover');
+  },function(){
+     $(".js_bg_receiver_work", this).removeClass('hover');
+  });
+
+  // Work Page Test
+    // $("#demo2 li").hoverIntent(addHover,removeHover);
+    // function addHover(){$(".js_bg_hover_img", this).addClass('hover');}
+    // function removeHover(){$(".js_bg_hover_img", this).removeClass('hover');}
+
 
   var options = {
   "animate": true,

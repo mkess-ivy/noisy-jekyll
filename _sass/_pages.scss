@@ -2,6 +2,12 @@
 .red_span {
 	color: $red;
 }
+.hero_img_home {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	// filter: contrast(107%) saturate(0%);
+}
 
 /* About */
 .noisy_wrapper_member {
@@ -79,7 +85,7 @@
 	width: 90%;
 }
 .page_copy_section {
-	margin-bottom: 100px;	
+	margin-bottom: 100px;
 }
 .page_copy_title {
 	font-size: 28px;
@@ -95,6 +101,88 @@
 		width: 85%;
 	}
 }
+.brand_list {
+	margin: 0 30px;
+
+	@include tablet {
+		margin-left: 50px;
+	}
+
+	li {
+		font-size: 35px;
+		line-height: 35px;
+		width: auto;
+		margin-bottom: 25px;
+
+		@include palm {
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		@include tablet {
+			font-size: 70px;
+			line-height: 70px;
+		}
+
+		@include desktop {
+			font-size: 85px;
+			line-height: 80px;
+			margin-bottom: 35px;
+		}
+
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}
+.js_bg_receiver_work.hover {
+  display: none;
+  @include tablet {
+    height: calc(100vh - 75px);
+    width: 100%;
+    background-color: rgba(228,77,78,0.6);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -100;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+	filter: contrast(100%) grayscale(125%);
+	// top: 50px;
+  }
+}
+.js_hover_trigger a {
+	position: relative;
+
+	&:hover {
+		color: $red;
+		border-bottom: 2px solid;
+	}
+}
+.full_height_group {
+	height: calc(100vh - 95px) !important;
+	height: auto;
+
+	@include small {
+		height: calc(100vh - 75px) !important;
+	}
+	@include laptop {
+		height: calc(100vh - 88px) !important;
+	}
+}
+.single_post_wrapper {
+	min-height: calc(100vh - 95px) !important;
+	@include small {
+		min-height: calc(100vh - 75px) !important;
+	}
+	@include laptop {
+		min-height: calc(100vh - 88px) !important;
+	}
+}
+
 
 /* Contact */
 .noisy_text_wrapper {

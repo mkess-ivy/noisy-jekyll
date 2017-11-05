@@ -1,7 +1,7 @@
 body {
 	background: $black;
 	color: #ffffff;
-	font-family: Helvetica, sans-serif;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -121,6 +121,17 @@ ul,li {
 .normal_text {
 	font-weight: normal;
 }
+.full_height_wrapper {
+	min-height: calc(100vh - 95px) !important;
+	height: auto;
+	
+	@include small {
+		min-height: calc(100vh - 75px) !important;
+	}
+	@include laptop {
+		min-height: calc(100vh - 88px) !important;
+	}
+}
 
 /* - Flex */
 .flex {
@@ -154,8 +165,28 @@ ul,li {
 }
 .float_left {
 	@include tablet {
-		float: left;	
+		float: left;
 	}
-	
+
 }
 
+/* Links */
+.nt-link {
+	font-weight: bold;
+	color: $white;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+.nt-link:hover {
+	border-bottom: 2px solid $white;
+	padding-bottom: 2px;
+}
+.nt-link-position {
+	padding-top: 10px;
+	display: block;
+	@include tablet {
+		padding-top: 0;
+		padding-left: 10px;
+		display: inline;
+	}
+}

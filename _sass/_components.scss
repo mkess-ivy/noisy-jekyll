@@ -1,4 +1,4 @@
-/* 
+/*
 
 TABLE OF CONTENTS
 
@@ -27,6 +27,44 @@ FOR SLIDER - SEE SLIDER.SCSS
 FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
 */
+
+
+/* SINGLE POST META */
+.single_post_meta {
+    padding: 50px;
+    max-width: 700px;
+
+    .single_post_title {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 24px;
+        text-transform: initial;
+        -webkit-margin-before: 0.3em;
+        -webkit-margin-after: 0.3em;
+    }
+}
+.return_work {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 25px;
+    width: 175px;
+    text-align: right;
+    background: $black;
+    padding: 5px 8px;
+
+    a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
 
 /* - CTA Buttons */
 .btn_wrapper_70 {
@@ -80,14 +118,14 @@ a.link:hover {
 
 
 /* Back to Top Icon */
-.backtop-icon { 
+.backtop-icon {
   -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.55);
   box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.55);
   padding: 0.4em 0.8em;
   background: white;
   position: fixed;
-  bottom: 2em; 
+  bottom: 2em;
   right: 0em;
   z-index: 200;
   border-radius: 34px;
@@ -182,7 +220,7 @@ a.link:hover {
   min-height: 100vh;
 }
 
-/* - Food Menu 
+/* - Food Menu
 .food_menu_wrapper {
   @include palm {
     width: 60%;
@@ -244,14 +282,14 @@ a.link:hover {
   }
 }
 .testimonial_list {
-  
+
   @include tablet {
-    margin-left: 45px;  
+    margin-left: 45px;
   }
-  
+
 }
 .testimonial_list li {
-  
+
   list-style: none;
   margin: 0 5px 35px;
   padding: 15px 25px 15px 0;
@@ -317,9 +355,9 @@ a.link:hover {
 /* Press List */
 .press_list {
   @include tablet {
-    margin-left: 45px;  
+    margin-left: 45px;
   }
-  
+
 }
 .press_list li {
   list-style: none;
@@ -363,9 +401,9 @@ a.link:hover {
   @extend .section_title;
   position: relative;
   z-index: 800;
-  
+
   @include tablet {
-    float: left;  
+    float: left;
   }
 }
 
@@ -373,10 +411,10 @@ a.link:hover {
 .noisy-credits {
   overflow: hidden;
   padding: 0;
-  
+
   font-size: 16px;
   font-weight: bold;
-  
+
   margin-top: 55px;
   margin-left: 35px;
 
@@ -444,14 +482,14 @@ a.link:hover {
     font-size: 65px;
     width: 600px;
     margin-left: 100px;
-    margin-top: 25px;  
+    margin-top: 25px;
   }
 
 
   @include tv {
     font-size: 90px;
     width: 850px;
-  }  
+  }
 }
 .title_wrapper {
   margin-top: 25px;
@@ -523,7 +561,7 @@ a.link:hover {
   }
   @include tablet {
     float: left;
-    width: 43%;  
+    width: 43%;
     margin-left: 30px;
   }
 }
@@ -538,7 +576,7 @@ a.link:hover {
     margin-left: 75px;
   }
   @include tablet {
-    float: right;  
+    float: right;
     width: 40%;
   }
   @include laptop {
@@ -579,14 +617,14 @@ a.visited:visited {
   }
   @include laptop {
     height: 400px;
-    width: 850px; 
+    width: 850px;
   }
   @include desktop {
     height: 450px;
     // width: 950px;
   }
   @include widescreen {
-    
+
   }
   @include tv {
     width: 1200px;
@@ -673,7 +711,7 @@ a.visited:visited {
   @include tablet {
     width: 42%;
     float: left;
-    margin-left: 45px;  
+    margin-left: 45px;
   }
 }
 .film_item_excerpt {
@@ -710,7 +748,7 @@ a.visited:visited {
 .film_item_text {
   @include tablet {
     width: 41%;
-    float: left;  
+    float: left;
   }
 }
 
@@ -733,7 +771,7 @@ a.visited:visited {
   @include laptop {
     height: 650px;
   }
-  
+
 }
 
 /* Production Credits */
@@ -778,7 +816,7 @@ a.visited:visited {
   @include tablet {
     width: 42%;
     float: left;
-    margin-left: 30px;  
+    margin-left: 30px;
   }
 
   @include laptop {
@@ -898,7 +936,7 @@ a.visited:visited {
 }
 .fluid-width-video-wrapper iframe {
   @include tablet {
-    height: 75% !important;  
+    height: 75% !important;
   }
-  
+
 }

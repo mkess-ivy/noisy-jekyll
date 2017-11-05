@@ -1,17 +1,14 @@
 /* Footer Menu */
 .site_footer {
-	background-color: $black;
-	width: 100%; /* controls how much padding is on the right and left side of footer */
+	padding: 5px;
+	width: 85%;
+	position: relative;
+	z-index: 1000;
 
 	@include tablet {
-		margin: auto;
-		left: 0;
-		right: 0; /* margin, right and left values, center this element */
-		
-		padding-left: 40px;
-		padding-right: 40px;
+		padding: 5px 25px;
+		width: auto;
 	}
-
 	@include tv {
 		max-width: 1450px;
 	}
@@ -20,7 +17,6 @@
 		max-width: 1650px;
 	}
 
-	
 }
 .footer1 {
 	@include tablet {
@@ -49,15 +45,27 @@
 	width: 10%;
 }
 .footer_text {
-	font-size: 10px;
-	margin: 0 auto;
-	text-align: center;
-	width: 40%;
-	color: $white;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 12px 0 7px 10px;
+	display: inline-block;
+
+	@include tablet {
+		text-align: right;
+		display: inline-block;
+		padding: 6px 0;
+	}
 }
 .social-icons {
-	padding: 20px 0;
 	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 0 5px 10px;
+
+	@include tablet {
+		padding-right: 15px;
+		padding-top: 0px;
+	}
 }
 .social-icons a {
 	color: white;
@@ -70,14 +78,13 @@
 	padding-right: 7px;
 }
 .copy {
-	font-size: 10px;
-	margin: 0 auto 20px;
-	text-align: center;
-	width: 50%;
+	font-size: 12px;
+	margin: 0 auto;
 	color: $white;
-
+	font-weight: normal;
+	padding-left: 10px;
 	@include tablet {
-		width: 60%;
+		padding-top: 4px;
 	}
 }
 .footer-line {
@@ -123,10 +130,10 @@
 	text-align: center;
 
 	@include tablet {
-		margin-left: 20px;	
+		margin-left: 20px;
 		text-align: left;
 	}
-	
+
 }
 .contact_info a {
 	color: $red;

@@ -1,6 +1,5 @@
 /* Header */
 .logo {
-	// float: left;
 	font-size: 13px;
 	padding-top: 13px;
 	position: relative;
@@ -43,96 +42,90 @@
 	}
 }
 
-/* - Mobile Menu */
-.menu {
-	// float: right;
-}
-
 /* - Overlay Responsive Menu */
-#menu-container { 
-	height: 50px; 
-	position: relative; 
+#menu-container {
+	height: 50px;
+	position: relative;
 	width: 100px;
 
 	@include palm {
 		width: 50px;
 	}
 }
-.menuButton { 
+.menuButton {
 	background: transparent !important;
-	border: none !important; 
+	border: none !important;
 	color: #fff !important;
 	font-size: 48px !important;
 	height: 100% !important;
-	position: relative !important; 
-	width: 100% !important; 
+	position: relative !important;
+	width: 100% !important;
 	margin-top: -12px;
 	font-weight: lighter;
 	-webkit-font-smoothing: antialiased;
 }
-.menuButton:active { 
-	position: relative; 
-	top: 1px; 
+.menuButton:active {
+	position: relative;
+	top: 1px;
 }
-.menuButton:hover { 
+.menuButton:hover {
 	-o-transition:.75s;
-    -ms-transition:.75s; 
-    -moz-transition:.75s; 
-    -webkit-transition:.75s; 
+    -ms-transition:.75s;
+    -moz-transition:.75s;
+    -webkit-transition:.75s;
     transition:.75s;
 }
-// .menu-icons { 
-// 	padding-top: 2%; 
-// }
-// .menu-icons img { 
-// 	width: 3%; 
-// }
-.overlay { 
-	background-color: rgba(230,79,76,0.97); 
-	height: 100%; 
-	left: 0; 
-	position: fixed; 
-	top: 0; 
-	width: 100%; 
+.overlay {
+	background-color: rgba(230,79,76,0.97);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	z-index: 500;
 }
-.overlay nav { 
-	height: 45%;
-	position: relative; 
-	top: 5%;
+.overlay nav {
+	position: relative;
 }
-.overlay ul { 
+.overlay ul {
 	display: inline-block;
-	height: 100%; 
 	list-style: none;
 	margin-left: 20px;
-	margin-top: 30px;
 	padding: 0;
 	position: relative;
 
-	@include small {
+	@include tablet {
 		margin-left: 50px;
 	}
-	@include tv {
-		margin-left: 45px;
-	}
 }
-.overlay ul li { 
+.overlay ul li {
 	margin:0;
 	padding: 0;
 	width: 100%;
+	padding-bottom: 20px;
 }
-.overlay ul li a { 
-	color: #fff; 
-	font-size: 34px;
+.overlay ul li a {
+	color: #fff;
+	font-size: 38px;
+	line-height: 44px;
 	font-weight: bold;
 	text-decoration: none;
+
+	@include tablet {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	@include desktop {
+		font-size: 90px;
+		line-height: 80px;
+	}
 }
-.overlay ul li a:hover { 
+.overlay ul li a:hover {
 	color: black;
 	border-bottom: 1px solid #000;
 }
-.overlay-close { 
+.overlay-close {
 	background: url('../img/close-v2.png') no-repeat center center !important;
 	background-size: contain !important;
 	border: none !important;
@@ -146,20 +139,18 @@
 	top: 10px !important;
 	width: 25px !important;
 	z-index: 100 !important;
+
 	@include tablet {
-		right: 53px !important;
-	}
-	@include tv {
-		// right: 53px;
+		right: 57px !important;
 	}
 }
-.overlay-data { 
+.overlay-data {
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.5s, visibility 0s 0.5s;
 	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
 }
-.overlay-open { 
+.overlay-open {
 	opacity: 1;
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
@@ -180,4 +171,9 @@
 	@include desktop {
 		width: 30% !important;
 	}
+}
+.flex-centered {
+	height: 100%;
+	justify-content: flex-start !important;
+	align-items: center;
 }

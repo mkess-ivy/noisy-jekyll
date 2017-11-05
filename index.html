@@ -1,61 +1,14 @@
 ---
 layout: hero_bg
---- 
-<!-- Slider -->
-<div id="mypreviousbutton" class="slick_btn"></div>
-<!-- <div id="mypreviousbutton"><img src="/img/left_slide_arrow.png" class="slick_btn" /></div> -->
-<div class="nt_slider clearfix">
-  
-  <!-- Slide Primary -->
-  <div class="slide slide_bg" id="noise-filter" style="background-image: url(/img/hero_1.jpg);">
-    <div class="frow direction-column wrap_my_slide_primary">
-      <div class="headline1">
-        WE<br/>CREATE<br/>OPPORTUNITIES
-      </div>
-      <div class="headline2">
-        Connecting businesses and community entities through <span class="red_span">projects</span> that challenge traditional approaches to spark a reimagined community.
-      </div>
-      <div class="btn_wrapper_primary">
-          <div class="btn_cta on_brand_dark">
-            <a href="#" class="slick_btn">learn more</a>
-          </div>
-        </div>
-      <!-- <div class="slide_primary_link">
-        <button class="slick-play">
-          <img src="/img/icon-slide-primary.png" width="45" />
-        </button>
-      </div> -->
+hero_img: /img/hero_1.jpg
+---
+
+<div class="frow direction-column wrap_my_slide_primary">
+    <div class="headline1">
+        Creating <br/>
+        Hope through Opportunity.
     </div>
-  </div>
-   <!-- #Slide Primary -->
-  
-  {% for work in site.work %}
-  
-    {% if work.slide-template == "slide1" %}
-    
-    <div class="slide slide_bg" id="noise-filter" style="background-image: url({{ work.slide-bg }});">
-
-      <div class="frow centered-column wrap_my_slide">
-        
-        <div class="slide_img_wrapper">
-          <img src="{{ work.slide-img }}" class="slide_img" />  
-        </div>
-        <div class="slide_headline">
-          {{ work.slide-description }}
-        </div>
-        <div class="btn_wrapper_30">
-          <div class="btn_cta on_brand_dark">
-            <a href="{{ work.url }}">read more</a>
-          </div>
-        </div>
-      
-      </div>
-    
+    <div class="headline2">
+        <span class="red_span">We</span> build bridges between businesses and youth in our <span class="red_span">community</span> through <span class="red_span">projects</span> that close the gap between sustainability and need.
     </div>
-    {% endif %} 
-
-  {% endfor %}
-
-</div><!-- nt_slider -->
-<!-- <div id="mynextbutton"><img src="/img/right_slide_arrow.png" class="slick_btn" /></div> -->
-<div id="mynextbutton" class="slick_btn"></div>
+</div>

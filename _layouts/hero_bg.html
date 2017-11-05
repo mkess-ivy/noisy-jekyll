@@ -6,16 +6,16 @@
   <body>
   	<!-- Preloader -->
   	<div id="preloader"></div>
-  	
-    <div class="container clear">
-      <!-- <div class="noisy_hero" style="height: 100vh;"> -->
-    		{% include header.html %}
-      	
-      	{{ content }}
-      <!-- </div> --><!-- .hero-bg -->
-    </div> <!-- .container -->
 
-    {% include footer.html %}
+    <div class="container clear">
+
+    	{% include header.html %}
+
+        <div class="hero_img_home" style="background-image: url({{ page.hero_img }});"><!-- removing #noise-filter -->
+    	   {{ content }}
+           {% include footer.html %}
+        </div>
+    </div> <!-- .container -->
 
   </body>
 

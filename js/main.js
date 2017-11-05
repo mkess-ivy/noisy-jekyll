@@ -56,6 +56,24 @@ $(document).ready(function(){
     dots: false,
     cssEase: 'linear'
   });
+  // making the prevArrow not show on init:
+  $('.hero-slider').on('init', function (event, slick, direction) {
+
+  // check to see if there are one or less slides
+  // if ($('.hero-slider .slick-slide').length == 1) {
+  //
+  //     // remove arrows
+  //     $('.slick-prev').hide();
+  //
+  // }
+  // if (slideIndex == 0) {
+  //
+  //     // remove arrows
+  //     $('.slick-prev').hide();
+  //
+  // }
+
+});
 
   $('.hero-slider').slick({
      autoplay: false,
@@ -65,9 +83,11 @@ $(document).ready(function(){
      speed: 500,
      dots: false,
      cssEase: 'linear',
-     nextArrow: '<small class="slick-next">&rarr;</small>',
-    prevArrow: '<small class="slick-prev">&larr;</small>'
+     nextArrow: '<img src="/img/right_arrow.png" class="slick-next" />',
+    prevArrow: '<img src="/img/left_arrow.png" class="slick-prev" />'
   });
+
+
 
   // site preloader -- also uncomment the div in the header and the css style for #preloader
 	$(window).load(function(){
@@ -136,16 +156,17 @@ $(document).ready(function(){
     });
 
 
-  var options = {
-  "animate": true,
-  "patternWidth": 350.4,
-  "patternHeight": 500,
-  "grainOpacity": 0.17,
-  "grainDensity": 1.5,
-  "grainWidth": 1,
-  "grainHeight": 1
-  }
-  grained("#noise-filter", options);
+    // Noisy Filter for Image
+    // var options = {
+    // "animate": true,
+    // "patternWidth": 350.4,
+    // "patternHeight": 500,
+    // "grainOpacity": 0.17,
+    // "grainDensity": 1.5,
+    // "grainWidth": 1,
+    // "grainHeight": 1
+    // }
+    // grained("#noise-filter", options);
 
 
 }); // Close of jQuery

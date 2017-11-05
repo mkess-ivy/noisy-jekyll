@@ -11,6 +11,8 @@ project-hero-icon 		: "/img/logo-big-noisyburger.png"
 project-title 			: "Noisy Burger"
 project-subtitle 		: "a pop up restaurant designed by mervo baking trade students"
 
+slide					: noisyburger-slide
+
 ---
 <div class="single_post_wrapper">
 	{% include single_post_meta.html

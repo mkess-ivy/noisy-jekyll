@@ -10,16 +10,16 @@
     <div class="container clear">
 
     	{% include header.html %}
+        <button type="button" class="slick-prev">Previous</button>
         <div class="hero-slider">
-
-                <div class="hero_img_home below_fold" style="background-image: url({{ page.hero_img }});"><!-- removing #noise-filter -->
-        	        {{ content }}
-                    {% include footer.html %}
-                </div>
-                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
-                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
-                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
-                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
+            {% for item in site.data.[page.slide] %}
+            <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')"></div>
+            {% endfor %}
+        </div>
+        <button type="button" class="slick-next">Next</button>
+        <div class="wrapper_overlay ">
+            {{ content }}
+            {% include footer.html %}
         </div>
     </div> <!-- .container -->
 

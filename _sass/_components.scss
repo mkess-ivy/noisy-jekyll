@@ -28,6 +28,14 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
 */
 
+
+/* WRAPPER OVERLAY */
+.wrapper_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 /* PRESS GROUP */
 .press_group {
     background: $white;
@@ -43,7 +51,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     }
     @include tablet {
         max-width: 675px;
-        margin: 50px auto 100px;
+        margin: 100px auto 100px;
     }
 
     .press_group_title {

@@ -299,3 +299,25 @@ button.slick-play {
 #noise-filter > * {
 	position: relative;
 }
+.hero-slider {
+	.slick-next {
+		right: 25px;
+		z-index: 740;
+		width: 100px;
+		height: 45px;
+
+		&.slick-disabled {
+			display: none !important;
+		}
+	}
+	.slick-prev {
+		left: 25px;
+		z-index: 740;
+		width: 100px;
+		height: 45px;
+
+		&.slick-disabled {
+			display: none !important;
+		}
+	}
+}

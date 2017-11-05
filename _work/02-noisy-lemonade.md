@@ -1,8 +1,9 @@
 ---
 [//]: # (Meta Info)
-layout 					: project_layout
+layout 					: hero_bg
 title 					: "Noisy <br />Lemonade"
-work_hover_img			: /img/hero-noisylemonade.png
+work_hover_img			: /img/hero-noisylemonade-v2.png
+hero_img				: /img/hero-noisylemonade-v2.png
 
 [//]: # (Project Info)
 project-hero-icon 		: "/img/logo-big-nl.png"
@@ -10,19 +11,12 @@ project-title 			: "Noisy Lemonade"
 project-subtitle 		: "Youth Owned Lemonade stands based in Greenmount West"
 
 ---
-<div class="template_wrapper">
-
-	<!-- Image Content Block w/menu -->
-	{% include
-
-		content-block-image.html
-
-		content-image="/img/nl-menu-image.jpg"
-		content-title="The Concept"
-		content-text="Noisy Lemonade is a social enterprise created in collaboration with Greenmount West Community Center. Noisy Lemonade serves as a platform for entrepreneurship by allowing youth to design and operate their own lemonade stands. Youth build business skills through direct application and guidance.<br/><br/>
-		Follow Noisy Tenants on Instagram, Facebook, and Twitter to learn where Lemonade Stands in the Noisy Tenants network will be located!"
+<div class="single_post_wrapper">
+	{% include single_post_meta.html
+		title="Bradford"
+		text="<p>Beverage stand micro-businesses owned and operated by youth.</p>
+		<p>Add more about financial literacy, marketing, etc</p>
+		<p>Portion of proceeds benefit programming at local community center</p>"
 
 	%}
-
-
 </div>

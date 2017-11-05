@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  	<!-- Preloader -->
+  	<div id="preloader"></div>
+
+    <div class="container clear">
+
+    	{% include header.html %}
+        <div class="hero-slider">
+
+                <div class="hero_img_home below_fold" style="background-image: url({{ page.hero_img }});"><!-- removing #noise-filter -->
+        	        {{ content }}
+                    {% include footer.html %}
+                </div>
+                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
+                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
+                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
+                <div class="hero_img_home" style="background-image: url('/img/hero-noisyburger.png')"></div>
+        </div>
+    </div> <!-- .container -->
+
+  </body>
+
+</html>

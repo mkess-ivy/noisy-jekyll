@@ -124,7 +124,7 @@ ul,li {
 .full_height_wrapper {
 	min-height: calc(100vh - 95px) !important;
 	height: auto;
-	
+
 	@include small {
 		min-height: calc(100vh - 75px) !important;
 	}
@@ -168,6 +168,11 @@ ul,li {
 		float: left;
 	}
 
+}
+
+/* Single Work */
+.below_fold {
+	height: 125vh;
 }
 
 /* Links */

@@ -2,12 +2,20 @@
 .site_footer {
 	padding: 5px;
 	width: 85%;
-	position: relative;
-	z-index: 1000;
+	// position: relative;
+	z-index: 100;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+
+	position: fixed;
+	bottom: -110px;
+	left: 0;
+	right: 0;
 
 	@include tablet {
 		padding: 5px 25px;
 		width: auto;
+		bottom: 10px;
 	}
 	@include tv {
 		max-width: 1450px;

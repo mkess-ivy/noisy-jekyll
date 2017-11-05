@@ -57,6 +57,18 @@ $(document).ready(function(){
     cssEase: 'linear'
   });
 
+  $('.hero-slider').slick({
+     autoplay: false,
+     arrows: true,
+     infinite: false,
+     fade: true,
+     speed: 500,
+     dots: false,
+     cssEase: 'linear',
+     nextArrow: '<small class="slick-next">&rarr;</small>',
+    prevArrow: '<small class="slick-prev">&larr;</small>'
+  });
+
   // site preloader -- also uncomment the div in the header and the css style for #preloader
 	$(window).load(function(){
 		$('#preloader').fadeOut('slow',function(){$(this).remove();});
@@ -112,6 +124,16 @@ $(document).ready(function(){
     // $("#demo2 li").hoverIntent(addHover,removeHover);
     // function addHover(){$(".js_bg_hover_img", this).addClass('hover');}
     // function removeHover(){$(".js_bg_hover_img", this).removeClass('hover');}
+
+    // Reveal Footer Credits after certain scroll pointer
+    $(window).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 75) {
+            $('.site_footer').css("bottom", "10px");
+        } else {
+            $('.site_footer').css("bottom", "-110px");
+        } // need to add media query to this
+    });
 
 
   var options = {

@@ -12,15 +12,11 @@ project-subtitle 		: "Supporting locaL youth at the start of their school day"
 
 ---
 <div class="single_post_wrapper">
-	<div class="single_post_meta">
-		<div class="single_post_title">{{ page.title }}</div>
-		<p>Beverage stand micro-businesses owned and operated by youth.</p>
-
+	{% include single_post_meta.html
+		title="Bradford"
+		text="<p>Beverage stand micro-businesses owned and operated by youth.</p>
 		<p>Add more about financial literacy, marketing, etc</p>
+		<p>Portion of proceeds benefit programming at local community center</p>"
 
-		<p>Portion of proceeds benefit programming at local community center</p>
-	</div>
-	<div class="return_work">
-		<a href="/work">return to work</a>
-	</div>
+	%}
 </div>

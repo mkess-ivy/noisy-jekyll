@@ -28,39 +28,131 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
 */
 
+/* PRESS GROUP */
+.press_group {
+    background: $white;
+    color: $black;
+    width: 90%;
+    margin: 50px auto 200px;
+    padding: 25px;
+    position: relative;
+    z-index: 500;
 
+    @include palm {
+        max-width: 475px;
+    }
+    @include tablet {
+        max-width: 675px;
+        margin: 50px auto 100px;
+    }
+
+    .press_group_title {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    .press_group_title:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: $red;
+    }
+    .press_single {
+        width: 100%;
+        margin-bottom: 25px;
+        float: left;
+        min-height: 150px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        padding: 10px;
+
+        @include tablet {
+            width: 48%;
+            min-height: 130px;
+        }
+    }
+    .press_single:nth-child(even) {
+        margin-right: 25px;
+    }
+    .press_single_highlight {
+        color: $red;
+    }
+    .press_single_title {
+        text-transform: initial;
+        padding-bottom: 10px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+                color: $red;
+                border-bottom: 1px solid;
+            }
+        }
+    }
+}
 /* SINGLE POST META */
-.single_post_meta {
-    padding: 50px;
-    max-width: 700px;
+.single_post_wrapper {
+    padding: 100px 25px;
+
+    @include tablet {
+        padding: 125px 50px;
+        max-width: 750px;
+    }
 
     .single_post_title {
-        font-size: 72px;
+        font-size: 36px;
+        line-height: 36px;
+        padding-bottom: 30px;
+
+        @include palm {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        @include tablet {
+            font-size: 72px;
+            line-height: 72px;
+        }
+        @include desktop {
+            font-size: 82px;
+            line-height: 77px;
+        }
     }
 
     p {
-        font-size: 24px;
+        font-size: 20px;
         text-transform: initial;
-        -webkit-margin-before: 0.3em;
-        -webkit-margin-after: 0.3em;
+        -webkit-margin-before: 0.5em;
+        -webkit-margin-after: 0.5em;
+
+        @include tablet {
+                font-size: 24px;
+        }
     }
 }
 .return_work {
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 0;
-    font-size: 25px;
-    width: 175px;
+    font-size: 16px;
+    width: 115px;
     text-align: right;
-    background: $black;
+    background: $white;
     padding: 5px 8px;
+
+    @include tablet {
+        font-size: 25px;
+        width: 175px;
+    }
 
     a {
         text-decoration: none;
-        color: $white;
+        color: $black;
 
         &:hover {
             color: $red;
+            border-bottom: 1px solid;
         }
     }
 }

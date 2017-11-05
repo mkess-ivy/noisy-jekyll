@@ -189,7 +189,7 @@ ul,li {
 .nt-link-position {
 	padding-top: 10px;
 	display: block;
-	@include tablet {
+	@include laptop {
 		padding-top: 0;
 		padding-left: 10px;
 		display: inline;

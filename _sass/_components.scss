@@ -41,7 +41,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     background: $white;
     color: $black;
     width: 90%;
-    margin: 50px auto 200px;
+    margin: 100px auto 200px;
     padding: 25px;
     position: relative;
     z-index: 500;
@@ -51,7 +51,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     }
     @include tablet {
         max-width: 675px;
-        margin: 100px auto 100px;
+        margin: 125px auto 200px;
     }
 
     .press_group_title {
@@ -94,17 +94,21 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
             &:hover {
                 color: $red;
-                border-bottom: 1px solid;
+                // border-bottom: 1px solid;
             }
         }
     }
 }
 /* SINGLE POST META */
 .single_post_wrapper {
-    padding: 100px 25px;
+    padding: 150px 25px;
+
+    @include palm {
+        max-width: 615px;
+    }
 
     @include tablet {
-        padding: 125px 50px;
+        padding: 150px 50px;
         max-width: 750px;
     }
 
@@ -112,6 +116,11 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
         font-size: 36px;
         line-height: 36px;
         padding-bottom: 30px;
+
+        @include small {
+            font-size: 45px;
+            line-height: 48px;
+        }
 
         @include palm {
             font-size: 60px;
@@ -141,17 +150,17 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 }
 .return_work {
     position: absolute;
-    top: 70px;
+    top: 65px;
     right: 0;
-    font-size: 16px;
-    width: 115px;
+    font-size: 14px;
+    // width: 115px;
     text-align: right;
     background: $white;
     padding: 5px 8px;
 
     @include tablet {
-        font-size: 25px;
-        width: 175px;
+        font-size: 18px;
+        // width: 175px;
     }
 
     a {
@@ -160,7 +169,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
         &:hover {
             color: $red;
-            border-bottom: 1px solid;
+            // border-bottom: 1px solid;
         }
     }
 }

@@ -56,24 +56,6 @@ $(document).ready(function(){
     dots: false,
     cssEase: 'linear'
   });
-  // making the prevArrow not show on init:
-  $('.hero-slider').on('init', function (event, slick, direction) {
-
-  // check to see if there are one or less slides
-  // if ($('.hero-slider .slick-slide').length == 1) {
-  //
-  //     // remove arrows
-  //     $('.slick-prev').hide();
-  //
-  // }
-  // if (slideIndex == 0) {
-  //
-  //     // remove arrows
-  //     $('.slick-prev').hide();
-  //
-  // }
-
-});
 
   $('.hero-slider').slick({
      autoplay: false,
@@ -145,15 +127,22 @@ $(document).ready(function(){
     // function addHover(){$(".js_bg_hover_img", this).addClass('hover');}
     // function removeHover(){$(".js_bg_hover_img", this).removeClass('hover');}
 
-    // Reveal Footer Credits after certain scroll pointer
-    $(window).scroll(function() {
-        var y = $(this).scrollTop();
-        if (y > 75) {
-            $('.site_footer').css("bottom", "10px");
-        } else {
-            $('.site_footer').css("bottom", "-110px");
-        } // need to add media query to this
-    });
+
+        if ($(window).width() < 900) {
+            // Reveal Footer Credits after certain scroll pointer
+            $(window).scroll(function() {
+                var y = $(this).scrollTop();
+                if (y > 75) {
+                    $('.site_footer').css("bottom", "10px");
+                } else {
+                    $('.site_footer').css("bottom", "-95px");
+                }
+
+            });
+        }
+
+
+
 
 
     // Noisy Filter for Image

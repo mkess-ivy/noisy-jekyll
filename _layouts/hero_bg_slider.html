@@ -10,13 +10,12 @@
     <div class="container clear">
 
     	{% include header.html %}
-        <button type="button" class="slick-prev">Previous</button>
         <div class="hero-slider">
             {% for item in site.data.[page.slide] %}
             <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')"></div>
             {% endfor %}
         </div>
-        <button type="button" class="slick-next">Next</button>
+    
         <div class="wrapper_overlay ">
             {{ content }}
             {% include footer.html %}

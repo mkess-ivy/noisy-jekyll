@@ -137,8 +137,8 @@
 	}
 }
 .js_bg_receiver_work.hover {
-  display: none;
-  @include tablet {
+  // display: none;
+  // @include tablet {
     height: calc(100vh - 75px);
     width: 100%;
     background-color: rgba(228,77,78,0.6);
@@ -152,14 +152,14 @@
     bottom: 0;
 	filter: contrast(100%) grayscale(125%);
 	// top: 50px;
-  }
+  // }
 }
 .js_hover_trigger a {
 	position: relative;
 
 	&:hover {
 		color: $red;
-		border-bottom: 2px solid;
+		// border-bottom: 2px solid;
 	}
 }
 .full_height_group {

@@ -1,21 +1,31 @@
 /* Footer Menu */
 .site_footer {
 	padding: 5px;
-	width: 85%;
+	width: 95%;
 	// position: relative;
 	z-index: 100;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 
 	position: fixed;
-	bottom: -110px;
+	bottom: -95px;
 	left: 0;
 	right: 0;
 
+	@include small {
+
+	}
+
 	@include tablet {
+
+
+		// bottom: 10px;
+	}
+
+	@include laptop {
+		bottom: -5px;
 		padding: 5px 25px;
 		width: auto;
-		bottom: 10px;
 	}
 	@include tv {
 		max-width: 1450px;
@@ -25,6 +35,31 @@
 		max-width: 1650px;
 	}
 
+}
+.right_footer {
+	width: 100%;
+	@include laptop {
+		width: auto;
+	}
+}
+.footer_text {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 12px 0 7px 10px;
+	display: inline-block;
+	width: 100%;
+
+	@include tablet {
+
+
+	}
+
+	@include laptop {
+		width: auto;
+		text-align: right;
+		display: inline-block;
+		padding: 6px 0;
+	}
 }
 .footer1 {
 	@include tablet {
@@ -52,25 +87,14 @@
 .footer_logo_img {
 	width: 10%;
 }
-.footer_text {
-	font-size: 12px;
-	font-weight: normal;
-	padding: 12px 0 7px 10px;
-	display: inline-block;
 
-	@include tablet {
-		text-align: right;
-		display: inline-block;
-		padding: 6px 0;
-	}
-}
 .social-icons {
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 0 5px 10px;
 
-	@include tablet {
+	@include laptop {
 		padding-right: 15px;
 		padding-top: 0px;
 	}
@@ -91,7 +115,7 @@
 	color: $white;
 	font-weight: normal;
 	padding-left: 10px;
-	@include tablet {
+	@include laptop {
 		padding-top: 4px;
 	}
 }

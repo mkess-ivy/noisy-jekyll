@@ -13,7 +13,7 @@ project-subtitle 		: "Youth Owned Lemonade stands based in Greenmount West"
 ---
 <div class="single_post_wrapper">
 	{% include single_post_meta.html
-		title="Bradford"
+		title="Noisy<br/>Lemonade"
 		text="<p>Beverage stand micro-businesses owned and operated by youth.</p>
 		<p>Add more about financial literacy, marketing, etc</p>
 		<p>Portion of proceeds benefit programming at local community center</p>"

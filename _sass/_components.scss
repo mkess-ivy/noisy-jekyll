@@ -112,6 +112,10 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
         max-width: 750px;
     }
 
+    @include desktop {
+        max-width: 900px;
+    }
+
     .single_post_title {
         font-size: 36px;
         line-height: 36px;
@@ -132,8 +136,8 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
             line-height: 72px;
         }
         @include desktop {
-            font-size: 82px;
-            line-height: 77px;
+            font-size: 100px;
+            line-height: 95px;
         }
     }
 
@@ -145,6 +149,10 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
         @include tablet {
                 font-size: 24px;
+        }
+
+        @include laptop {
+                font-size: 30px;
         }
     }
 }

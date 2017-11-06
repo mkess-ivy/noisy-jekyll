@@ -38,13 +38,6 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // text-align: center;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // -webkit-display: flex;
-  // -webkit-align-items: center;
-  // -webkit-justify-content: center;
 }
 
 .play {
@@ -64,9 +57,13 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
   right: 0;
   text-align: center;
 
-  @include tablet {
+  @include laptop {
       top: 45vh;
-      left: 15vw;
+      left: 5vw;
+  }
+
+  @include widescreen {
+      left: 20vw;
   }
 
 }
@@ -94,7 +91,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 .play-btn-wrapper {
     position: relative;
 
-    @include tablet {
+    @include laptop {
         float: left;
     }
 }
@@ -154,8 +151,8 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     font-size: 20px;
     font-weight: bold;
 
-    @include tablet {
-        font-size: 30px;
+    @include laptop {
+        font-size: 24px;
         line-height: 28px;
     }
 }
@@ -163,8 +160,8 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     font-size: 20px;
     font-weight: normal;
 
-    @include tablet {
-        font-size: 30px;
+    @include laptop {
+        font-size: 24px;
         line-height: 36px;
     }
 }
@@ -176,8 +173,9 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     text-transform: initial;
     font-weight: normal;
 
-    @include tablet {
+    @include laptop {
         font-size: 26px;
+        line-height: 36px;
         padding-top: 50px;
     }
 }

@@ -4,7 +4,7 @@ layout 					: hero_bg_slider
 title 					: "Noisy <br />Burger"
 work_hover_img			: /img/hero-noisyburger.png
 hero_img				: /img/hero-noisyburger-v3.png
-below_fold				: yes
+slide					: noisyburger-slide
 
 [//]: # (Project Info)
 project-hero-icon 		: "/img/logo-big-noisyburger.png"
@@ -14,7 +14,7 @@ project-subtitle 		: "a pop up restaurant designed by mervo baking trade student
 slide					: noisyburger-slide
 
 ---
-<div class="single_post_wrapper">
+<div class="single_post_wrapper the_slider">
 	{% include single_post_meta.html
 		title="Welcome to Noisy Burger"
 		text="<p>A one week pop-up restaurant created by students at Mergenthaler Vo-Tech High School</p>

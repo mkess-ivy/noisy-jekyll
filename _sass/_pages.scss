@@ -173,15 +173,6 @@
 		height: calc(100vh - 88px) !important;
 	}
 }
-.single_post_wrapper {
-	min-height: calc(100vh - 95px) !important;
-	@include small {
-		min-height: calc(100vh - 75px) !important;
-	}
-	@include laptop {
-		min-height: calc(100vh - 88px) !important;
-	}
-}
 
 
 /* Contact */

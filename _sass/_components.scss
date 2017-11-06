@@ -28,6 +28,177 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
 */
 
+/* FILM */
+/* Fullscreen Section */
+.main_play_wrapper {
+  width: 100%;
+  height: calc(100vh - 50px);
+  color: white;
+  background-image: url('/img/hero-noisyfilms.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // text-align: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // -webkit-display: flex;
+  // -webkit-align-items: center;
+  // -webkit-justify-content: center;
+}
+
+.play {
+  width: 70px;
+  height: 70px;
+  background: transparent !important;
+  display: block;
+  margin: 0 auto;
+  /* Important for :after */
+  position: absolute;
+  border: 2px solid;
+  /* Makes a circle */
+  border-radius: 50%;
+  z-index: 500;
+  top: -15vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  @include tablet {
+      top: 45vh;
+      left: 15vw;
+  }
+
+}
+
+.play:hover {
+  background: #333;
+  cursor: pointer;
+}
+
+.play:after {
+  position: absolute;
+  content: "";
+  /* Centering */
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left:  -8px;
+  /* CSS Triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent #ffffff;
+}
+.play-btn-wrapper {
+    position: relative;
+
+    @include tablet {
+        float: left;
+    }
+}
+
+/* Fullscreen Overlay */
+.video-overlay {
+  width: 100%;
+  height: 100vh;
+  /* 50% opacity black */
+  background: rgba(0,0,0,.5);
+  /* Stays locked on scroll */
+  position: fixed;
+  /* On top of the rest*/
+  z-index: 2;
+  /* Hidden */
+  opacity: 0;
+  /* No interference */
+  left: -100%;
+  /* CSS3 Transition */
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+
+/* 90% width container */
+.video-container {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.close {
+  width: 20px;
+  fill: white;
+  position: absolute;
+  right: 0;
+  /* Bring above video */
+  top: -30px;
+}
+
+.close:hover {
+  /* 50% opacity white */
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/* Class to fade in overlay */
+.show {
+  opacity: 1;
+}
+
+
+/* Film Highlight */
+.film_bold {
+    font-size: 20px;
+    font-weight: bold;
+
+    @include tablet {
+        font-size: 30px;
+        line-height: 28px;
+    }
+}
+.film_light {
+    font-size: 20px;
+    font-weight: normal;
+
+    @include tablet {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+.film_summary {
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $font-italic;
+    text-transform: initial;
+    font-weight: normal;
+
+    @include tablet {
+        font-size: 26px;
+        padding-top: 50px;
+    }
+}
+
+
+/* CoverVid for Home Page */
+.covervid-wrapper {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+
+    .covervid-video {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
 
 /* WRAPPER OVERLAY */
 .wrapper_overlay {
@@ -101,6 +272,12 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 }
 /* SINGLE POST META */
 .single_post_wrapper {
+    min-height: calc(100vh - 95px) !important;
+
+    @include small {
+		min-height: calc(100vh - 75px) !important;
+	}
+
     padding: 150px 25px;
 
     @include palm {
@@ -108,13 +285,19 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     }
 
     @include tablet {
-        padding: 150px 50px;
+        padding: 75px 50px;
         max-width: 750px;
     }
+
+    @include laptop {
+		min-height: calc(100vh - 50px) !important;
+	}
 
     @include desktop {
         max-width: 900px;
     }
+
+
 
     .single_post_title {
         font-size: 36px;
@@ -155,6 +338,9 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
                 font-size: 30px;
         }
     }
+}
+.the_slider {
+    padding-top: 125px;
 }
 .return_work {
     position: absolute;
@@ -1001,32 +1187,32 @@ a.visited:visited {
     // height: 600px;
   }
 }
-.play {
-  width: 70px;
-  height: 70px;
-  background: #e44d4e;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  border-radius: 50%;
-}
-.play:hover {
-  background: #A7333F;
-  cursor: pointer;
-}
-.play:after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  margin-top: -15px;
-  left: 50%;
-  margin-left:  -8px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 20px;
-  border-color: transparent transparent transparent #ffffff;
-}
+// .play {
+//   width: 70px;
+//   height: 70px;
+//   background: #e44d4e;
+//   display: block;
+//   margin: 0 auto;
+//   position: relative;
+//   border-radius: 50%;
+// }
+// .play:hover {
+//   background: #A7333F;
+//   cursor: pointer;
+// }
+// .play:after {
+//   position: absolute;
+//   content: "";
+//   top: 50%;
+//   margin-top: -15px;
+//   left: 50%;
+//   margin-left:  -8px;
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 15px 0 15px 20px;
+//   border-color: transparent transparent transparent #ffffff;
+// }
 .html5_close {
   width: 90px;
   position: absolute;

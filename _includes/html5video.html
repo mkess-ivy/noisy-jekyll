@@ -306,26 +306,26 @@
       return (window.Froogaloop = window.$f = Froogaloop);
   })();
   ////////////////////////////////////////
-  // Our Script 
+  // Our Script
   ////////////////////////////////////////
   $(document).ready(function(){
-    
+
     // Initiate FitVid.js
-    $(".video_container").fitVids();
+    $(".video-container").fitVids();
     // Iframe/player variables
     var iframe = $('#video')[0];
     var player = $f(iframe);
     // Open on play
     $('.play').click(function(){
-      $('.noisy_video_overlay').css('left', 0)
-      $('.noisy_video_overlay').addClass('html5_show')
+      $('.video-overlay').css('left', 0)
+      $('.video-overlay').addClass('html5_show')
       player.api("play");
     })
     // Closes on click outside
-    $('.noisy_video_overlay').click(function(){
-      $('.noisy_video_overlay').removeClass('html5_show')
+    $('.video-overlay').click(function(){
+      $('.video-overlay').removeClass('html5_show')
       setTimeout(function() {
-        $('.noisy_video_overlay').css('left', '-100%')
+        $('.video-overlay').css('left', '-100%')
       }, 300);
       player.api("pause");
     })

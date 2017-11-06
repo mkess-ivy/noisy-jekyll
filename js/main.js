@@ -122,24 +122,21 @@ $(document).ready(function(){
      $(".js_bg_receiver_work", this).removeClass('hover');
   });
 
-  // Work Page Test
-    // $("#demo2 li").hoverIntent(addHover,removeHover);
-    // function addHover(){$(".js_bg_hover_img", this).addClass('hover');}
-    // function removeHover(){$(".js_bg_hover_img", this).removeClass('hover');}
 
+    if ($(window).width() < 900) {
+        // Reveal Footer Credits after certain scroll pointer
+        $(window).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 75) {
+                $('.site_footer').css("bottom", "10px");
+            } else {
+                $('.site_footer').css("bottom", "-95px");
+            }
 
-        if ($(window).width() < 900) {
-            // Reveal Footer Credits after certain scroll pointer
-            $(window).scroll(function() {
-                var y = $(this).scrollTop();
-                if (y > 75) {
-                    $('.site_footer').css("bottom", "10px");
-                } else {
-                    $('.site_footer').css("bottom", "-95px");
-                }
+        });
+    }
 
-            });
-        }
+    $('.covervid-video').coverVid();
 
 
 

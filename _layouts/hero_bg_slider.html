@@ -12,10 +12,10 @@
     	{% include header.html %}
         <div class="hero-slider">
             {% for item in site.data.[page.slide] %}
-            <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')"></div>
+                <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')"></div>
             {% endfor %}
         </div>
-    
+
         <div class="wrapper_overlay ">
             {{ content }}
             {% include footer.html %}

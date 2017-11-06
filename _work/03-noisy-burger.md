@@ -14,6 +14,7 @@ project-subtitle 		: "a pop up restaurant designed by mervo baking trade student
 slide					: noisyburger-slide
 
 ---
+{% include return-work.html %}
 <div class="single_post_wrapper the_slider">
 	{% include single_post_meta.html
 		title="Welcome to Noisy Burger"

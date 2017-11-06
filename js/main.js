@@ -136,6 +136,7 @@ $(document).ready(function(){
         });
     }
 
+    // CoverVid
     $('.covervid-video').coverVid();
 
 

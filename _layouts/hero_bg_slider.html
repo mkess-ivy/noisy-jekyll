@@ -11,7 +11,7 @@
 
     	{% include header.html %}
         <div class="hero-slider">
-            {% for item in site.data.page.slide %}
+            {% for item in site.data.[page.slide] %}
                 <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')"></div>
             {% endfor %}
         </div>

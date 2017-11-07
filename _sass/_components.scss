@@ -28,6 +28,120 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
 */
 
+
+/* Modal */
+.openModal {
+    position: relative;
+}
+.tracker-close {
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    background: transparent;
+    border: 0;
+}
+
+/* Modal */
+.modal-header {
+    padding: 15px 15px 0 15px;
+
+    .modal-title {
+        float: left;
+        width: 60%;
+        font-size: 20px;
+        text-align: left;
+        line-height: 26px;
+    }
+    .modal-img {
+        float: right;
+        width: 30%;
+    }
+}
+.modal-week {
+    font-size: 54px;
+    text-align: left;
+    padding-left: 15px;
+    width: 90%;
+    line-height: 60px;
+}
+.modal-status {
+    width: 25%;
+    margin: 15px auto;
+    text-align: left;
+}
+.light {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.light-log {
+    @extend .light;
+    margin-top: 8px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $white;
+}
+.green-light {
+    background: $tracker-green;
+}
+.yellow-light {
+    background: $tracker-yellow;
+}
+.red-light {
+    background: $tracker-red;
+}
+.modal-weekly-log {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-bottom: 10px 0;
+
+    ul li {
+        display: inline-block;
+        margin: 10px 13px;
+    }
+}
+.modal-share {
+    padding: 15px 0 0 15px;
+    text-align: left;
+    font-size: 20px;
+}
+a.twitter-share {
+    text-transform: initial;
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    &:hover {
+        color: $red;
+    }
+}
+
+
+/* Tracker */
+.tracker_wrapper {
+    margin: 20px 0;
+
+    a {
+        padding: 6px 12px;
+        background: $white;
+        color: $black;
+        text-decoration: none;
+    }
+}
+#openModal {
+    background: $black;
+    border: 5px solid $white;
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    text-align: center;
+    left: 35vw;
+    right: 0;
+    top: 7%;
+    bottom: 0;
+}
+
+
 /* FILM */
 /* Fullscreen Section */
 .main_play_wrapper {
@@ -145,7 +259,6 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
   opacity: 1;
 }
 
-
 /* Film Highlight */
 .film_bold {
     font-size: 20px;
@@ -180,7 +293,6 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     }
 }
 
-
 /* CoverVid for Home Page */
 .covervid-wrapper {
     position: absolute;
@@ -197,7 +309,6 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     }
 }
 
-
 /* WRAPPER OVERLAY */
 .wrapper_overlay {
     position: absolute;
@@ -205,6 +316,24 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     left: 0;
     right: 0;
 }
+
+/* Image Item and Group */
+.image_item {
+    width: 47%;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    // display: inline-block;
+    float: left;
+    display:none;
+
+    img {
+        width: 100%;
+    }
+}
+.loadMore {
+    text-align: center;
+}
+
 /* PRESS GROUP */
 .press_group {
     background: $white;
@@ -226,6 +355,12 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     .press_group_title {
         font-size: 30px;
         padding-bottom: 25px;
+
+        @include tablet {
+            font-size: 60px;
+            line-height: 60px;
+            width: 73%;
+        }
     }
     .press_group_title:after {
         content: '';
@@ -295,8 +430,6 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
         max-width: 900px;
     }
 
-
-
     .single_post_title {
         font-size: 36px;
         line-height: 36px;
@@ -329,11 +462,12 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
         -webkit-margin-after: 0.5em;
 
         @include tablet {
-                font-size: 24px;
+            font-size: 22px;
+            line-height: 22px;
         }
 
         @include laptop {
-                font-size: 30px;
+
         }
     }
 }
@@ -1212,14 +1346,18 @@ a.visited:visited {
 //   border-color: transparent transparent transparent #ffffff;
 // }
 .html5_close {
-  width: 90px;
+  width: 45px;
   position: absolute;
   color: #000;
-  right: 30px;
+  right: 50px;
   top: -30px;
   display: block;
   font-size: 12px;
   border: 1px solid;
+
+  img {
+      width: 100%;
+  }
 }
 .html5_close:hover {
   color: #E44D4E;

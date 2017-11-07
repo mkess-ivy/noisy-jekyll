@@ -40,12 +40,6 @@ $(document).ready(function(){
 	});
 
 
-  // This adds a next button to the first slide on home page
-  // $('.slick-play').on('click',function() {
-  //   $('.nt_slider').slick('slickNext');
-  // });
-
-
   // Content Slider
   $('.content_slider').slick({
     autoplay: false,
@@ -68,6 +62,31 @@ $(document).ready(function(){
      nextArrow: '<img src="/img/right_arrow.png" class="slick-next" />',
     prevArrow: '<img src="/img/left_arrow.png" class="slick-prev" />'
   });
+
+  $('.image_item:lt(4)').show();
+    // $('#showLess').hide();
+    var items =  25;
+    var shown =  4;
+    $('#loadMore').click(function () {
+        // $('#showLess').show();
+        shown = $('.image_item:visible').size()+4;
+        if(shown< items) {$('.image_item:lt('+shown+')').show();}
+        else {$('.image_item:lt('+items+')').show();
+             $('#loadMore').hide();
+             }
+    });
+    // $('#showLess').click(function () {
+    //     $('#myList li').not(':lt(3)').hide();
+    // });
+
+    $('#openModal').hide();
+    $('#tracker').on('click', function(e) {
+        e.preventDefault();
+        $('#openModal').fadeToggle('show');
+    });
+    $('#tracker-close').on('click', function() {
+        $('#openModal').css("display","none");
+    })
 
 
 

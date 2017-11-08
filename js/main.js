@@ -65,7 +65,7 @@ $(document).ready(function(){
 
   $('.image_item:lt(4)').show();
     // $('#showLess').hide();
-    var items =  25;
+    var items =  8;
     var shown =  4;
     $('#loadMore').click(function () {
         // $('#showLess').show();
@@ -110,7 +110,7 @@ $(document).ready(function(){
     });
   });
 
-   // Reveal Back to top icon after certain scroll height
+   // Reveal Back to top icon after certain scroll height (may not need this)
   $('#js-backtop').hide();
   $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
@@ -121,10 +121,10 @@ $(document).ready(function(){
     }
   });
 
-  // Reveal Footer
+  // Reveal Footer (may not need this functionality)
   // $('footer').footerReveal({ shadow: false, zIndex: -101 });
 
-  // View Work Hover Feature
+  // View Work Hover Feature (may not need this functionality)
   $(".js-background-trigger").hover(function(){
    $(".js-background-receiver", this).addClass('hover');
   }

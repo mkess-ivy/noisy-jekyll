@@ -29,9 +29,30 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 */
 
 
-/* Modal */
+/* Modal + Tracker */
 .openModal {
     position: relative;
+}
+#openModal {
+    background: $black;
+    border: 5px solid $white;
+    width: 85%;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    left: 7%;
+    right: 0;
+    top: 7%;
+    bottom: 0;
+
+    @include palm {
+        width: 470px;
+        top: 3%;
+        height: 550px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
 }
 .tracker-close {
     position: absolute;
@@ -40,34 +61,73 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     background: transparent;
     border: 0;
 }
-
-/* Modal */
 .modal-header {
-    padding: 15px 15px 0 15px;
+    padding: 15px 15px 10px 15px;
+
+    @include tablet {
+        padding: 15px 15px 0 15px;
+    }
 
     .modal-title {
-        float: left;
-        width: 60%;
+
         font-size: 20px;
         text-align: left;
         line-height: 26px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        @include palm {
+            float: left;
+            width: 60%;
+            text-align: left;
+        }
     }
     .modal-img {
-        float: right;
-        width: 30%;
+        @include palm {
+            float: right;
+            width: 30%;
+        }
+
+        img {
+            width: 50px;
+
+            @include palm {
+                width: 100px;
+            }
+        }
+
     }
 }
 .modal-week {
-    font-size: 54px;
+    font-size: 32px;
     text-align: left;
     padding-left: 15px;
-    width: 90%;
-    line-height: 60px;
+    width: 80%;
+    line-height: 40px;
+
+    @include palm {
+        font-size: 54px;
+        // width: 90%;
+        line-height: 60px;
+    }
 }
 .modal-status {
-    width: 25%;
+    width: 90%;
     margin: 15px auto;
     text-align: left;
+
+    @include palm {
+        width: 245px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 .light {
     width: 5px;
@@ -77,10 +137,12 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 }
 .light-log {
     @extend .light;
-    margin-top: 8px;
+    margin: 8px 0 8px 10px;
     width: 10px;
     height: 10px;
     border: 1px solid $white;
+    display: inline-block;
+    vertical-align: top;
 }
 .green-light {
     background: $tracker-green;
@@ -94,17 +156,24 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 .modal-weekly-log {
     border-top: 1px solid;
     border-bottom: 1px solid;
-    padding-bottom: 10px 0;
+    padding: 10px 0;
 
     ul li {
-        display: inline-block;
-        margin: 10px 13px;
+
+        @include tablet {
+            display: inline-block;
+            margin: 10px 13px;
+        }
     }
 }
 .modal-share {
     padding: 15px 0 0 15px;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
+
+    @include tablet {
+        font-size: 20px;
+    }
 }
 a.twitter-share {
     text-transform: initial;
@@ -115,11 +184,8 @@ a.twitter-share {
         color: $red;
     }
 }
-
-
-/* Tracker */
 .tracker_wrapper {
-    margin: 20px 0;
+    margin-top: 40px;
 
     a {
         padding: 6px 12px;
@@ -128,22 +194,10 @@ a.twitter-share {
         text-decoration: none;
     }
 }
-#openModal {
-    background: $black;
-    border: 5px solid $white;
-    width: 400px;
-    height: 550px;
-    position: absolute;
-    text-align: center;
-    left: 35vw;
-    right: 0;
-    top: 7%;
-    bottom: 0;
-}
 
 
-/* FILM */
-/* Fullscreen Section */
+
+/* FILM (Noisy Films) */
 .main_play_wrapper {
   width: 100%;
   height: calc(100vh - 50px);
@@ -153,7 +207,6 @@ a.twitter-share {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .play {
   width: 70px;
   height: 70px;
@@ -165,11 +218,15 @@ a.twitter-share {
   border: 2px solid;
   /* Makes a circle */
   border-radius: 50%;
-  z-index: 500;
+  z-index: 2;
   top: -15vh;
   left: 0;
   right: 0;
   text-align: center;
+
+  @include small {
+      top: -25vh;
+  }
 
   @include laptop {
       top: 45vh;
@@ -177,16 +234,14 @@ a.twitter-share {
   }
 
   @include widescreen {
-      left: 20vw;
+      left: 12vw;
   }
 
 }
-
 .play:hover {
   background: #333;
   cursor: pointer;
 }
-
 .play:after {
   position: absolute;
   content: "";
@@ -227,16 +282,18 @@ a.twitter-share {
   /* CSS3 Transition */
   transition: opacity .5s;
   -webkit-transition: opacity .5s;
+  z-index: 200;
 }
 
 /* 90% width container */
 .video-container {
-  width: 90%;
+  width: 95%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+
 }
 
 .close {
@@ -259,7 +316,7 @@ a.twitter-share {
   opacity: 1;
 }
 
-/* Film Highlight */
+/* Film Highlight Text Component */
 .film_bold {
     font-size: 20px;
     font-weight: bold;
@@ -303,7 +360,7 @@ a.twitter-share {
     background-color: rgba(0,0,0,0.75);
 
     .covervid-video {
-        width: 100%;
+        min-width: 100%;
         height: 100%;
         z-index: -1;
     }
@@ -312,19 +369,24 @@ a.twitter-share {
 /* WRAPPER OVERLAY */
 .wrapper_overlay {
     position: absolute;
-    top: 0;
+    top: 50px; /* clears the header for bg sliders */
     left: 0;
     right: 0;
 }
 
 /* Image Item and Group */
 .image_item {
-    width: 47%;
     margin-right: 15px;
     margin-bottom: 25px;
-    // display: inline-block;
-    float: left;
+
     display:none;
+
+    @include tablet {
+        width: 47%;
+        float: left;
+    }
+
+
 
     img {
         width: 100%;
@@ -343,13 +405,18 @@ a.twitter-share {
     padding: 25px;
     position: relative;
     z-index: 500;
+    margin-top: -50px;
 
     @include palm {
         max-width: 475px;
     }
     @include tablet {
         max-width: 675px;
-        margin: 125px auto 200px;
+        margin: -65px auto 200px;
+    }
+
+    @include laptop {
+        margin: -100px auto 200px;
     }
 
     .press_group_title {
@@ -403,22 +470,22 @@ a.twitter-share {
         }
     }
 }
+
 /* SINGLE POST META */
 .single_post_wrapper {
     min-height: calc(100vh - 95px) !important;
+    padding: 150px 25px;
 
     @include small {
 		min-height: calc(100vh - 75px) !important;
 	}
-
-    padding: 150px 25px;
 
     @include palm {
         max-width: 615px;
     }
 
     @include tablet {
-        padding: 75px 50px;
+        padding: 150px 50px;
         max-width: 750px;
     }
 
@@ -431,8 +498,8 @@ a.twitter-share {
     }
 
     .single_post_title {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 40px;
+        line-height: 44px;
         padding-bottom: 30px;
 
         @include small {
@@ -457,13 +524,14 @@ a.twitter-share {
 
     p {
         font-size: 20px;
+        line-height: 30px;
         text-transform: initial;
-        -webkit-margin-before: 0.5em;
-        -webkit-margin-after: 0.5em;
+        -webkit-margin-before: 0.7em;
+        -webkit-margin-after: 0.7em;
 
         @include tablet {
             font-size: 22px;
-            line-height: 22px;
+            // line-height: 22px;
         }
 
         @include laptop {
@@ -471,22 +539,21 @@ a.twitter-share {
         }
     }
 }
-.the_slider {
-    padding-top: 125px;
-}
 .return_work {
     position: absolute;
     top: 65px;
     right: 0;
     font-size: 14px;
-    // width: 115px;
     text-align: right;
     background: $white;
     padding: 5px 8px;
 
+    &.the_slider {
+        top: 15px !important;
+    }
+
     @include tablet {
         font-size: 18px;
-        // width: 175px;
     }
 
     a {
@@ -495,7 +562,6 @@ a.twitter-share {
 
         &:hover {
             color: $red;
-            // border-bottom: 1px solid;
         }
     }
 }
@@ -512,7 +578,6 @@ a.twitter-share {
 }
 .btn_wrapper_primary {
   margin: 30px 0;
-  // text-align: center;
 }
 .btn_cta a,
 .btn_cta a:visited {
@@ -654,37 +719,6 @@ a.link:hover {
   margin-bottom: 8em;
   min-height: 100vh;
 }
-
-/* - Food Menu
-.food_menu_wrapper {
-  @include palm {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  @include tablet {
-    width: 40%;
-    max-width: 320px;
-  }
-}
-.menu_wrapper {
-  text-align: center;
-  padding-top: 50px;
-}
-.menu_list {
-  list-style: none;
-  margin: 30px;
-}
-.menu_list li {
-  margin-bottom: 35px;
-  font-size: 19px;
-}
-.menu-icon img {
-  width: 50px;
-}
-
-*/
-
 
 /* - Testimonials */
 .testimonial_item_wrapper {
@@ -1187,7 +1221,6 @@ a.visited:visited {
   }
 }
 
-
 /* Image Content Block */
 .content_bg_image {
   background-size: contain;
@@ -1349,11 +1382,12 @@ a.visited:visited {
   width: 45px;
   position: absolute;
   color: #000;
-  right: 50px;
+  right: 12vw;
   top: -30px;
   display: block;
   font-size: 12px;
   border: 1px solid;
+  background: $red;
 
   img {
       width: 100%;
@@ -1377,5 +1411,4 @@ a.visited:visited {
   @include tablet {
     height: 75% !important;
   }
-
 }

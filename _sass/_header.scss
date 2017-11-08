@@ -111,9 +111,19 @@
 	font-weight: bold;
 	text-decoration: none;
 
-	@include tablet {
+	@include small {
+		font-size: 48px;
+		line-height: 54px;
+	}
+
+	@include palm {
 		font-size: 60px;
 		line-height: 60px;
+	}
+
+	@include tablet {
+		font-size: 70px;
+		line-height: 70px;
 	}
 
 	@include desktop {
@@ -123,7 +133,6 @@
 }
 .overlay ul li a:hover {
 	color: black;
-	// border-bottom: 1px solid #000;
 }
 .overlay-close {
 	background: url('../img/close-v2.png') no-repeat center center !important;

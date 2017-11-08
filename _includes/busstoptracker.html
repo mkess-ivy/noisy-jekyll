@@ -23,27 +23,27 @@
         <ul>
             {% for day in track.day1 limit: 1 %}
             <li>
-                Mon<br />{{ day.date }}<br/><div class="light-log {{ day.status }}-light">&nbsp;</div>
+                Mon {{ day.date }}<div class="light-log {{ day.status }}-light">&nbsp;</div>
             </li>
             {% endfor %}
             {% for day in track.day2 limit: 1 %}
             <li>
-                Tues<br />{{ day.date }}<br/><div class="light-log {{ day.status }}-light">&nbsp;</div>
+                Tues {{ day.date }}<div class="light-log {{ day.status }}-light">&nbsp;</div>
             </li>
             {% endfor %}
             {% for day in track.day3 limit: 1 %}
             <li>
-                Wed<br />{{ day.date }}<br/><div class="light-log {{ day.status }}-light">&nbsp;</div>
+                Wed {{ day.date }}<div class="light-log {{ day.status }}-light">&nbsp;</div>
             </li>
             {% endfor %}
             {% for day in track.day4 limit: 1 %}
             <li>
-                Thurs<br />{{ day.date }}<br/><div class="light-log {{ day.status }}-light">&nbsp;</div>
+                Thurs {{ day.date }}<div class="light-log {{ day.status }}-light">&nbsp;</div>
             </li>
             {% endfor %}
             {% for day in track.day5 limit: 1 %}
             <li>
-                Fri<br />{{ day.date }}<br/><div class="light-log {{ day.status }}-light">&nbsp;</div>
+                Fri {{ day.date }}<div class="light-log {{ day.status }}-light">&nbsp;</div>
             </li>
             {% endfor %}
         </ul>

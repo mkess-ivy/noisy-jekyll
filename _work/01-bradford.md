@@ -2,8 +2,8 @@
 [//]: # (Meta Info)
 layout 					: hero_bg
 title 					: "Bradford"
-work_hover_img			: /img/hero-bradford.jpg
-hero_img				: /img/hero-bradford.jpg
+work_hover_img			: /img/bradford.jpg
+hero_img				: /img/bradford.jpg
 
 [//]: # (Project Info)
 project-hero-icon 		: "/img/logo-big-bsb.png"

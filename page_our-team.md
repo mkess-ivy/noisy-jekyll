@@ -1,7 +1,7 @@
 ---
 layout: page_template
 title: Our Team
-permalink: /aboutus/
+permalink: /our-team/
 ---
 
 

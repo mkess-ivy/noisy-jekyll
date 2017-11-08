@@ -114,9 +114,13 @@
 		width: auto;
 		margin-bottom: 25px;
 
+		@include small {
+			font-size: 44px;
+			line-height: 46px;
+		}
 		@include palm {
-			font-size: 50px;
-			line-height: 50px;
+			font-size: 55px;
+			line-height: 60px;
 		}
 
 		@include tablet {
@@ -139,7 +143,7 @@
 .js_bg_receiver_work.hover {
   // display: none;
   // @include tablet {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 50px);
     width: 100%;
     background-color: rgba(228,77,78,0.6);
     background-size: cover;

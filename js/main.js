@@ -40,11 +40,11 @@ $(document).ready(function(){
 
     // Load More
     $('.image_item:lt(4)').show();
-    // $('#showLess').hide();
+    $('#showLess').hide();
     var items =  8;
     var shown =  4;
     $('#loadMore').click(function () {
-        // $('#showLess').show();
+        $('#showLess').show();
         shown = $('.image_item:visible').size()+4;
         if(shown< items) {$('.image_item:lt('+shown+')').show();}
         else {
@@ -53,7 +53,7 @@ $(document).ready(function(){
         }
     });
     // $('#showLess').click(function () {
-    //     $('#myList li').not(':lt(3)').hide();
+    //     $('#myList li').not(':lt(4)').hide();
     // });
 
     // Bus Stop Tracker Modal

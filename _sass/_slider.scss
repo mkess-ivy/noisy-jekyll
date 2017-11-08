@@ -311,10 +311,10 @@ button.slick-play {
 .hero-slider {
 	.slick-next {
 		right: 25px;
-		z-index: 740;
+		z-index: 200;
 		width: 100px;
 		height: 45px;
-		top: 60%;
+		top: 40%;
 
 		&.slick-disabled {
 			display: none !important;
@@ -322,10 +322,10 @@ button.slick-play {
 	}
 	.slick-prev {
 		left: 25px;
-		z-index: 740;
+		z-index: 200;
 		width: 100px;
 		height: 45px;
-		top: 60%;
+		top: 40%;
 
 		&.slick-disabled {
 			display: none !important;

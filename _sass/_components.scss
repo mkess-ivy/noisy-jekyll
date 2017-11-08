@@ -44,6 +44,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
     right: 0;
     top: 7%;
     bottom: 0;
+    z-index: 400;
 
     @include palm {
         width: 470px;
@@ -52,6 +53,10 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%)
+    }
+
+    @include tablet {
+        top: 8%;
     }
 }
 .tracker-close {
@@ -163,6 +168,7 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
         @include tablet {
             display: inline-block;
             margin: 10px 13px;
+            width: 60px;
         }
     }
 }
@@ -173,6 +179,14 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
     @include tablet {
         font-size: 20px;
+    }
+
+    img {
+        display: block;
+
+        @include tablet {
+            display: inline-block;
+        }
     }
 }
 a.twitter-share {
@@ -192,6 +206,19 @@ a.twitter-share {
         background: $white;
         color: $black;
         text-decoration: none;
+    }
+}
+.modal-overlay {
+    z-index: 390;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+
+    &.close {
+        display: none;
     }
 }
 
@@ -368,8 +395,8 @@ a.twitter-share {
 
 /* WRAPPER OVERLAY */
 .wrapper_overlay {
-    position: absolute;
-    top: 50px; /* clears the header for bg sliders */
+    position: relative;
+    margin-top: -45vh; /* clears the header for bg sliders */
     left: 0;
     right: 0;
 }
@@ -404,7 +431,7 @@ a.twitter-share {
     margin: 100px auto 200px;
     padding: 25px;
     position: relative;
-    z-index: 500;
+    z-index: 200;
     margin-top: -50px;
 
     @include palm {
@@ -541,16 +568,17 @@ a.twitter-share {
 }
 .return_work {
     position: absolute;
-    top: 65px;
+    top: 70px;
     right: 0;
     font-size: 14px;
     text-align: right;
     background: $white;
     padding: 5px 8px;
+    z-index: 200;
 
-    &.the_slider {
-        top: 15px !important;
-    }
+    // &.the_slider {
+    //     top: 15px !important;
+    // }
 
     @include tablet {
         font-size: 18px;

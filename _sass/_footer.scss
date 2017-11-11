@@ -1,40 +1,20 @@
 /* Footer Menu */
 .site_footer {
+	background-color: $black;
+	// bottom: -95px;
+	left: 0;
 	padding: 5px;
-	width: 95%;
-	// position: relative;
-	z-index: 100;
+	position: relative;
+	right: 0;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
-
-	position: fixed;
-	bottom: -95px;
-	left: 0;
-	right: 0;
-
-	@include small {
-
-	}
-
-	@include tablet {
-
-
-		// bottom: 10px;
-	}
+	z-index: 100;
 
 	@include laptop {
-		bottom: -5px;
+		// bottom: -5px;
 		padding: 5px 25px;
 		width: auto;
 	}
-	@include tv {
-		max-width: 1450px;
-	}
-
-	@include tv-1650 {
-		max-width: 1650px;
-	}
-
 }
 .right_footer {
 	width: 100%;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  	<!-- Preloader -->
+  	<div id="preloader"></div>
+
+    <div class="container clear">
+        <div class="fullwidth_bg_content" style="background-image: url('/img/hero-busstopbuddies-1.png');">
+	       {% include header.html %}
+           {% include return-work.html %}
+        </div>
+        <div class="wrapper_overlay">
+    	   {{ content }}
+           {% include footer.html %}
+        </div>
+    </div> <!-- .container -->
+
+  </body>
+
+</html>

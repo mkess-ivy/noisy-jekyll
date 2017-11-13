@@ -1,6 +1,6 @@
 ---
 [//]: # (Meta Info)
-layout 					: hero_bg
+layout 					: coming_soon
 title 					: "Bradford"
 work_hover_img			: /img/bradford.jpg
 hero_img				: /img/bradford.jpg

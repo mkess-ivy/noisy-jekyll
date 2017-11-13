@@ -10,7 +10,9 @@
     <div class="container clear">
 
     	{% include header.html %}
+        {% unless page.title == "Work" %}
         {% include return-work.html %}
+        {% endunless %}
 
         <div class="hero_img_home" style="background-image: url({{ page.hero_img }});"><!-- removing #noise-filter -->
 

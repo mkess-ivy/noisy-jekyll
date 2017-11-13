@@ -1,0 +1,25 @@
+---
+layout: page_template
+title: Work
+permalink: /draft_test_work/
+--- 
+	<section class="page_copy_section">
+		<div class="page_copy_title">Why We Do</div>
+		<div class="page_copy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	</section>
+	<!-- Work Items -->
+	<section class="page_copy_section">
+		<div class="page_copy_title">What We Do</div>
+		<div class="clearfix">
+			{% for work in site.work reversed %}
+			<div class="work_item_wrapper">
+				<div class="work_picture"><a href="{{ work.url }}"><img src="{{ work.work-thumbnail }}" /></a></div>
+				<div class="default_text_sm">{{ work.date | date: '%-m-%-d-%y' }}</div>
+				<div class="default_initial"><a href="{{ work.url }}">{{ work.title }}</a></div>
+				<div class="default_text_sm">{{ work.work-description }}</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+	
+</div>

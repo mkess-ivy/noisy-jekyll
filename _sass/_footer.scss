@@ -1,7 +1,6 @@
 /* Footer Menu */
 .site_footer {
 	background-color: $black;
-	// bottom: -95px;
 	left: 0;
 	padding: 5px;
 	position: relative;
@@ -9,6 +8,7 @@
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 	z-index: 100;
+	// text-align: center;
 
 	@include laptop {
 		// bottom: -5px;
@@ -26,12 +26,11 @@
 	font-size: 12px;
 	font-weight: normal;
 	padding: 12px 0 7px 10px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 
 	@include tablet {
-
-
+		display: inline-block;
 	}
 
 	@include laptop {

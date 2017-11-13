@@ -28,6 +28,14 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 
 */
 
+// masthead_bg_img
+.masthead_bg_img {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: $black;
+    background-image: url('/img/hero-busstopbuddies-2.png');
+}
 
 /* Modal + Tracker */
 .openModal {
@@ -752,8 +760,12 @@ a.link:hover {
   background-color: #000000 !important;
   background: none;
   height: auto;
-  margin-bottom: 8em;
-  min-height: 100vh;
+  // margin-bottom: 8em;
+  min-height: 80vh;
+
+  @include laptop {
+      min-height: 50vh;
+  }
 }
 .hero-bg-gray {
   background-color: #e3e3e3 !important;
@@ -1466,4 +1478,19 @@ a.visited:visited {
   @include tablet {
     height: 75% !important;
   }
+}
+
+// Coming Soon
+.coming_soon {
+    height: calc(20vh - 63px);
+    padding: 0 20px;
+
+    @include tablet {
+        height: calc(20vh - 88px);
+        padding: 0 30px;
+    }
+    @include laptop {
+        height: calc(50vh - 38px);
+        padding: 0 50px;
+    }
 }

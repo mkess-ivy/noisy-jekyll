@@ -96,20 +96,19 @@ $(document).ready(function(){
         $(".js_bg_receiver_work", this).removeClass('hover');
     });
 
-
-    // Reveal the bottom portion of footer at bottom of page
-    if ($(window).width() < 900) {
-        // Reveal Footer Credits after certain scroll pointer
-        $(window).scroll(function() {
-            var y = $(this).scrollTop();
-            if (y > 75) {
-                $('.site_footer').css("bottom", "10px");
-            } else {
-                $('.site_footer').css("bottom", "-95px");
-            }
-
-        });
-    }
+    // // Reveal the bottom portion of footer at bottom of page
+    // if ($(window).width() < 900) {
+    //     // Reveal Footer Credits after certain scroll pointer
+    //     $(window).scroll(function() {
+    //         var y = $(this).scrollTop();
+    //         if (y > 75) {
+    //             $('.site_footer').css("bottom", "10px");
+    //         } else {
+    //             $('.site_footer').css("bottom", "-95px");
+    //         }
+    //
+    //     });
+    // }
 
     // CoverVid
     $('.covervid-video').coverVid();

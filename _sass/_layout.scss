@@ -205,10 +205,21 @@ ul,li {
 	height: 100vh;
 }
 
-// Links
+// Links + Buttons
 .line_through {
 	cursor: default;
 	&:hover {
 		text-decoration: line-through;
+	}
+}
+.btn_more {
+	background: transparent;
+	border: 0;
+	left: 60px;
+	position: absolute;
+	top: 60px;
+
+	&:focus {
+		outline: 0;
 	}
 }

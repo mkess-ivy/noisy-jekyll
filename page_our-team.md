@@ -1,32 +1,51 @@
 ---
-layout: page_template
+layout: our_team
 title: Our Team
 permalink: /our-team/
 ---
 
+<!-- Member 1 -->
+<section class="team_row">
+	<div class="team_member">
+		<button type="button" class="btn_more" id="btn_more"><img src="/img/btn_more.png"  /></button>
+		<div class="team_member_img" style="background-image: url('/img/nick.png');"></div>
+		<div class="team_member_info" id="team_member_info">
+			<div class="frow centered">
+				<div class="member_wrapper">
+					<div class="member_name">Nicholas Mitchel</div>
+					<div class="member_summary">
+						A short (less than 50 word) bio on Nicholas that gives insight into who he is
+					</div>
+					<div class="member_social">
+						<span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+						<span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+<!-- Member 2
+<section>
+	<div class="team_member">
+		<button type="button" class="btn_more_even" id="btn_more_even"><img src="/img/btn_more.png"  /></button>
+		<div class="team_member_img" style="background-image: url('/img/nick.png');"></div>
+		<div class="team_member_info" id="team_member_info_even">
+			<div class="frow centered">
+				<div class="member_wrapper">
+					<div class="member_name">Nicholas Mitchel</div>
+					<div class="member_summary">
+						A short (less than 50 word) bio on Nicholas that gives insight into who he is
+					</div>
+					<div class="member_social">
+						<span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+						<span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="noisy_wrapper_member clearfix">
-<div class="default_text_med half_float_left">
-	<div class="wrapper_30 default_text_lg">Nicholas Mitchel, Cofounder</div><!-- removed .member_bio_title -->
-	<div class="default_text_lg">Nicholas' Role:</div>
-	<div class="wrapper_30">Coming Soon.</div>
-	<div class="default_text_lg">Nicholas' Background:</div>
-	<div class="wrapper_30">Coming Soon.</div>
-</div>
-<div class="member_bio_img">
-	<img src="/img/students.png" />
-</div>
-</div>
-<div class="member_spacer">&nbsp;</div>
-<div class="noisy_wrapper_member clearfix">
-<div class="default_text_med half_float_left">
-	<div class="wrapper_30 default_text_lg">Christopher Landrum, Cofounder</div>
-	<div class="default_text_lg">Christopher's Role:</div>
-	<div class="wrapper_30">Coming Soon.</div>
-	<div class="default_text_lg">Christopher's Background:</div>
-	<div class="wrapper_30">Coming Soon.</div>
-</div>
-<div class="member_bio_img">
-	<img src="/img/students.png" />
-</div>
+#Member 2 -->

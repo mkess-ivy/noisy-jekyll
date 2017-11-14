@@ -224,3 +224,98 @@ input {
 	list-style: none;
 	font-size: 14px;
 }
+
+// Our team
+.team_row {
+	position: relative;
+	width: 100%;
+	// @extend .clearfix;
+}
+.team_member {
+	width: 50%;
+	position: relative;
+	// float: left;
+}
+.team_member_img {
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 95vh;
+	// width: 50%;
+}
+.team_member_info {
+	background: rgba(0,0,0,0.8);
+	height: 95vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+
+	.member_wrapper {
+		padding: 75px;
+	}
+	.member_name {
+		font-size: 100px;
+		line-height: 110px;
+		padding-bottom: 35px;
+	}
+	.member_summary {
+		font-family: $font-italic;
+		text-transform: initial;
+		font-size: 32px;
+		line-height: 44px;
+		padding-bottom: 35px;
+	}
+	.member_social {
+		span {
+			padding-right: 20px;
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			a {
+				color: $white;
+
+				&:hover {
+					@extend %hover;
+				}
+			}
+		}
+	}
+}
+
+
+// Draft
+.team_row_2 {
+	position: relative;
+	@extend .clearfix;
+
+	.team_member_mk {
+		background: $red;
+		float: left;
+		width: 50%;
+
+		.team_member_img_wrapper_mk {
+			position: relative;
+
+			.team_member_img_mk {
+				background-position: top center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 90vh;
+			}
+			.btn_more_even_mk {
+				background: transparent;
+				border: 0;
+				position: absolute;
+				right: 60px;
+				top: 60px;
+
+				&:focus {
+					outline: 0;
+				}
+			}
+		}
+	}
+}

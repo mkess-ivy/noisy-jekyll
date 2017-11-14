@@ -69,6 +69,21 @@ $(document).ready(function(){
         $('#js-modal-overlay').css("display", "none");
     })
 
+    // Team Member Information
+    $('#team_member_info').hide();
+    $('#btn_more').on('click', function(e) {
+        e.preventDefault();
+        $('#team_member_info').fadeToggle('show');
+    })
+
+    // Team Member Information even
+    $('#team_member_info_even').hide();
+    $('#btn_more').on('click', function(e) {
+        e.preventDefault;
+        $('#team_member_info_even').fadeToggle('show');
+    })
+
+
     // site preloader
     $(window).load(function(){
     	$('#preloader').fadeOut('slow',function(){$(this).remove();});

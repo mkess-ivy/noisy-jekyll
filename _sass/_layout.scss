@@ -212,14 +212,3 @@ ul,li {
 		text-decoration: line-through;
 	}
 }
-.btn_more {
-	background: transparent;
-	border: 0;
-	left: 60px;
-	position: absolute;
-	top: 60px;
-
-	&:focus {
-		outline: 0;
-	}
-}

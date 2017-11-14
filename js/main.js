@@ -70,24 +70,25 @@ $(document).ready(function(){
     });
 
     // Team Member Information
-    $('#team_member_info_mk').hide();
-    $('#btn_more').on('click', function(e) {
+    // see refactored codepen: https://codepen.io/mkess-ivy/pen/LOjxqb
+    $('.js-openModalA').hide();
+    $('#btn_moreA').click(function(e) {
         e.preventDefault();
-        $('#team_member_info_mk').fadeToggle('show');
+        $('.js-openModalA').fadeToggle('show');
     });
-
-    // Team Member Information even
-    $('#team_member_info_even_mk').hide();
-    $('#btn_more_even_mk').on('click', function(e) {
+    $('.js-openModalB').hide();
+    $('#btn_moreB').click(function(e) {
         e.preventDefault();
-        $('#team_member_info_even_mk').fadeToggle('show');
+        $('.js-openModalB').fadeToggle('show');
     });
-
 
     // site preloader
     $(window).load(function(){
     	$('#preloader').fadeOut('slow',function(){$(this).remove();});
     });
+
+    // CoverVid
+    $('.covervid-video').coverVid();
 
 	// Slow Reveal
     $(window).scroll( function(){
@@ -125,8 +126,7 @@ $(document).ready(function(){
     //     });
     // }
 
-    // CoverVid
-    $('.covervid-video').coverVid();
+
 
     // Reveal Back to top icon after certain scroll height
     // $('#js-backtop').hide();

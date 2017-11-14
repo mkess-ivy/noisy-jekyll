@@ -67,21 +67,21 @@ $(document).ready(function(){
     $('#tracker-close').on('click', function() {
         $('#openModal').css("display","none");
         $('#js-modal-overlay').css("display", "none");
-    })
+    });
 
     // Team Member Information
-    $('#team_member_info').hide();
+    $('#team_member_info_mk').hide();
     $('#btn_more').on('click', function(e) {
         e.preventDefault();
-        $('#team_member_info').fadeToggle('show');
-    })
+        $('#team_member_info_mk').fadeToggle('show');
+    });
 
     // Team Member Information even
-    $('#team_member_info_even').hide();
-    $('#btn_more').on('click', function(e) {
-        e.preventDefault;
-        $('#team_member_info_even').fadeToggle('show');
-    })
+    $('#team_member_info_even_mk').hide();
+    $('#btn_more_even_mk').on('click', function(e) {
+        e.preventDefault();
+        $('#team_member_info_even_mk').fadeToggle('show');
+    });
 
 
     // site preloader

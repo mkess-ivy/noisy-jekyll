@@ -29,10 +29,6 @@
 	display: none;
 	width: 100%;
 
-	@include tablet {
-		display: inline-block;
-	}
-
 	@include laptop {
 		width: auto;
 		text-align: right;

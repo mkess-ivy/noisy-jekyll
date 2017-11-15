@@ -1,0 +1,245 @@
+// About
+
+// - Masthead
+.nt_hero_bg {
+    @extend %background-image;
+    height: calc(90vh - 88px);
+    position: relative;
+}
+.about_hero_text {
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    width: 50%;
+
+    .hero_text_italic {
+        font-family: $font-italic;
+        font-weight: normal;
+    }
+    .hero_text_bold {
+        font-family: $oldoriginals;
+        font-weight: normal;
+    }
+}
+.nt_scroll {
+    bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    text-align: center;
+    text-transform: initial;
+}
+
+// Social Entrepreneurship
+.about_bg_white {
+    background: $white;
+    color: $black;
+}
+.nt_about_wrapper {
+    padding: 50px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .about_content {
+        width: 58%;
+
+        .about_header {
+            font-family: $handoriginals;
+            font-size: 48px;
+            font-weight: normal;
+            line-height: 85px;
+            padding-bottom: 25px;
+        }
+        .about_red {
+            color: $red;
+        }
+        .about_text {
+            font-family: $font-italic;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 38px;
+            text-transform: initial;
+        }
+        .about_name {
+            font-family: $font-italic;
+            font-weight: normal;
+            padding-top: 65px;
+            text-align: right;
+            text-transform: initial;
+        }
+    }
+}
+.about_film {
+    position: relative;
+    width: 40%;
+
+    .video_btn_wrapper {
+
+        left: 50%;
+        position: absolute;
+        top: 35%;
+
+        .about_playbtn_wrapper {
+            position: relative;
+
+            .about_play {
+                @extend .play;
+
+                border: 6px solid;
+
+                left: auto;
+                position: relative;
+                right: auto;
+                top: auto;
+
+                height: 90px;
+                width: 90px;
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    /* Centering */
+                    top: 50%;
+                    margin-top: -15px;
+                    left: 50%;
+                    margin-left:  -8px;
+                    /* CSS Triangle */
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 15px 0 15px 20px;
+                    border-color: transparent transparent transparent #000;
+                }
+                &:hover {
+                    background: $red !important;
+                }
+            }
+        }
+    }
+}
+.about_video_overlay {
+    top: 0;
+    background: rgba(0,0,0,0.9) !important;
+}
+
+.about_section_hero {
+    @extend %background-image;
+    height: 60vh;
+
+    .about_section_text {
+        font-family: $handoriginals;
+        font-size: 60px;
+        line-height: 2;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+.about_section_header {
+    font-family: $handoriginals;
+    font-size: 48px;
+    font-weight: normal;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.house_rules_wrapper {
+    padding: 50px 0;
+}
+.house_rules {
+    font-family: $oldoriginals;
+    font-size: 35px;
+    line-height: 2;
+    text-align: center;
+
+    li {
+
+        font-weight: normal;
+        &:nth-child(odd) {
+            color: $red;
+        }
+    }
+}
+.about_bg_offwhite {
+    background: #F8F8F8;
+}
+.partners_wrapper {
+    width: 70%;
+}
+.partners_title {
+    color: $black;
+    font-family: $handoriginals;
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 2;
+}
+.partners {
+    border-left: 1px solid $black;
+    padding: 40px 0 40px 70px;
+}
+.partner_block {
+    position: relative;
+    @extend .clearfix;
+    padding-bottom: 15px;
+
+    .partner_block_left {
+        float: left;
+    }
+    .partner_block_right {
+        float: right;
+    }
+}
+.openworks_logo {
+    padding: 7px 5px 15px 0;
+}
+.globalair_logo {
+    padding: 0 10px 10px 0;
+}
+.gwca_logo {
+    padding: 0 20px 0 0;
+}
+
+.newsletter_wrapper {
+    @extend %background-image;
+    background-position: 130%;
+}
+// .noisy_wrapper_member {
+// 	text-transform: initial;
+// 	padding-bottom: 75px;
+// }
+// .member_bio_img {
+// 	@include palm {
+// 		width: 70%;
+// 		margin: 3em auto 0;
+// 	}
+//
+// 	@include tablet {
+// 		float: right;
+// 		margin: auto;
+// 		width: 49%;
+// 	}
+//
+// 	@include desktop {
+// 		width: 40%;
+// 	}
+//
+// 	@include widescreen {
+// 		width: 37%;
+// 		max-width: 400px;
+// 	}
+//
+// 	@include tv {
+// 		margin-top: -35px;
+// 	}
+// }
+// .member_bio_img img {
+// 	width: 100%;
+// }
+// .member_spacer {
+// 	border-bottom: 1px solid;
+// 	margin: 0 auto 5em;
+// 	width: 50%;
+//
+// 	@include tablet {
+// 		width: 25%;
+// 	}
+// }

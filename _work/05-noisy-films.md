@@ -5,7 +5,6 @@ title 					: "Noisy Films"
 work_hover_img			: /img/hero-noisyfilms.jpg
 hero_img				: /img/hero-noisyfilms.jpg
 
-
 [//]: # (Project Info)
 project-hero-icon 		: "/img/logo-big-greenmount-west.png"
 project-title 			: "noisy films"

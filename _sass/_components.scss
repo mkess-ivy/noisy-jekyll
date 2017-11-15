@@ -241,6 +241,10 @@ a.twitter-share {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @include laptop {
+      height: calc(100vh - 88px);
+  }
 }
 .play {
   width: 70px;
@@ -552,7 +556,7 @@ a.twitter-share {
     }
 
     @include laptop {
-		min-height: calc(100vh - 50px) !important;
+		min-height: calc(100vh - 88px) !important;
 	}
 
     @include desktop {

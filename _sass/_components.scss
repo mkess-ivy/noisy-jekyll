@@ -1453,12 +1453,17 @@ a.visited:visited {
   width: 45px;
   position: absolute;
   color: #000;
-  right: 12vw;
-  top: -30px;
+  right: 6vw;
+  top: -45px;
   display: block;
   font-size: 12px;
   border: 1px solid;
   background: $red;
+
+  @include tablet {
+      // top: -45px;
+      // right: 7vw;
+  }
 
   img {
       width: 100%;
@@ -1480,7 +1485,7 @@ a.visited:visited {
 }
 .fluid-width-video-wrapper iframe {
   @include tablet {
-    height: 75% !important;
+    height: 90% !important;
   }
 }
 

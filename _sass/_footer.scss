@@ -16,8 +16,16 @@
 		width: auto;
 	}
 }
+.left_footer {
+	margin: auto;
+
+	@include laptop {
+		margin: 0;
+	}
+}
 .right_footer {
 	width: 100%;
+	text-align: center;
 	@include laptop {
 		width: auto;
 	}

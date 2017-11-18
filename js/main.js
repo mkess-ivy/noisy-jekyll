@@ -38,6 +38,13 @@ $(document).ready(function(){
         prevArrow: '<img src="/img/left_arrow.png" class="slick-prev" />'
     });
 
+    // Work Page Hover Feature
+    $('.js_hover_trigger').hover(function(){
+        $('.js_bg_receiver_work', this).addClass('hover');
+    },function(){
+        $('.js_bg_receiver_work', this).removeClass('hover');
+    });
+
     // Load More
     $('.image_item:lt(4)').show();
     $('#showLess').hide();
@@ -105,12 +112,7 @@ $(document).ready(function(){
         });
     });
 
-    // Work Page Hover Feature
-    $(".js_hover_trigger").hover(function(){
-        $(".js_bg_receiver_work", this).addClass('hover');
-    },function(){
-        $(".js_bg_receiver_work", this).removeClass('hover');
-    });
+
 
     // // Reveal the bottom portion of footer at bottom of page
     // if ($(window).width() < 900) {

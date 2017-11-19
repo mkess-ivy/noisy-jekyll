@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  	<!-- Preloader -->
+  	<div id="preloader"></div>
+
+    <div class="container clear">
+
+    	{% include header.html %}
+
+        {% unless page.title == "Work" %}
+            {% include return-work.html %}
+        {% endunless %}
+
+        <div class="element-with-video-bg jquery-background-video-wrapper">
+        	<video class="my-background-video jquery-background-video" loop autoplay muted poster="/img/bigcity.png">
+        		<source src="/video/small_video.mp4" type="video/mp4">
+        	</video>
+
+
+    	   {{ content }}
+
+           {% include footer.html %}
+
+        </div>
+    </div> <!-- .container -->
+
+  </body>
+
+</html>

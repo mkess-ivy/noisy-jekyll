@@ -1,10 +1,8 @@
 ---
 [//]: # (Meta Info)
-layout 					: hero_bg_slider
+layout 					: hero_bg_test
 title 					: "Noisy Burger"
-
-[//]: # (Slider for Background Images)
-slide					: noisyburger-slide
+hero_img				: /img/hero-noisyburger-1.png
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyburger.png
@@ -13,8 +11,10 @@ work_hover_img			: /img/hero-noisyburger.png
 component               : press
 component_data          : noisyburger-press
 ---
+<div class="single_post_wrapper">
 {% include single_post_meta.html
     title="Welcome to Noisy Burger"
     text="<p>A one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School</p>
     <p>April 26 - May 2 2017<br/>R. House, Baltimore</p>"
 %}
+</div>

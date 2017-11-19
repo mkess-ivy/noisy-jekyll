@@ -2,7 +2,7 @@
 [//]: # (Meta Info)
 layout 					: film
 title 					: "Noisy Films"
-hero_img				: /img/hero-noisyfilms.jpg
+hero_img				: /img/bigcity.png
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyfilms.jpg

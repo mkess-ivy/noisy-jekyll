@@ -1,14 +1,11 @@
 ---
 [//]: # (Meta Info)
 layout 					: hero_bg
-title 					: "Noisy <br />Lemonade"
-work_hover_img			: /img/hero-noisylemonade-v2.png
+title 					: "Noisy Lemonade"
 hero_img				: /img/hero-noisylemonade-v2.png
 
-[//]: # (Project Info)
-project-hero-icon 		: "/img/logo-big-nl.png"
-project-title 			: "Noisy Lemonade"
-project-subtitle 		: "Youth Owned Lemonade stands based in Greenmount West"
+[//]: # (Background for Work Page)
+work_hover_img			: /img/hero-noisylemonade-v2.png
 
 ---
 <div class="single_post_wrapper">

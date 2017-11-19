@@ -241,9 +241,10 @@ a.twitter-share {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 
   @include laptop {
-      height: calc(100vh - 88px);
+      // height: calc(100vh - 88px);
   }
 }
 .play {
@@ -253,7 +254,7 @@ a.twitter-share {
   display: block;
   margin: 0 auto;
   /* Important for :after */
-  position: absolute;
+  // position: absolute;
   border: 2px solid;
   /* Makes a circle */
   border-radius: 50%;
@@ -298,9 +299,11 @@ a.twitter-share {
 }
 .play-btn-wrapper {
     position: relative;
+    margin: auto;
 
     @include laptop {
-        float: left;
+        // float: left;
+        width: calc(100vw - 800px);
     }
 }
 
@@ -540,15 +543,17 @@ a.twitter-share {
 
 /* SINGLE POST META */
 .single_post_wrapper {
-    min-height: calc(100vh - 95px) !important;
+    min-height: calc(100vh - 205px) !important;
     padding: 150px 25px;
+    position: relative;
 
     @include small {
-		min-height: calc(100vh - 75px) !important;
+		// min-height: calc(100vh - 75px) !important;
 	}
 
     @include palm {
-        max-width: 615px;
+        min-height: calc(100vh - 275px) !important;
+        // max-width: 615px;
     }
 
     @include tablet {

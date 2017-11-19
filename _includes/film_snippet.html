@@ -1,4 +1,4 @@
-<div class="video-overlay">
+<div class="video-overlay clearfix">
     <div class="video-container">
 
         <button class="html5_close"><img src="/img/close-icon.png" /></button>
@@ -9,13 +9,14 @@
     </div>
 </div>
 
-<div class="main_play_wrapper">
+<div class="main_play_wrapper clearfix">
+    <div class="frow justify-between">
+        {% if page.layout == "film" %}
+            {{ content }}
+        {% endif %}
 
-    {% if page.layout == "film" %}
-        {{ content }}
-    {% endif %}
-
-    <div class="play-btn-wrapper">
-        <span class="play"></span>
+        <div class="play-btn-wrapper">
+            <span class="play play-position"></span>
+        </div>
     </div>
 </div>

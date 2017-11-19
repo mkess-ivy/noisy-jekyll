@@ -408,7 +408,7 @@ a.twitter-share {
 /* WRAPPER OVERLAY */
 .wrapper_overlay {
     position: relative;
-    margin: -60vh auto 0; /* clears the header for bg sliders */
+    margin: -52vh auto 0; /* clears the overflow content's header for bg sliders */
     left: 0;
     right: 0;
 }
@@ -480,8 +480,9 @@ a.twitter-share {
         // margin: -65px auto 200px;
     }
 
-    @include laptop {
-        // margin: -100px auto 200px;
+    @include desktop {
+        max-width: 850px;
+        margin: 100px auto;
     }
 
     .press_group_title {
@@ -560,7 +561,7 @@ a.twitter-share {
 	}
 
     @include desktop {
-        max-width: 900px;
+        max-width: 800px;
     }
 
     .single_post_title {
@@ -590,18 +591,14 @@ a.twitter-share {
 
     p {
         font-size: 20px;
-        line-height: 30px;
+        font-weight: normal;
+        line-height: 1.2;
         text-transform: initial;
         -webkit-margin-before: 0.7em;
         -webkit-margin-after: 0.7em;
 
         @include tablet {
-            font-size: 22px;
-            // line-height: 22px;
-        }
-
-        @include laptop {
-
+            font-size: 24px;
         }
     }
 }
@@ -614,10 +611,6 @@ a.twitter-share {
     background: $white;
     padding: 5px 8px;
     z-index: 200;
-
-    // &.the_slider {
-    //     top: 15px !important;
-    // }
 
     @include tablet {
         font-size: 18px;

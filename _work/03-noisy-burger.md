@@ -11,14 +11,12 @@ project-hero-icon 		: "/img/logo-big-noisyburger.png"
 project-title 			: "Noisy Burger"
 project-subtitle 		: "a pop up restaurant designed by mervo baking trade students"
 
+[//]: # (Extra Components)
+component: press
+component_data: noisyburger-press
 ---
-<!-- {% include return-work.html %} -->
-<!-- <div class="single_post_wrapper the_slider">
-	{% include single_post_meta.html
-		title="Welcome to Noisy Burger"
-		text="<p>A one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School</p>
-		<p>APRIL 26 - MAY 2 2017<br/>R. HOUSE Baltimore</p>"
-	%}
-</div> -->
-
-{%	include press_group.html dataList="noisyburger-press" %}
+{% include single_post_meta.html
+    title="Welcome to Noisy Burger"
+    text="<p>A one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School</p>
+    <p>APRIL 26 - MAY 2 2017<br/>R. HOUSE Baltimore</p>"
+%}

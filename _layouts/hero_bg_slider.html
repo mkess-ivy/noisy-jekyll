@@ -15,20 +15,7 @@
             {% for item in site.data[page.slide] limit:1 %}
             <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')">
                 <div class="single_post_wrapper">
-                    {% if page.title == "Noisy Burger" %}
-                	{% include single_post_meta.html
-                		title="Welcome to Noisy Burger"
-                		text="<p>A one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School</p>
-                		<p>APRIL 26 - MAY 2 2017<br/>R. HOUSE Baltimore</p>"
-                	%}
-                    {% endif %}
-                    {% if page.title == "Bus Stop Buddies" %}
-                        {% include single_post_meta.html
-                    		title="Bus Stop<br/>Buddies"
-                    		text="Adults stand with youth in the neighborhood in an effort to provide a safe and positive start to their days."
-                    	%}
-                    	{% include busstoptracker.html %}
-                    {% endif %}
+                    {{ content }}
                 </div>
             </div>
             {% endfor %}
@@ -37,12 +24,11 @@
             {% endfor %}
         </div>
 
-        <!-- {% unless page.title == "Bus Stop Buddies" %} -->
-        <div class="wrapper_overlay ">
-            {{ content }}
-            {% include footer.html %}
-        </div>
-        <!-- {% endunless %} -->
+        {% if page.component == "press" %}
+            {% include press_group.html %}
+        {% endif %}
+
+        {% include footer.html %}
     </div> <!-- .container -->
 
   </body>

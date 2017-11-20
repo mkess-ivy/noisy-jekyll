@@ -4,7 +4,7 @@
     {% include layouts/head.html %}
 
     <body>
-    	
+
     	<div id="preloader"></div>
 
         <div class="container clear">
@@ -21,6 +21,8 @@
             </video>
 
             {{ content }}
+
+            {% include components/extra_components.html %}
 
             {% include layouts/footer.html %}
 

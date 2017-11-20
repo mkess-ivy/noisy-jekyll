@@ -15,13 +15,15 @@
             {% include components/return-work.html %}
         {% endunless %}
 
-        <div class="hero_img_home" style="background-image: url({{ page.hero_img }});">
+        <div class="hero_img_home" style="background-image: url({{ page.hero_img }}); {% if page.component %} height: 100vh !important;{% endif %}">
 
     	   {{ content }}
 
-           {% include layouts/footer.html %}
-
         </div>
+
+        {% include components/extra_components.html %}
+
+        {% include layouts/footer.html %}
     </div> <!-- .container -->
 
   </body>

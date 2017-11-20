@@ -1,0 +1,13 @@
+<div class="wrapper_overlay_photofeed ">
+	<div class="image_group_wrapper clearfix">
+		<div class="image_group_title">The latest from bus stop buddies</div>
+		{% for single-image in site.data[page.component_data] %}
+	        <div class="image_item">
+	            <img src="{{ single-image.image }}" />
+	        </div>
+		{% endfor %}
+	    <!-- <a href="#" id="loadMore">Load More</a> -->
+	    <div id="loadMore" class="loadMore">Load more</div>
+		<!-- <div id="showLess" class="loadMore">Show Less</div> -->
+	</div>
+</div>

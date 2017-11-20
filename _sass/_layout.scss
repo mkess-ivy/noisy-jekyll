@@ -49,9 +49,13 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 .wrapper_overlay {
     position: relative;
-    margin: -52vh auto 0; /* clears the overflow content's header for bg sliders */
+    margin: -20vh auto 0; /* clears the overflow content's header for bg sliders */
     left: 0;
     right: 0;
+}
+.wrapper_overlay_photofeed {
+	@extend .wrapper_overlay;
+	margin: -35vh auto 0;
 }
 /* Single Work */
 .below_fold {

@@ -85,7 +85,6 @@ Slide 1
   <div class="headline">
     {% raw %}{{ work.description }}{% endraw %}
   </div>
-  {% raw %}{% include btn.html btn_color='on_brand_dark' url-location='work/noisy-burger' url-text="read more" %}{% endraw %}
 </div>
 
 ```
@@ -285,8 +284,6 @@ layout: black_bg
 
 {% raw %}{{ content }}{% endraw %}
 
-{% raw %}{% include btn.html btn_color='on_brand_light' url-location='work' url-text="return to work" %}{% endraw %}
-
 <div class="footer-line"></div>
 {% raw %}{% include template-footer.html %}{% endraw %}
 ```
@@ -318,8 +315,6 @@ layout: black_bg
 		<span><a href="{% raw %}{{ page.film-url }}{% endraw %}">tickets</a></span>
 	</div>
 </div>
-
-{% raw %}{% include btn.html btn_color='on_brand_light' url-location='work' url-text="return to work" %}{% endraw %}
 
 <div class="footer-line"></div>
 {% raw %}{% include template-footer.html %}{% endraw %}
@@ -461,33 +456,12 @@ creditList: "mervo-credits"
 galleryList: "mervo-gallery"
 ---
 
-{% raw %}{% include credits.html %}{% endraw %}
 {% raw %}{% include gallery.html %}{% endraw %}
 ```
-
-For credits.html, because we want to reuse the credits.html include fragment over and over for other project files, we use a list of variables to fill in our content for us.  Instead of listing each variable like how we do for value.html, instead we introduce the _data folder.
 
 ```
 |-- noisy-jekyll
     |-- _data
-
-```
-
-Code for the credit.html file:
-
-```
-<div>
-	<div class="wrapper_30 pull_center"><img src="/img/noisy-logo_credits.png" width="40" /></div>
-	<div class="default_initial pull_center wrapper_30">Special Thanks</div>
-	<ul class="noisy-credits" id="double">
-		{% raw %}{% for person in site.data.[page.creditList] %}{% endraw %}
-		<li>{% raw %}{{ person.name }}{% endraw %}</li>
-		{% raw %}{% endfor %}{% endraw %}
-	</ul>
-</div>
-```
-
-page.creditList is the most important piece of code, because we also call that variable in the front-matter for MERVO-TENANTS.html.  Because the value associated with this variable is mervo-credits, we can look for that file in the _data folder.  It's an itemized list that can easily be duplicated or copied to fill in credits for another project.
 
 ---
 
@@ -506,6 +480,3 @@ RESOURCES
 + [Jekyll Docs Site](http://www.jekyllrb.com)
 + [Stack Overflow, Jekyll Thread](http://stackoverflow.com/questions/tagged/jekyll)
 + [My Github Repo](https://github.com/mkess-ivy?tab=repositories)
-
-
-{% include btn.html btn_color='on_brand_dark' url-location='index.html' url-text="return home" %}

@@ -1,0 +1,46 @@
+.image_item {
+    margin-right: 15px;
+    margin-bottom: 25px;
+
+    display:none;
+
+    @include tablet {
+        width: 47%;
+        float: left;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+.loadMore {
+    text-align: center;
+    cursor: pointer;
+}
+.image_group_wrapper {
+    @extend .press_group;
+    background: transparent !important;
+    color: #fff !important;
+
+    @include widescreen {
+        max-width: 900px !important;
+    }
+
+    .image_group_title {
+        font-size: 30px;
+        line-height: 1.2;
+        padding-bottom: 25px;
+        @include palm {
+            font-size: 40px;
+        }
+        @include tablet {
+            font-size: 60px;
+            line-height: 1;
+            width: 80%;
+        }
+        @include widescreen {
+            width: 75%;
+            font-size: 80px;
+        }
+    }
+}

@@ -47,8 +47,32 @@ body.noScroll { /* ...or body.dialogShowing */
 		min-height: calc(100vh - 88px) !important;
 	}
 }
-
+.wrapper_overlay {
+    position: relative;
+    margin: -52vh auto 0; /* clears the overflow content's header for bg sliders */
+    left: 0;
+    right: 0;
+}
 /* Single Work */
 .below_fold {
 	height: 125vh !important;
+}
+
+.flex-centered {
+	height: 100%;
+	justify-content: flex-start !important;
+	align-items: center;
+}
+
+// HERO
+.hero-bg {
+  @include tablet {
+    background-position: center left;
+  }
+}
+.hero-bg-gray {
+  background-color: #e3e3e3 !important;
+  background: none;
+  height: auto;
+  margin-bottom: 8em;
 }

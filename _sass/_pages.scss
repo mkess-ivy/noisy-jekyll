@@ -24,3 +24,18 @@
 	list-style: none;
 	font-size: 14px;
 }
+
+// Coming Soon
+.coming_soon {
+    height: calc(20vh - 63px);
+    padding: 0 20px;
+
+    @include tablet {
+        height: calc(20vh - 88px);
+        padding: 0 30px;
+    }
+    @include laptop {
+        height: calc(50vh - 38px);
+        padding: 0 50px;
+    }
+}

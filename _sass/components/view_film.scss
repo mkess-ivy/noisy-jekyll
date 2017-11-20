@@ -1,0 +1,170 @@
+.main_play_wrapper {
+  width: 100%;
+  height: calc(100vh - 50px);
+  color: white;
+  // background-image: url('/img/hero-noisyfilms.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  @include laptop {
+      // height: calc(100vh - 88px);
+  }
+}
+.video-overlay {
+  width: 100%;
+  height: 100vh;
+  /* 50% opacity black */
+  background: rgba(0,0,0,.5);
+  /* Stays locked on scroll */
+  position: fixed;
+  /* On top of the rest*/
+  z-index: 2;
+  /* Hidden */
+  opacity: 0;
+  /* No interference */
+  left: -100%;
+  /* CSS3 Transition */
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  z-index: 200;
+}
+.video-container {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+}
+.html5_close {
+  width: 45px;
+  position: absolute;
+  color: #000;
+  right: 6vw;
+  top: -45px;
+  display: block;
+  font-size: 12px;
+  border: 1px solid;
+  background: $red;
+
+  @include tablet {
+      // top: -45px;
+      // right: 7vw;
+  }
+
+  img {
+      width: 100%;
+  }
+}
+.html5_close:hover {
+  color: #E44D4E;
+  cursor: pointer;
+}
+.html5_show {
+  opacity: 1;
+}
+.play-btn-wrapper {
+    position: relative;
+    margin: auto;
+
+    @include laptop {
+        // float: left;
+        width: calc(100vw - 800px);
+    }
+}
+.play {
+  width: 70px;
+  height: 70px;
+  background: transparent !important;
+  display: block;
+  margin: 0 auto;
+  /* Important for :after */
+  // position: absolute;
+  border: 2px solid;
+  /* Makes a circle */
+  border-radius: 50%;
+  z-index: 2;
+  top: -15vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  @include small {
+      top: -25vh;
+  }
+
+  @include laptop {
+      top: 45vh;
+      left: 5vw;
+  }
+
+  @include widescreen {
+      left: 12vw;
+  }
+
+  &:hover {
+      background: $red !important;
+      cursor: pointer;
+  }
+
+}
+.play:after {
+  position: absolute;
+  content: "";
+  /* Centering */
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left:  -8px;
+  /* CSS Triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent #ffffff;
+}
+/* Film Highlight Text Component */
+.film_bold {
+    font-size: 20px;
+    font-weight: bold;
+
+    @include laptop {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+.film_light {
+    font-size: 20px;
+    font-weight: normal;
+
+    @include laptop {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.film_summary {
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $font-italic;
+    text-transform: initial;
+    font-weight: normal;
+
+    @include laptop {
+        font-size: 26px;
+        line-height: 36px;
+        padding-top: 50px;
+    }
+}
+.fluid-width-video-wrapper {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+.fluid-width-video-wrapper iframe {
+  @include tablet {
+    height: 90% !important;
+  }
+}

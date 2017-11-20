@@ -1,0 +1,211 @@
+/* Modal + Tracker */
+.openModal {
+    position: relative;
+}
+#openModal {
+    background: $black;
+    border: 5px solid $white;
+    margin: auto;
+    width: 85%;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    // left: 7%;
+    right: 0;
+    // top: 7%;
+    bottom: 0;
+    z-index: 400;
+
+    @include palm {
+        width: 470px;
+        top: 0px;
+        height: 550px;
+        // left: 50%;
+        // -webkit-transform: translateX(-50%);
+        // transform: translateX(-50%)
+    }
+
+    @include tablet {
+        top: 0px;
+    }
+}
+.tracker-close {
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    background: transparent;
+    border: 0;
+}
+.modal-header {
+    padding: 15px 15px 10px 15px;
+
+    @include tablet {
+        padding: 15px 15px 0 15px;
+    }
+
+    .modal-title {
+
+        font-size: 20px;
+        text-align: left;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        @include palm {
+            float: left;
+            width: 60%;
+            text-align: left;
+        }
+    }
+    .modal-img {
+        @include palm {
+            float: right;
+            width: 30%;
+        }
+
+        img {
+            width: 50px;
+
+            @include palm {
+                width: 100px;
+            }
+        }
+
+    }
+}
+.modal-week {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 15px;
+    width: 80%;
+    line-height: 40px;
+
+    @include palm {
+        font-size: 54px;
+        // width: 90%;
+        line-height: 60px;
+    }
+}
+.modal-status {
+    width: 90%;
+    margin: 15px auto;
+    text-align: left;
+
+    @include palm {
+        width: 245px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.light {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.light-log {
+    @extend .light;
+    margin: 8px 0 8px 10px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $white;
+    display: inline-block;
+    vertical-align: top;
+}
+.green-light {
+    background: $tracker-green;
+}
+.yellow-light {
+    background: $tracker-yellow;
+}
+.red-light {
+    background: $tracker-red;
+}
+.modal-weekly-log {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+
+    ul li {
+
+        @include tablet {
+            display: inline-block;
+            margin: 10px 13px;
+            width: 60px;
+        }
+    }
+}
+.modal-share {
+    padding: 15px 0 0 15px;
+    text-align: left;
+    font-size: 16px;
+
+    @include tablet {
+        font-size: 20px;
+    }
+
+    img {
+        display: block;
+
+        @include tablet {
+            display: inline-block !important;
+        }
+    }
+}
+a.twitter-share {
+    text-transform: initial;
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    &:hover {
+        color: $red;
+    }
+}
+.tracker_wrapper {
+    margin-top: 40px;
+
+    a {
+        padding: 6px 12px;
+        background: $white;
+        color: $black;
+        text-decoration: none;
+    }
+}
+.modal-overlay {
+    z-index: 390;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+
+    &.close {
+        display: none;
+    }
+}
+.modal-close {
+  width: 20px;
+  fill: white;
+  position: absolute;
+  right: 0;
+  /* Bring above video */
+  top: -30px;
+}
+
+.modal-close:hover {
+  /* 50% opacity white */
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.modal-show {
+  opacity: 1;
+}

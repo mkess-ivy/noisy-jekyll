@@ -2,6 +2,8 @@
 [//]: # (Meta Info)
 layout 					: hero_bg
 title 					: "Noisy Lemonade"
+
+[//]: # (Background Image)
 hero_img				: /img/hero-noisylemonade-v2.png
 
 [//]: # (Background for Work Page)

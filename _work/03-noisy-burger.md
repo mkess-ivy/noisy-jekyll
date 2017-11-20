@@ -1,8 +1,7 @@
 ---
 [//]: # (Meta Info)
-layout 					: hero_bg_test
+layout 					: hero_video
 title 					: "Noisy Burger"
-hero_img				: /img/hero-noisyburger-1.png
 
 [//]: # (Background Video)
 video_poster			: /img/hero-noisyburger-1.png

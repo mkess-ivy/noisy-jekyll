@@ -1,10 +1,12 @@
 ---
 [//]: # (Meta Info)
-layout 					: full_width_height
+layout 					: hero_bg
 title 					: "Bus Stop Buddies"
-hero_img				: /img/hero-noisyburger-v3.png
 
-[//]: (Background for Work Page)
+[//]: # (Background Image)
+hero_img				: /img/hero-busstopbuddies-2.png
+
+[//]: # (Background for Work Page)
 work_hover_img			: /img/hero-busstopbuddies.png
 ---
 <div class="single_post_wrapper">

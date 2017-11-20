@@ -44,27 +44,29 @@ FOR ANY WRAPPERS - SEE LAYOUT.SCSS
 #openModal {
     background: $black;
     border: 5px solid $white;
+    margin: auto;
     width: 85%;
     height: 500px;
     position: absolute;
     text-align: center;
-    left: 7%;
+    left: 0;
+    // left: 7%;
     right: 0;
-    top: 7%;
+    // top: 7%;
     bottom: 0;
     z-index: 400;
 
     @include palm {
         width: 470px;
-        top: 100px;
+        top: 0px;
         height: 550px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%)
+        // left: 50%;
+        // -webkit-transform: translateX(-50%);
+        // transform: translateX(-50%)
     }
 
     @include tablet {
-        // top: 8%;
+        top: 0px;
     }
 }
 .tracker-close {
@@ -546,7 +548,7 @@ a.twitter-share {
 .single_post_wrapper {
     min-height: calc(100vh - 205px) !important;
     padding: 150px 25px;
-    position: relative;
+    // position: relative;
 
     @include small {
 		// min-height: calc(100vh - 75px) !important;

@@ -1,8 +1,7 @@
 ---
 [//]: # (Meta Info)
-layout 					: hero_bg_test
+layout 					: hero_video
 title 					: "Bradford"
-hero_img				: /img/bradford.jpg
 
 [//]: # (Background Video)
 video_poster			: /img/bradford.jpg

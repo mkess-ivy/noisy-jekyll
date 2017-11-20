@@ -79,14 +79,32 @@ $(document).ready(function(){
     // Team Member Information
     // see refactored codepen: https://codepen.io/mkess-ivy/pen/LOjxqb
     $('.js-openModalA').hide();
+    $('#btn_more_close',this).hide();
     $('#btn_moreA').click(function(e) {
         e.preventDefault();
-        $('.js-openModalA').fadeToggle('show');
+        $('.js-openModalA').fadeIn('show');
+        $(this).fadeOut('hide');
+        $('#btn_more_close').fadeIn('show');
+    });
+    $('#btn_more_close').click(function(e) {
+        e.preventDefault();
+        $('.js-openModalA').fadeOut('hide');
+        $(this).fadeOut('hide');
+        $('#btn_moreA').fadeIn('show');
     });
     $('.js-openModalB').hide();
+    $('#btn_more_closeB',this).hide();
     $('#btn_moreB').click(function(e) {
         e.preventDefault();
-        $('.js-openModalB').fadeToggle('show');
+        $('.js-openModalB').fadeIn('show');
+        $(this).fadeOut('hide');
+        $('#btn_more_closeB').fadeIn('show');
+    });
+    $('#btn_more_closeB').click(function(e) {
+        e.preventDefault();
+        $('.js-openModalB').fadeOut('hide');
+        $(this).fadeOut('hide');
+        $('#btn_moreB').fadeIn('show');
     });
 
     // site preloader

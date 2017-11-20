@@ -29,6 +29,7 @@ permalink: /our-team/
 		</div>
 		<div class="team_member_img_wrapper_mk">
 			<button type="button" class="btn_more" id="btn_moreA"><img src="/img/btn_more.png" /></button>
+			<button type="button" class="btn_more" id="btn_more_close"><img src="/img/btn_more_close.png" /></button>
 			<div class="team_member_img_mk" style="background-image: url('{{ member.image }}');"></div>
 		</div>
 	</div>
@@ -53,6 +54,7 @@ permalink: /our-team/
 		</div>
 		<div class="team_member_img_wrapper_mk">
 			<button type="button" class="btn_more" id="btn_moreB"><img src="/img/btn_more.png"  /></button>
+			<button type="button" class="btn_more" id="btn_more_closeB"><img src="/img/btn_more_close.png" /></button>
 			<div class="team_member_img_mk" style="background-image: url('{{ member.image }}');"></div>
 		</div>
 	</div>

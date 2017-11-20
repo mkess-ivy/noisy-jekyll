@@ -1,5 +1,5 @@
 ---
-layout: page_template_gray
+layout: styleguide
 title: FEWD Docs
 permalink: /docs/
 ---
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 -----------------
 <div class="backtop-icon" id="js-backtop"><a href="#home"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
 
-### Pages ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### Pages ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 + [index.html](#index)
 + [page_about.html](#about)
 + [page_work.html](#work)
@@ -66,7 +66,7 @@ TABLE OF CONTENTS
 THINGS TO KNOW - PAGES
 --------------
 <div id="index"></div>
-### index.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### index.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This is the home page where the slider lives. There are a max of 3 slides that will show on the slider.  The information for each slider, is pulled from the front matter code at the very beginning of each project file. (Ex: 2017-04-02-noisy-burger.md)
 
@@ -136,7 +136,7 @@ For any slide that should be featured on the index.html page - use the __feature
 
 ---
 <div id="about"></div>
-### page-about.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### page-about.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 
 This is the About page. This page has information on the team members. Consists of a bio and picture.  There are two spaces for team members, however, this can easily increase, by copying the code and then editing from one team member.
@@ -177,7 +177,7 @@ There's three variables used in the loop: (1) work.date, (2)work.url, (3)work.ti
 ```
 |-- noisy-jekyll
     |-- _work
-        
+
 ```
 
 the front matter for page_work.html looks like this:
@@ -187,7 +187,7 @@ the front matter for page_work.html looks like this:
 layout: page_template
 title: Work
 permalink: /work/
---- 
+---
 ```
 
 This means that the layout used for this page is called page_template which can be found in the _layouts folder.  The title of this page is __Work__ and the permalink for this page is /work/ which means once the page is loaded - the url is: siteurl.com/work
@@ -209,14 +209,14 @@ The only time a user will see this page is after they submit their email address
 THINGS TO KNOW - LAYOUTS
 --------------
 <div id="comingsoon"></div>
-### coming_soon.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### coming_soon.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This is a placeholder web page. This is for the instance that you want to list projects but do not have content for the project site yet. A simple COMING SOON and RETURN HOME button for this page.
 
 ---
 
 <div id="pagetemplate"></div>
-### page_template.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### page_template.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 The ABOUT, WORK and CONTACT pages use this template. This template sets a wrapper for this page, as well as lists the page title at the very top of the page. Helps to keep all three of these pages uniform in styling.
 
@@ -227,34 +227,34 @@ If any additional pages need to be created for the site, make sure to use this l
 layout: page_template
 title: Contact
 permalink: /contact/
---- 
+---
 ```
 
 ---
 
 <div id="black"></div>
-### black_bg.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### black_bg.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This template layout file changed the default background color of the website from white to black. It has a minimum height of 100% so that the footer is revealed once scrolled to the bottom of page.
 
 ---
 
 <div id="hero"></div>
-### hero_bg.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### hero_bg.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This template layout file is for the web page that uses the same background image as the home or index.html web page. The hero extends 100% in height.
 
 ---
 
 <div id="red"></div>
-### red_bg.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### red_bg.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This template layout file changed the default background color of the website from white to red. It has a minimum height of 100% so that the footer is revealed once scrolled to the bottom of page.
 
 ---
 
 <div id="event"></div>
-### work_event_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### work_event_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This template layout file is used for projects that are events like the Noisy Burger Pop Up Restaurant. This template layout is controlled mostly from the project file, instead of from the template layout file work_event_layout.html. The idea behind this: If there is another event project, it can be modified based on parameters added to the single project file and the layout can be reused for other projects(ex: 2017-04-02-noisy-burger.md). Parameters that can be added: hero section, foodmenu, testimonials, text and Call-to-action buttons and newsletter signup. At the bottom of the content for the project, there is a RETURN TO WORK cta so the user can easily return to the list of projects on the WORK page. Other parameters can be easily added to this list as well.
 
@@ -271,7 +271,7 @@ So the front-matter of the project file will include these variables. Once the v
 ```
 ---
 layout: black_bg
---- 
+---
 
 <div class="noisy_hero flex" style="background: none; background-color: {% raw %}{{ page.hero-color }}{% endraw %}; color: {% raw %}{{ page.color-text }}{% endraw %};">
 	<div class="wrapper_30"><img src="{% raw %}{{ page.event-picture }}{% endraw %}" width="{% raw %}{{ page.event-picture_width }}{% endraw %}" /></div>
@@ -296,16 +296,16 @@ Where {% raw %}{{ content }}{% endraw %} is, this is where the information from 
 ---
 
 <div id="film"></div>
-### work_film_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### work_film_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This template layout file is used for projects that are films like the BUS STOP BUDDIES SHORT FILM. This template layout is controlled mostly from the project file, instead of from the template layout file work_film_layout.html. This layout consists of a hero background that extends 100% in height. There is also some text overlays for the hero section that include the name of the film, date of screening, screening locations and a section to purchase tickets. Other parameters can be easily added to this list as well.
 
-Code from work_film_layout.html - 
+Code from work_film_layout.html -
 
 ```
 ---
 layout: black_bg
---- 
+---
 
 <div class="noisy_hero flex noisy-hero_film" style="background-image: url('{% raw %}{{ page.hero-img }}{% endraw %}');">
 	<div class="film-wrapper">
@@ -337,7 +337,7 @@ This layout doesn't have a {% raw %}{{ content }}{% endraw %} listed because of 
 ---
 
 <div id="video"></div>
-### work_video_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### work_video_layout.html ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This template layout file is used for projects that have video hero sections like MERVO TENANTS. This template layout is controlled mostly from the project file, instead of from the template layout file work_video_layout.html. This layout consists of a set of values, testimonials, and a gallery lightbox. Other parameters can be easily added to this list as well.
 
@@ -358,9 +358,9 @@ Basically this code is saying - use a background image for the hero section, and
 THINGS TO KNOW - PROJECTS
 --------------
 <div id="noisyburger"></div>
-### 2017-04-02-noisy-burger.md ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### 2017-04-02-noisy-burger.md ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
-This project site uses the work_event_layout.html template layout file. 
+This project site uses the work_event_layout.html template layout file.
 
 The most important directories for project files are:
 
@@ -369,12 +369,12 @@ The most important directories for project files are:
     |-- _includes
     |-- _layouts
     |-- _work
-        
+
 ```
 
 the items in the _includes folder are code fragments that are reusable all throughout the site.  It helps with keeping DRY (do not repeat yourself) code.  For example - the header and footer for this website are actually code fragments stored in the _includes folder.
 
-For this particular project file - the layout section in the front-matter will determine which layout needs to be used, like : 
+For this particular project file - the layout section in the front-matter will determine which layout needs to be used, like :
 
 ```
 ---
@@ -421,7 +421,7 @@ locale: "Baltimore, MD 21211"
 
 After the three dashes to end the front-matter section, this is technically the content section.  Here we can see that we are adding the foodmenu, testimonials, event cta, and signup. To reuse the include fragments, it's best to use variables within those code fragments as well.  
 
-value.html code fragment from the _includes folder is used for a different project, here is what the code looks like with variables - 
+value.html code fragment from the _includes folder is used for a different project, here is what the code looks like with variables -
 
 ```
 <div class="noisy-values">
@@ -447,7 +447,7 @@ Here, all we're doing is filling in the variables with actual content.
 ---
 
 <div id="mervotenants"></div>
-### 2017-04-02-mervo-tenants.md ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### 2017-04-02-mervo-tenants.md ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This project site uses the work_video_layout.html template layout file, since the hero section is a video.
 
@@ -470,7 +470,7 @@ For credits.html, because we want to reuse the credits.html include fragment ove
 ```
 |-- noisy-jekyll
     |-- _data
-        
+
 ```
 
 Code for the credit.html file:
@@ -492,7 +492,7 @@ page.creditList is the most important piece of code, because we also call that v
 ---
 
 <div id="busstop"></div>
-### 2017-04-02-bus-stop-buddies.md ![NT Logo](/img/logo_nt_micro.png "NT Logo") 
+### 2017-04-02-bus-stop-buddies.md ![NT Logo](/img/logo_nt_micro.png "NT Logo")
 
 This project site uses the work_film_layout.html template layout file.
 

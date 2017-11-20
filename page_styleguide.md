@@ -1,12 +1,12 @@
 ---
-layout: page_template_gray
+layout: styleguide
 title: FEWD Style Guide
 permalink: /styleguide/
 ---
 
 ## COLORS
 
-RED - #E44D4E 
+RED - #E44D4E
 <div style="background: #e44d4e; padding: 3px;">&nbsp;</div>
 
 BLACK - #000
@@ -172,7 +172,7 @@ margin-bottom: 5px;
 <div class="noisy_text_wrapper">
 		<form>
 		  <input type='hidden' name='redirect_to' value='http://www.noisytenants.com/thank-you' />
-		 
+
 		  <input type='text' name='name' id="input-name" placeholder="name" />
 		  <input type='text' name='email' id="input-email" placeholder="email"/>
 		  <input type='text' name='message' id="input-message" placeholder="message"/>
@@ -184,7 +184,7 @@ margin-bottom: 5px;
 <div class="noisy_text_wrapper">
 <form action="https://getsimpleform.com/messages?form_api_token=3ec784183fc7823c676746fa64318836" method="post">
   <input type='hidden' name='redirect_to' value='http://www.noisytenants.com/thank-you' />
- 
+
   <input type='text' name='name' id="input-name" placeholder="name" />
   <input type='text' name='email' id="input-email" placeholder="email"/>
   <input type='text' name='message' id="input-message" placeholder="message"/>
@@ -192,4 +192,3 @@ margin-bottom: 5px;
 </form>
 </div>
 ```
-

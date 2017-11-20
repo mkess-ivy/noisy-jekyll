@@ -11,7 +11,7 @@ work_hover_img			: /img/hero-noisylemonade-v2.png
 
 ---
 <div class="single_post_wrapper">
-	{% include single_post_meta.html
+	{% include components/single_post_meta.html
 		title="Noisy<br/>Lemonade"
 		text="<p>Beverage stand micro-businesses owned and operated by youth.</p>
 		<p>Add more about financial literacy, marketing, etc</p>

@@ -10,9 +10,9 @@ hero_img				: /img/hero-busstopbuddies-2.png
 work_hover_img			: /img/hero-busstopbuddies.png
 ---
 <div class="single_post_wrapper">
-    {% include single_post_meta.html
+    {% include components/single_post_meta.html
         title="Bus Stop<br/>Buddies"
         text="<p>Adults stand with youth in the neighborhood in an effort to provide a safe and positive start to their days.</p>"
     %}
-    {% include busstoptracker.html %}
+    {% include components/busstoptracker.html %}
 </div>

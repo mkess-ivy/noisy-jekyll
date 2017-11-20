@@ -15,7 +15,7 @@ component               : press
 component_data          : noisyburger-press
 ---
 <div class="single_post_wrapper">
-{% include single_post_meta.html
+{% include components/single_post_meta.html
     title="Welcome to Noisy Burger"
     text="<p>A one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School</p>
     <p>April 26 - May 2 2017<br/>R. House, Baltimore</p>"

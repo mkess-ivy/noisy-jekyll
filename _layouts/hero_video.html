@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-    {% include head.html %}
+    {% include layouts/head.html %}
 
     <body>
-    	<!-- Preloader -->
+    	
     	<div id="preloader"></div>
 
         <div class="container clear">
 
-        	{% include header.html %}
+        	{% include layouts/header.html %}
 
             {% unless page.title == "Work" %}
-                {% include return-work.html %}
+                {% include components/return-work.html %}
             {% endunless %}
 
             <video autoplay loop id="video-background" muted plays-inline poster="{{ page.video_poster }}">
@@ -22,7 +22,7 @@
 
             {{ content }}
 
-            {% include footer.html %}
+            {% include layouts/footer.html %}
 
         </div> <!-- .container -->
 

@@ -10,16 +10,16 @@ hero_img				: /img/bigcity.png
 work_hover_img			: /img/hero-noisyfilms.jpg
 ---
 <div class="single_post_wrapper">
-	{% 	include single_post_meta.html
+	{% 	include components/single_post_meta.html
 		title="Now Playing"
 	%}
-	{% 	include film_highlight.html
+	{% 	include components/film_highlight.html
 		film_title="Big City - Minisode"
 		film_runtime="5:01"
 		film_crew_title="Directed &amp; Written By"
 		film_crew_name="Edmond Cofie"
 	%}
-	{%	include film_summary.html
+	{%	include components/film_summary.html
 		film_summary="In a stifling New York City, Paul - a precarious young man, implores his friend and confident Mimi to help him meditate. What follows is a dream-like flight through memories of the past, lost love, family, and the quest for new beginnings."
 	%}
 </div>

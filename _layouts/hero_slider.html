@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include layouts/head.html %}
 
   <body>
   	<!-- Preloader -->
@@ -9,10 +9,10 @@
 
     <div class="container clear">
 
-    	{% include header.html %}
+    	{% include layouts/header.html %}
 
-        {% include return-work.html %}
-        
+        {% include components/return-work.html %}
+
         <div class="hero-slider">
             {% for item in site.data[page.slide] limit:1 %}
             <div class="hero_img_home below_fold" style="background-image: url('{{ item.image }}')">
@@ -27,10 +27,10 @@
         </div>
 
         {% if page.component == "press" %}
-            {% include press_group.html %}
+            {% include components/press_group.html %}
         {% endif %}
 
-        {% include footer.html %}
+        {% include layouts/footer.html %}
     </div> <!-- .container -->
 
   </body>

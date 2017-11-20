@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    {% include layouts/head.html %}
 
-  <body>
-  	<!-- Preloader -->
-  	<div id="preloader"></div>
-  	
-    <div class="container clear">
-      <div class="hero-bg-gray clearfix">
-    		{% include header.html %}
+    <body>
 
-        <div class="noisy_wrapper docs" style="color: #000;">
-          <div class="page_title black_text">{{ page.title }}</div>
-      	
-      	   {{ content }}
+        <div id="preloader"></div>
 
-        </div>
-      </div><!-- .hero-bg -->
-    </div> <!-- .container -->
+        <div class="container clear">
+            <div class="hero-bg-gray clearfix">
+        		{% include layouts/header.html %}
 
-    {% include footer.html %}
+                <div class="noisy_wrapper docs" style="color: #000;">
+                    <div class="page_title black_text">{{ page.title }}</div>
 
-  </body>
+              	    {{ content }}
+
+                </div>
+            </div><!-- .hero-bg -->
+        </div> <!-- .container -->
+
+        {% include layouts/footer.html %}
+
+    </body>
 
 </html>

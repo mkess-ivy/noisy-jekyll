@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include layouts/head.html %}
 
   <body>
-  	<!-- Preloader -->
+
   	<div id="preloader"></div>
 
     <div class="container clear">
 
-    	{% include header.html %}
+    	{% include layouts/header.html %}
 
         {% unless page.title == "Work" or page.url == "/" %}
-            {% include return-work.html %}
+            {% include components/return-work.html %}
         {% endunless %}
 
         <div class="hero_img_home" style="background-image: url({{ page.hero_img }});">
 
     	   {{ content }}
 
-           {% include footer.html %}
+           {% include layouts/footer.html %}
 
         </div>
     </div> <!-- .container -->

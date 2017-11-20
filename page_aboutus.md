@@ -54,7 +54,7 @@ newsletter_bg: /img/gwbg@2x.png
 
 				</div>
 
-				{% include html5video.html %}
+				{% include components/html5video.html %}
 			</div>
 		</div>
 	</div>

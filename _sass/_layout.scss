@@ -7,17 +7,8 @@ body {
 	text-transform: uppercase;
 	overflow-x: hidden;
 }
-body.font-black {
-	color: $black;
-}
 body.noScroll { /* ...or body.dialogShowing */
   	overflow: hidden;
-}
-ul,li {
-	list-style: none;
-}
-.black-bg {
-	background: #000;
 }
 
 /* - Global Wrappers */
@@ -46,82 +37,6 @@ ul,li {
 	}
 }
 .full_height_wrapper {
-	height: calc(100vh - 50px);
-}
-.wrapper_15 {
-	margin-bottom: 15px;
-}
-.wrapper_30 {
-	margin-bottom: 30px;
-}
-.wrapper_50 {
-	margin-bottom: 50px;
-}
-.element_wrapper {
-	margin-bottom: 80px;
-}
-.section_wrapper {
-	padding-top: 50px;
-}
-.template_wrapper {
-	margin: 0px 20px 100px 20px;
-
-	@include palm {
-		margin: 0;
-		width: 500px;
-		float: right;
-	}
-
-	@include tablet {
-		width: 650px;
-	}
-
-	@include laptop {
-		width: 800px;
-	}
-
-	@include desktop {
-		width: 950px;
-	}
-	@include widescreen {
-		width: calc(100% - 120px);
-	}
-	@include tv-1920 {
-		width: calc(100% - 450px);
-	}
-}
-.project_layout_wrapper {
-	background: #fff;
-	width: 100%;
-	padding: 100px 0;
-	color: $black;
-}
-.viewwork_wrapper {
-	background: $white;
-  	color: #000;
-  	padding-bottom: 50px;
-  	position: relative;
-}
-.viewwork_inner_wrapper {
-	@include tablet {
-		width: 715px;
-		margin: 0 auto;
-	}
-}
-.content_wrapper {
-	margin-bottom: 125px;
-}
-.no-margin {
-	margin: 0 auto !important;
-}
-.image_center {
-	text-align: center;
-	margin: 50px 0;
-}
-.normal_text {
-	font-weight: normal;
-}
-.full_height_wrapper {
 	min-height: calc(100vh - 95px) !important;
 	height: auto;
 
@@ -133,82 +48,7 @@ ul,li {
 	}
 }
 
-/* - Flex */
-.flex {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-/* - Floats */
-.pull_center {
-	text-align: center;
-}
-.pull_left {
-	text-align: left !important;
-}
-.pull_tight {
-	@include palm {
-		width: 60%;
-	}
-
-	@include tablet {
-		width: 40%;
-	}
-}
-.half_float_left {
-	@include tablet {
-		float: left;
-		width: 50%;
-	}
-}
-.float_left {
-	@include tablet {
-		float: left;
-	}
-
-}
-
 /* Single Work */
 .below_fold {
 	height: 125vh !important;
-}
-
-/* Links */
-.nt-link {
-	font-weight: bold;
-	color: $white;
-	text-decoration: none;
-	letter-spacing: 0.5px;
-}
-.nt-link:hover {
-	border-bottom: 2px solid $white;
-	padding-bottom: 2px;
-}
-.nt-link-position {
-	padding-top: 10px;
-	display: block;
-	@include laptop {
-		padding-top: 0;
-		padding-left: 10px;
-		display: inline;
-	}
-}
-
-// Full width + height
-.fullwidth_bg_content {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100vh;
-}
-
-// Links + Buttons
-.line_through {
-	cursor: default;
-	&:hover {
-		text-decoration: line-through;
-	}
 }

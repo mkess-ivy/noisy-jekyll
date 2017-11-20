@@ -3,15 +3,7 @@
 	color: $red;
 }
 .hero_img_home {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-/* Contact */
-.noisy_text_wrapper {
-	max-width: 500px;
-	margin: 0 auto 4em;
+	@extend %background-image;
 }
 
 /* Thank You */

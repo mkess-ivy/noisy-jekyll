@@ -1,8 +1,12 @@
 ---
 [//]: # (Meta Info)
-layout 					: coming_soon
+layout 					: hero_bg_test
 title 					: "Bradford"
 hero_img				: /img/bradford.jpg
+
+[//]: # (Background Video)
+video_poster			: /img/bradford.jpg
+video 					: /video/monuments.mp4
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/bradford.jpg

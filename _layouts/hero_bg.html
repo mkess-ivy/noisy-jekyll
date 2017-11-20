@@ -11,7 +11,7 @@
 
     	{% include header.html %}
 
-        {% unless page.title == "Work" %}
+        {% unless page.title == "Work" or page.url == "/" %}
             {% include return-work.html %}
         {% endunless %}
 
@@ -20,7 +20,7 @@
     	   {{ content }}
 
            {% include footer.html %}
-           
+
         </div>
     </div> <!-- .container -->
 

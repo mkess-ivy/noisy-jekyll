@@ -4,6 +4,10 @@ layout 					: hero_bg_test
 title 					: "Noisy Burger"
 hero_img				: /img/hero-noisyburger-1.png
 
+[//]: # (Background Video)
+video_poster			: /img/hero-noisyburger-1.png
+video 					: /video/noisyburger.mp4
+
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyburger.png
 

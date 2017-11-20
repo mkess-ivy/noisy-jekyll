@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
-  	<!-- Preloader -->
-  	<div id="preloader"></div>
+    <body>
+    	<!-- Preloader -->
+    	<div id="preloader"></div>
 
-    <div class="container clear">
+        <div class="container clear">
 
-    	{% include header.html %}
+        	{% include header.html %}
 
-        {% unless page.title == "Work" %}
-            {% include return-work.html %}
-        {% endunless %}
+            {% unless page.title == "Work" %}
+                {% include return-work.html %}
+            {% endunless %}
 
-        <div class="element-with-video-bg jquery-background-video-wrapper">
-        	<video class="my-background-video jquery-background-video" loop autoplay muted poster="/img/bigcity.png">
-        		<source src="/video/small_video.mp4" type="video/mp4">
-        	</video>
+            <video autoplay loop id="video-background" muted plays-inline poster="{{ page.video_poster }}">
+                <!-- <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4"> -->
+                <source src="{{ page.video }}" type="video/mp4">
+            </video>
 
+            {{ content }}
 
-    	   {{ content }}
+            {% include footer.html %}
 
-           {% include footer.html %}
+        </div> <!-- .container -->
 
-        </div>
-    </div> <!-- .container -->
-
-  </body>
+    </body>
 
 </html>

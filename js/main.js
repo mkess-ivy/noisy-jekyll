@@ -68,8 +68,8 @@ $(document).ready(function(){
     $('#js-modal-overlay').hide();
     $('#tracker').on('click', function(e) {
         e.preventDefault();
-        $('#openModal').fadeToggle('show');
-        $('#js-modal-overlay').fadeToggle('close');
+        $('#openModal').fadeIn('show');
+        $('#js-modal-overlay').fadeIn('close');
     });
     $('#tracker-close').on('click', function() {
         $('#openModal').css("display","none");
@@ -95,7 +95,7 @@ $(document).ready(function(){
     });
 
     // CoverVid
-    $('.covervid-video').coverVid();
+    // $('.covervid-video').coverVid();
 
 	// Slow Reveal
     $(window).scroll( function(){

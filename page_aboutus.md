@@ -8,7 +8,7 @@ hero_bg: /img/hero_1.jpg
 section_bg: /img/gwbg@2x.png
 newsletter_bg: /img/gwbg@2x.png
 ---
-<div class="nt_hero_bg" style="background-image:url({{ page.hero_bg }});">
+<div class="nt_hero_bg">
 	<div class="frow centered">
 		<div class="about_hero_text">
 			We <span class="hero_text_italic">move</span> in &amp;

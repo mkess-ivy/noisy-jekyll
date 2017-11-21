@@ -3,6 +3,12 @@
 // - Masthead
 .nt_hero_bg {
     @extend %background-image;
+    background-attachment: fixed;
+    background-image: url('/img/hero_1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 80vh;
     position: relative;
 
@@ -10,6 +16,29 @@
         height: calc(90vh - 88px);
     }
 }
+// Background Image Change on Scroll
+.nt_hero_bg.scrolled{
+    background-image: url('/img/bg_mervo.jpg');
+}
+.nt_hero_bg.scrolled-2{
+    background-image: url('/img/hero-busstopbuddies-1.png');
+}
+.nt_hero_bg.scrolled-3{
+    background-image: url('/img/hero-busstopbuddies-5.png');
+}
+.nt_hero_bg.scrolled-4{
+    background-image: url('/img/hero-busstopbuddies-3.png');
+}
+.nt_hero_bg.scrolled-5{
+    background-image: url('/img/hero-busstopbuddies-2.png');
+}
+.nt_hero_bg.scrolled-6{
+    background-image: url('/img/hero-busstopbuddies-4.png') ;
+}
+.nt_hero_bg.scrolled-7{
+    background-image: url('/img/hero-busstopbuddies-6.png');
+}
+
 .about_hero_text {
     font-size: 34px;
     line-height:2;

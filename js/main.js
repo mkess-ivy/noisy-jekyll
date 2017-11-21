@@ -112,4 +112,32 @@ $(document).ready(function(){
     	$('#preloader').fadeOut('slow',function(){$(this).remove();});
     });
 
+    // Background Image Change on scroll
+    $(window).scroll(function(){
+        // var fromTopPx = 50; // distance to trigger
+        var scroll = $(window).scrollTop();
+        if(scroll >= 250){
+            $('.nt_hero_bg').addClass('scrolled');
+            $('.nt_hero_bg').removeClass('scrolled-4');
+
+        } else if (scroll >= 200) {
+            $('.nt_hero_bg').removeClass('scrolled-5');
+            $('.nt_hero_bg').addClass('scrolled-4');
+        }else if (scroll >= 150) {
+            $('.nt_hero_bg').removeClass('scrolled-6');
+            $('.nt_hero_bg').addClass('scrolled-5');
+        }else if (scroll >= 100) {
+            $('.nt_hero_bg').removeClass('scrolled-7');
+            $('.nt_hero_bg').addClass('scrolled-6');
+        }else if (scroll >= 50) {
+            $('.nt_hero_bg').addClass('scrolled-7');
+        }else {
+            $('.nt_hero_bg').removeClass('scrolled');
+            $('.nt_hero_bg').removeClass('scrolled-4');
+            $('.nt_hero_bg').removeClass('scrolled-5');
+            $('.nt_hero_bg').removeClass('scrolled-6');
+            $('.nt_hero_bg').removeClass('scrolled-7');
+        };
+    });
+
 }); // Close of jQuery

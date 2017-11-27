@@ -5,7 +5,7 @@ permalink: /about/
 
 [//]: #Hero image
 hero_bg: /img/hero_1.jpg
-section_bg: /img/gwbg@2x.png
+section_bg: /img/gwbg@2x_red.jpg
 newsletter_bg: /img/gwbg@2x.png
 ---
 <div class="nt_hero_bg">
@@ -23,47 +23,50 @@ newsletter_bg: /img/gwbg@2x.png
 
 <div class="about_bg_white">
 	<div class="nt_about_wrapper">
-		<div class="frow justify-between">
-			<div class="about_content">
+
+		<div class="about_content">
+			<div class="frow justify-between">
 				<div class="about_header">
-					...Through <span class="about_red">Social Entrepreneurship</span>
+					...Through <span class="about_red break_word">Social Entrepreneurship</span>
 				</div>
-				<div class="about_text">
-					"Social entrepreneurs identify resources where others only see problems. They view the villagers as the solution, not the passive beneficiary.  They begin with the assumption of competence and unleash the resources in the community they're serving."
+				<div class="about_quote">
+					<div class="about_text">
+						"Social entrepreneurs identify resources where others only see problems. They view the villagers as the solution, not the passive beneficiary.  They begin with the assumption of competence and unleash the resources in the community they're serving."
+					</div>
+					<div class="about_name">
+						&mdash; David Bornstein
+					</div>
 				</div>
-				<div class="about_name">
-					&mdash; David Bornstein
-				</div>
-			</div>
-			<div class="about_film">
-				<div class="video-overlay about_video_overlay">
-				    <div class="video-container">
-
-				        <button class="html5_close"><img src="/img/close-icon.png" /></button>
-
-				        <!-- Embedded video -->
-				        <iframe id="video" src="https://player.vimeo.com/video/201795592?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				    </div>
-				</div>
-
-				<div class="video_btn_wrapper">
-
-				    <div class="about_playbtn_wrapper">
-				        <span class="play about_play"></span>
-				    </div>
-
-				</div>
-
-				{% include components/html5video.html %}
 			</div>
 		</div>
+
 	</div>
 </div>
 
 <div class="about_section_hero" style="background-image: url('{{ page.section_bg }}');">
 	<div class="frow centered">
-		<div class="about_section_text">
-			We live in Greenmount West
+		<div class="about_film">
+
+			<div class="video-overlay about_video_overlay">
+				<div class="video-container">
+
+					<button class="html5_close"><img src="/img/close-icon.png" /></button>
+
+					<iframe id="video" src="https://player.vimeo.com/video/201795592?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="video_btn_wrapper">
+				<div class="about_playbtn_wrapper">
+					<span class="play about_play"></span>
+				</div>
+				<div class="video_text">
+					(click to view video)
+				</div>
+			</div>
+
+			{% include components/html5video.html %}
+
 		</div>
 	</div>
 </div>
@@ -76,14 +79,14 @@ newsletter_bg: /img/gwbg@2x.png
 					House Rules:
 				</div>
 				<ul class="house_rules">
-					<li>relationships matter</li>
-					<li>bring the innovation!</li>
-					<li>authenticity is a must</li>
-					<li>equitable lens</li>
-					<li>bring your greatness</li>
-					<li>want to grow</li>
-					<li>seize opportunities</li>
-					<li>create, learn &amp; share</li>
+					<li class="potato">relationships matter</li>
+					<li class="potato">bring the innovation!</li>
+					<li class="potato">authenticity is a must</li>
+					<li class="potato">equitable lens</li>
+					<li class="potato">bring your greatness</li>
+					<li class="potato">want to grow</li>
+					<li class="potato">seize opportunities</li>
+					<li class="potato">create, learn &amp; share</li>
 				</ul>
 			</div>
 		</div>

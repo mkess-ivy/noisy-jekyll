@@ -110,17 +110,20 @@
         max-width: 700px;
     }
     @include desktop {
-        max-width: 950px;
+        max-width: 900px;
+    }
+    @include widescreen {
+        max-width: 1100px;
     }
     @include tv {
-        max-width: 1200px;
+        max-width: 1300px;
     }
 
 
     .about_content {
-        @include desktop {
-            width: 65%;
-        }
+        // @include desktop {
+        //     width: 65%;
+        // }
 
         .about_header {
             font-family: $handoriginals;
@@ -143,16 +146,29 @@
                 line-height: 85px;
             }
             @include desktop {
-                font-size: 40px;
+                font-size: 30px;
+                line-height: 2.5;
                 text-align: left;
+                max-width: 550px;
+                width: 45%;
             }
-            @include tv {
-                font-size: 48px;
-                line-height: 2;
+            @include widescreen {
+                font-size: 42px;
+                line-height: 2.5;
+                width: 50%;
             }
+
         }
         .about_red {
             color: $red;
+        }
+        .about_quote {
+            @include desktop {
+                width: 50%;
+            }
+            @include widescreen {
+                width: 40%;
+            }
         }
         .about_text {
             font-family: $font-italic;
@@ -168,6 +184,12 @@
             @include tablet {
                 font-size: 28px;
                 line-height: 38px;
+            }
+
+            @include desktop {
+                font-size: 22px;
+                line-height: 1.5;
+                padding: 0;
             }
         }
         .about_name {
@@ -189,23 +211,23 @@
     }
 }
 .about_film {
-    margin: 75px 0 150px;
+    // margin: 75px 0 150px;
+    margin: auto;
     position: relative;
-    width: 1000%;
+    width: 100%;
 
     @include desktop {
         width: 30%;
+
     }
 
     .video_btn_wrapper {
 
         // left: 50%;
-        left: 0;
-        right: 0;
-        position: absolute;
-        top: 35%;
-
-
+        // left: 0;
+        // right: 0;
+        // position: absolute;
+        // top: 35%;
 
         .about_playbtn_wrapper {
             position: relative;
@@ -236,12 +258,19 @@
                     height: 0;
                     border-style: solid;
                     border-width: 15px 0 15px 20px;
-                    border-color: transparent transparent transparent #000;
+                    border-color: transparent transparent transparent #fff;
                 }
                 &:hover {
                     background: $red !important;
                 }
             }
+        }
+        .video_text {
+            font-family: $font-italic;
+            font-weight: normal;
+            padding-top: 30px;
+            text-align: center;
+            text-transform: initial;
         }
     }
 }
@@ -252,7 +281,7 @@
 
 .about_section_hero {
     @extend %background-image;
-    height: 60vh;
+    height: 50vh;
 
     .about_section_text {
         font-family: $handoriginals;
@@ -304,7 +333,7 @@
     }
 
     @include tablet {
-        font-size: 35px;
+        font-size: 28px;
         line-height: 2;
     }
 

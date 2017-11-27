@@ -9,9 +9,6 @@ hero_img				: /img/hero-busstopbuddies-2.png
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-busstopbuddies.png
 
-[//]: # (Extra Components)
-component               : photofeed
-component_data          : busstopbuddies-feed
 ---
 <div class="single_post_wrapper">
     {% include components/single_post_meta.html

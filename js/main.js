@@ -116,27 +116,47 @@ $(document).ready(function(){
     $(window).scroll(function(){
         // var fromTopPx = 50; // distance to trigger
         var scroll = $(window).scrollTop();
-        if(scroll >= 250){
+        if(scroll >= 500){
             $('.nt_hero_bg').addClass('scrolled');
-            $('.nt_hero_bg').removeClass('scrolled-4');
+            $('.nt_hero_bg').removeClass('scrolled-2');
 
-        } else if (scroll >= 200) {
+        }else if (scroll >= 450) {
+            $('.nt_hero_bg').removeClass('scrolled-3');
+            $('.nt_hero_bg').addClass('scrolled-2');
+        }else if (scroll >= 400) {
+            $('.nt_hero_bg').removeClass('scrolled-4');
+            $('.nt_hero_bg').addClass('scrolled-3');
+        }else if (scroll >= 350) {
             $('.nt_hero_bg').removeClass('scrolled-5');
             $('.nt_hero_bg').addClass('scrolled-4');
-        }else if (scroll >= 150) {
+        }else if (scroll >= 300) {
             $('.nt_hero_bg').removeClass('scrolled-6');
             $('.nt_hero_bg').addClass('scrolled-5');
-        }else if (scroll >= 100) {
+        }else if (scroll >= 250) {
             $('.nt_hero_bg').removeClass('scrolled-7');
             $('.nt_hero_bg').addClass('scrolled-6');
-        }else if (scroll >= 50) {
+        }else if (scroll >= 200) {
+            $('.nt_hero_bg').removeClass('scrolled-8');
             $('.nt_hero_bg').addClass('scrolled-7');
+        }else if (scroll >= 150) {
+            $('.nt_hero_bg').removeClass('scrolled-9');
+            $('.nt_hero_bg').addClass('scrolled-8');
+        }else if (scroll >= 100) {
+            $('.nt_hero_bg').removeClass('scrolled-10');
+            $('.nt_hero_bg').addClass('scrolled-9');
+        }else if (scroll >= 50) {
+            $('.nt_hero_bg').addClass('scrolled-10');
         }else {
             $('.nt_hero_bg').removeClass('scrolled');
+            $('.nt_hero_bg').removeClass('scrolled-2');
+            $('.nt_hero_bg').removeClass('scrolled-3');
             $('.nt_hero_bg').removeClass('scrolled-4');
             $('.nt_hero_bg').removeClass('scrolled-5');
             $('.nt_hero_bg').removeClass('scrolled-6');
             $('.nt_hero_bg').removeClass('scrolled-7');
+            $('.nt_hero_bg').removeClass('scrolled-8');
+            $('.nt_hero_bg').removeClass('scrolled-9');
+            $('.nt_hero_bg').removeClass('scrolled-10');
         };
     });
 

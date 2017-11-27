@@ -7,6 +7,10 @@ permalink: /about/
 hero_bg: /img/hero_1.jpg
 section_bg: /img/gwbg@2x_red.jpg
 newsletter_bg: /img/gwbg@2x.png
+
+[//]: #Video
+video_poster: /img/gwbg@2x_red.jpg
+video: /video/monuments.mp4
 ---
 <div class="nt_hero_bg">
 	<div class="frow centered">
@@ -43,7 +47,12 @@ newsletter_bg: /img/gwbg@2x.png
 	</div>
 </div>
 
-<div class="about_section_hero" style="background-image: url('{{ page.section_bg }}');">
+
+<!-- <div class="about_section_hero" style="background-image: url('{{ page.section_bg }}');"> -->
+<div class="about_section_hero">
+	<video autoplay loop id="video-background-about" muted plays-inline poster="{{ page.video_poster }}">
+		<source src="{{ page.video }}" type="video/mp4">
+	</video>
 	<div class="frow centered">
 		<div class="about_film">
 
@@ -92,6 +101,7 @@ newsletter_bg: /img/gwbg@2x.png
 		</div>
 	</div>
 </div>
+
 
 <div class="about_bg_offwhite">
 	<div class="nt_about_wrapper partners_wrapper">

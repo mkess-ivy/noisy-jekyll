@@ -98,6 +98,11 @@
     background: $white;
     color: $black;
 }
+.house_rules_section {
+    @include desktop {
+        width: 50%;
+    }
+}
 .nt_about_wrapper {
     padding: 50px 20px;
     margin: 0 auto;

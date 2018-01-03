@@ -134,26 +134,28 @@ TABLE OF CONTENTS
 
 // SINGLE POST META
 .single_post_wrapper {
-    min-height: calc(100vh - 205px) !important;
-    padding: 150px 25px;
+    min-height: calc(100vh - 125px) !important;
+    // padding: 150px 25px;
+    padding: 75px 25px 0;
     // position: relative;
 
     @include small {
 		// min-height: calc(100vh - 75px) !important;
+        padding: 100px 25px 0;
 	}
 
     @include palm {
-        min-height: calc(100vh - 275px) !important;
+        // min-height: calc(100vh - 275px) !important;
         // max-width: 615px;
     }
 
     @include tablet {
-        padding: 150px 50px;
+        padding: 125px 50px 0;
         max-width: 750px;
     }
 
     @include laptop {
-		min-height: calc(100vh - 88px) !important;
+		min-height: calc(100vh - 100px) !important;
 	}
 
     @include desktop {
@@ -162,8 +164,9 @@ TABLE OF CONTENTS
 
     .single_post_title {
         font-size: 40px;
-        line-height: 44px;
-        padding-bottom: 30px;
+        line-height: 1;
+        // line-height: 44px;
+        padding-bottom: 10px;
 
         @include small {
             font-size: 45px;
@@ -178,6 +181,7 @@ TABLE OF CONTENTS
         @include tablet {
             font-size: 72px;
             line-height: 72px;
+            padding-bottom: 30px;
         }
         @include desktop {
             font-size: 100px;
@@ -185,9 +189,17 @@ TABLE OF CONTENTS
         }
     }
 
+    .single_post_meta {
+        padding-bottom: 25px;
+
+        @include small {
+            padding-bottom: 0;
+        }
+    }
+
     p {
         @extend %font-italic;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: normal;
         line-height: 1.4;
         text-transform: initial;

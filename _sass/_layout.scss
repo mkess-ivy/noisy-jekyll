@@ -52,6 +52,13 @@ body.noScroll { /* ...or body.dialogShowing */
     margin: -20vh auto 0; /* clears the overflow content's header for bg sliders */
     left: 0;
     right: 0;
+
+	@include desktop {
+		margin-top: 0;
+	}
+	@include widescreen {
+		margin-top: -15vh;
+	}
 }
 .wrapper_overlay_photofeed {
 	@extend .wrapper_overlay;

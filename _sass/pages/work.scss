@@ -113,11 +113,11 @@
 	}
 }
 .full_height_group {
-	height: calc(100vh - 95px) !important;
+	height: calc(100vh - 110px) !important;
 	height: auto;
 
 	@include small {
-		height: calc(100vh - 75px) !important;
+		// height: calc(100vh - 75px) !important;
 	}
 	@include laptop {
 		height: calc(100vh - 88px) !important;

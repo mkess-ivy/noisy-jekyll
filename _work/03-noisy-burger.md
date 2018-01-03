@@ -5,7 +5,7 @@ title 					: "Noisy Burger"
 
 [//]: # (Background Video)
 video_poster			: /img/hero-noisyburger-1.png
-video 					: /video/noisyburger.mp4
+video 					: /video/nb.mp4
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyburger.png
@@ -16,8 +16,7 @@ component_data          : noisyburger-press
 ---
 <div class="single_post_wrapper">
 {% include components/single_post_meta.html
-    title="Welcome to Noisy Burger"
-    text="<p>A one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School</p>
-    <p>April 26 - May 2 2017<br/>R. House, Baltimore</p>"
+    title="Welcome to Noisy Burger!"
+    text="<p>Noisy Burger! is a one week pop-up restaurant created by students at Mergenthaler Vocational Technical High School. Students developed concept, menu, and operated the restaurant in the pop-up stall at R. House located in Remington. Noisy Burger set records for weekend sales for pop-up and permanent locations. Be on the lookout for future restaurant concepts!</p>"
 %}
 </div>

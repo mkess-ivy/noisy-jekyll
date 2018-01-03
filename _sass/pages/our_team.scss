@@ -18,7 +18,7 @@
 				background-position: top center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				height: calc(49vh - 55px);
+				height: calc(55vh - 55px);
 
 				@include widescreen {
 					height: 90vh;
@@ -28,10 +28,10 @@
 	}
 	.team_member_info_mk {
 		background: $black;
-		height: 45vh;
+		height: 50vh;
 		position: absolute;
 		right: 0;
-		top:35vh;
+		top:40vh;
 		width: 100%;
 		z-index: 2;
 
@@ -49,32 +49,53 @@
 		left: 0;
 		right: auto;
 		top:0;
-
+		height: 50vh;
+		@include tablet {
+			// top: 45vh;
+		}
+		@include widescreen {
+			height: 90vh;
+			top:0;
+			width: 50%;
+		}
 	}
 	.team_member_meta {
-		padding: 15px 30px;
-		width:80%;
+		padding: 15px 0px;
+		width:85%;
 
 		@include tablet {
 			padding: 50px;
 			// width:90%;
 		}
 		@include desktop {
-			width: 70%;
+			width: 85%;
 		}
 		@include widescreen {
 			padding: 20px;
 		}
 
 		.team_member_name_mk {
-			font-size: 30px;
+			font-size: 20px;
 			line-height: 30px;
-			padding-bottom: 25px;
+			padding-bottom: 15px;
+
+			@include small {
+				font-size: 40px;
+				line-height: 1;
+				padding-right: 35px;
+			}
 
 			@include tablet {
 				font-size:60px;
-				line-height: 70px;
+				// line-height: 70px;
 				padding-bottom: 15px;
+				padding-right: 45px;
+			}
+
+			@include laptop {
+				padding-right: 0;
+				max-width: 500px;
+				font-size: 70px;
 			}
 
 			@include desktop {
@@ -90,10 +111,14 @@
 
 		}
 		.team_member_summary_mk {
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 20px;
 			padding-bottom: 25px;
 			text-transform: initial;
+
+			@include small {
+				font-size: 16px;
+			}
 
 			@include tablet {
 				font-size: 22px;

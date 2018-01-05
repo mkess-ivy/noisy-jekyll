@@ -1,6 +1,6 @@
 .main_play_wrapper {
   width: 100%;
-  height: calc(100vh - 50px);
+  // height: calc(100vh - 50px);
   color: white;
   // background-image: url('/img/hero-noisyfilms.jpg');
   background-size: cover;
@@ -8,15 +8,25 @@
   background-position: center;
   position: relative;
 
+  // 010318 Fix
+  height: calc(120vh - 50px);
+  @include tablet {
+      height: 95vh;
+  }
   @include laptop {
       // height: calc(100vh - 88px);
   }
+}
+.noisyfilms_wrapper {
+    @include tablet {
+        min-height: 70vh !important;
+    }
 }
 .video-overlay {
   width: 100%;
   height: 100vh;
   /* 50% opacity black */
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.9);
   /* Stays locked on scroll */
   position: fixed;
   /* On top of the rest*/
@@ -29,6 +39,7 @@
   transition: opacity .5s;
   -webkit-transition: opacity .5s;
   z-index: 200;
+  top: 0;
 }
 .video-container {
   width: 95%;
@@ -38,6 +49,10 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 
+  @include tv-1650 {
+      width: 85%;
+      max-width: 1400px;
+  }
 }
 .html5_close {
   width: 45px;
@@ -55,6 +70,11 @@
       // right: 7vw;
   }
 
+  @include tv-1650 {
+      top: 5px;
+      right: 0vw;
+  }
+
   img {
       width: 100%;
   }
@@ -69,6 +89,7 @@
 .play-btn-wrapper {
     position: relative;
     margin: auto;
+    width: 100%;
 
     @include laptop {
         // float: left;
@@ -152,6 +173,9 @@
     font-family: $font-italic;
     text-transform: initial;
     font-weight: normal;
+
+    // 010318 Fix
+    margin-bottom: 25px;
 
     @include laptop {
         font-size: 26px;

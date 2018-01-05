@@ -146,6 +146,9 @@ video: /video/monuments.mp4
 				margin: 0 auto;
 				width: 100%;
 			}
+			#mc_embed_signup .mc-field-group input {
+				color: black;
+			}
 			@media screen and (max-width: 500px) {
 				#mc_embed_signup {
 					max-width: 480px;

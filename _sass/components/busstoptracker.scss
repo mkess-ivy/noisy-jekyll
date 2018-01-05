@@ -7,7 +7,7 @@
     border: 5px solid $white;
     margin: auto;
     width: 85%;
-    height: 500px;
+    // height: 500px;
     position: absolute;
     text-align: center;
     left: 0;
@@ -16,6 +16,9 @@
     // top: 7%;
     bottom: 0;
     z-index: 400;
+    // 010318 Fix
+    top: 0;
+    height: 400px;
 
     @include palm {
         width: 470px;
@@ -28,6 +31,7 @@
 
     @include tablet {
         top: 0px;
+        height: 500px;
     }
 }
 .tracker-close {
@@ -45,17 +49,20 @@
     }
 
     .modal-title {
-
-        font-size: 20px;
         text-align: left;
-        line-height: 26px;
+        // line-height: 26px;
         text-align: center;
         margin-bottom: 10px;
+        // 010318 Fix
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 0 20px;
 
         @include palm {
             float: left;
             width: 60%;
             text-align: left;
+            font-size: 20px;
         }
     }
     .modal-img {
@@ -66,6 +73,8 @@
 
         img {
             width: 50px;
+            // 010318 Fix
+            width: 35px;
 
             @include palm {
                 width: 100px;
@@ -75,22 +84,30 @@
     }
 }
 .modal-week {
-    font-size: 32px;
+    // font-size: 32px;
     text-align: left;
     padding-left: 15px;
-    width: 80%;
-    line-height: 40px;
+    // width: 80%;
+    // line-height: 40px;
+    // 010318 Fix
+    font-size: 24px;
+    width: 65%;
+    max-width: 170px;
+    line-height: 1;
 
     @include palm {
         font-size: 54px;
-        // width: 90%;
-        line-height: 60px;
+        width: 80%;
+        // line-height: 60px;
+        max-width: none;
     }
 }
 .modal-status {
     width: 90%;
     margin: 15px auto;
-    text-align: left;
+    // text-align: left;
+    // 010308 Fix
+    text-align: center;
 
     @include palm {
         width: 245px;
@@ -99,6 +116,12 @@
     li {
         display: inline-block;
         margin-right: 5px;
+        // 010318 Fix
+        font-size:13px;
+
+        @include palm {
+            font-size: 16px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -113,12 +136,16 @@
 }
 .light-log {
     @extend .light;
-    margin: 8px 0 8px 10px;
+    margin: 4px 0 8px 10px;
     width: 10px;
     height: 10px;
     border: 1px solid $white;
     display: inline-block;
     vertical-align: top;
+
+    @include palm {
+        margin: 8px 0 8px 10px;
+    }
 }
 .green-light {
     background: $tracker-green;
@@ -135,7 +162,11 @@
     padding: 10px 0;
 
     ul li {
+        font-size: 13px;
 
+        @include palm {
+            font-size: 16px;
+        }
         @include tablet {
             display: inline-block;
             margin: 10px 13px;
@@ -144,16 +175,25 @@
     }
 }
 .modal-share {
-    padding: 15px 0 0 15px;
+    // padding: 15px 0 0 15px;
     text-align: left;
-    font-size: 16px;
+    // font-size: 16px;
+
+    // 010318 Fix
+    padding: 10px 0 0 15px;
+    font-size: 12px;
+
+    @include palm {
+        font-size: 18px;
+        padding: 15px 0 0 15px;
+    }
 
     @include tablet {
         font-size: 20px;
     }
 
     img {
-        display: block;
+        display: inline;
 
         @include tablet {
             display: inline-block !important;
@@ -164,9 +204,13 @@ a.twitter-share {
     text-transform: initial;
     color: $white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     &:hover {
         color: $red;
+    }
+
+    @include palm {
+        font-size: 16px;
     }
 }
 .tracker_wrapper {

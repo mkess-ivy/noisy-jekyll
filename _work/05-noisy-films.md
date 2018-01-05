@@ -9,7 +9,7 @@ hero_img				: /img/bigcity.png
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyfilms.jpg
 ---
-<div class="single_post_wrapper">
+<div class="single_post_wrapper noisyfilms_wrapper">
 	{% 	include components/single_post_meta.html
 		title="Now Playing"
 	%}

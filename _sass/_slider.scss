@@ -3,9 +3,6 @@
 	margin-left: 15px;
 	z-index: 100;
 
-	@include small {
-		// height: calc(100vh - 75px) !important;
-	}
 	@include palm {
 		margin-left: 50px;
 		width: 425px;

@@ -50,9 +50,7 @@
 		right: auto;
 		top:0;
 		height: 50vh;
-		@include tablet {
-			// top: 45vh;
-		}
+
 		@include widescreen {
 			height: 90vh;
 			top:0;
@@ -65,7 +63,6 @@
 
 		@include tablet {
 			padding: 50px;
-			// width:90%;
 		}
 		@include desktop {
 			width: 85%;
@@ -87,7 +84,6 @@
 
 			@include tablet {
 				font-size:60px;
-				// line-height: 70px;
 				padding-bottom: 15px;
 				padding-right: 45px;
 			}
@@ -95,13 +91,7 @@
 			@include laptop {
 				padding-right: 0;
 				max-width: 500px;
-				// font-size: 70px;
 			}
-
-			// @include desktop {
-			// 	font-size: 80px;
-			// 	line-height: 80px;
-			// }
 
 			@include widescreen {
 				font-size:80px;
@@ -125,11 +115,6 @@
 				line-height: 28px;
 				padding-bottom: 15px;
 			}
-			// @include desktop {
-			// 	font-size: 28px;
-			// 	line-height: 36px;
-			// 	padding-bottom: 35px;
-			// }
 			@include widescreen {
 				font-size: 28px;
 				line-height: 34px;

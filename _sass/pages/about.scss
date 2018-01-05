@@ -16,7 +16,7 @@
         height: calc(90vh - 88px);
     }
 }
-// Background Image Change on Scroll
+// - Background Image Change on Scroll
 .nt_hero_bg.scrolled{
     background-image: url('/img/bg_mervo.jpg');
 }
@@ -124,12 +124,7 @@
         max-width: 1300px;
     }
 
-
     .about_content {
-        // @include desktop {
-        //     width: 65%;
-        // }
-
         .about_header {
             font-family: $handoriginals;
             font-size: 22px;
@@ -159,7 +154,6 @@
             }
             @include widescreen {
                 font-size: 42px;
-                line-height: 2.5;
                 width: 50%;
             }
 
@@ -188,12 +182,10 @@
 
             @include tablet {
                 font-size: 28px;
-                line-height: 38px;
             }
 
             @include desktop {
                 font-size: 22px;
-                line-height: 1.5;
                 padding: 0;
             }
         }
@@ -216,7 +208,6 @@
     }
 }
 .about_film {
-    // margin: 75px 0 150px;
     margin: auto;
     position: relative;
     width: 100%;
@@ -227,13 +218,6 @@
     }
 
     .video_btn_wrapper {
-
-        // left: 50%;
-        // left: 0;
-        // right: 0;
-        // position: absolute;
-        // top: 35%;
-
         .about_playbtn_wrapper {
             position: relative;
 
@@ -279,10 +263,6 @@
         }
     }
 }
-// .about_video_overlay {
-//     top: 0;
-//     background: rgba(0,0,0,0.9) !important;
-// }
 
 .about_section_hero {
     @extend %background-image;
@@ -455,7 +435,6 @@
     @include tablet {
         padding: 0 20px 0 0;
     }
-
 }
 
 .newsletter_wrapper {

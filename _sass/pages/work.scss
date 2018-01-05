@@ -56,27 +56,23 @@
 
 	li {
 		font-size: 35px;
-		line-height: 35px;
+		line-height: 1;
 		width: auto;
 		margin-bottom: 25px;
 
 		@include small {
 			font-size: 44px;
-			line-height: 46px;
 		}
 		@include palm {
 			font-size: 55px;
-			line-height: 60px;
 		}
 
 		@include tablet {
 			font-size: 70px;
-			line-height: 70px;
 		}
 
 		@include desktop {
 			font-size: 85px;
-			line-height: 80px;
 			margin-bottom: 35px;
 		}
 
@@ -87,8 +83,6 @@
 	}
 }
 .js_bg_receiver_work.hover {
-  // display: none;
-  // @include tablet {
     height: calc(100vh - 50px);
     width: 100%;
     background-color: rgba(228,77,78,0.6);
@@ -101,24 +95,18 @@
     left: 0;
     bottom: 0;
 	filter: contrast(100%) grayscale(125%);
-	// top: 50px;
-  // }
 }
 .js_hover_trigger a {
 	position: relative;
 
 	&:hover {
 		color: $red;
-		// border-bottom: 2px solid;
 	}
 }
 .full_height_group {
 	height: calc(100vh - 110px) !important;
 	height: auto;
 
-	@include small {
-		// height: calc(100vh - 75px) !important;
-	}
 	@include laptop {
 		height: calc(100vh - 88px) !important;
 	}

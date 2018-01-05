@@ -49,10 +49,7 @@ video: /video/monuments.mp4
 
 
 <div class="about_section_hero" style="background-image: url('{{ page.section_bg }}');">
-<!-- <div class="about_section_hero"> -->
-	<!-- <video autoplay loop id="video-background-about" muted plays-inline poster="{{ page.video_poster }}">
-		<source src="{{ page.video }}" type="video/mp4">
-	</video> -->
+
 	<div class="frow centered">
 		<div class="about_film">
 
@@ -159,10 +156,6 @@ video: /video/monuments.mp4
 				#mc_embed_signup {
 					max-width: 550px;
 				}
-
-				/*#mc_embed_signup h2 {
-					font-size: 40px;
-				}*/
 			}
 
 			@media screen and (min-width: 1024px) {
@@ -196,9 +189,6 @@ video: /video/monuments.mp4
 				@include tablet {
 					width: 45%;
 				}
-			}
-			#mc_embed_signup #email {
-				/*padding-right: 50px;*/
 			}
 			#mc_embed_signup #first-name {
 				float: right;

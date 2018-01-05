@@ -135,19 +135,11 @@ TABLE OF CONTENTS
 // SINGLE POST META
 .single_post_wrapper {
     min-height: calc(100vh - 110px) !important;
-    // padding: 150px 25px;
     padding: 75px 25px 0;
-    // position: relative;
 
     @include small {
-		// min-height: calc(100vh - 75px) !important;
         padding: 100px 25px 0;
 	}
-
-    @include palm {
-        // min-height: calc(100vh - 275px) !important;
-        // max-width: 615px;
-    }
 
     @include tablet {
         padding: 125px 50px 0;
@@ -165,27 +157,22 @@ TABLE OF CONTENTS
     .single_post_title {
         font-size: 40px;
         line-height: 1;
-        // line-height: 44px;
         padding-bottom: 10px;
 
         @include small {
             font-size: 45px;
-            line-height: 48px;
         }
 
         @include palm {
             font-size: 60px;
-            line-height: 60px;
         }
 
         @include tablet {
             font-size: 72px;
-            line-height: 72px;
             padding-bottom: 30px;
         }
         @include desktop {
             font-size: 100px;
-            line-height: 95px;
         }
     }
 

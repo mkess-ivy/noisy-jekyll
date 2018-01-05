@@ -7,30 +7,21 @@
     border: 5px solid $white;
     margin: auto;
     width: 85%;
-    // height: 500px;
     position: absolute;
     text-align: center;
     left: 0;
-    // left: 7%;
     right: 0;
-    // top: 7%;
     bottom: 0;
     z-index: 400;
-    // 010318 Fix
     top: 0;
     height: 400px;
 
     @include palm {
         width: 470px;
-        top: 0px;
         height: 550px;
-        // left: 50%;
-        // -webkit-transform: translateX(-50%);
-        // transform: translateX(-50%)
     }
 
     @include tablet {
-        top: 0px;
         height: 500px;
     }
 }
@@ -49,11 +40,8 @@
     }
 
     .modal-title {
-        text-align: left;
-        // line-height: 26px;
         text-align: center;
         margin-bottom: 10px;
-        // 010318 Fix
         font-size: 16px;
         line-height: 1.2;
         padding: 0 20px;
@@ -72,8 +60,6 @@
         }
 
         img {
-            width: 50px;
-            // 010318 Fix
             width: 35px;
 
             @include palm {
@@ -84,12 +70,8 @@
     }
 }
 .modal-week {
-    // font-size: 32px;
     text-align: left;
     padding-left: 15px;
-    // width: 80%;
-    // line-height: 40px;
-    // 010318 Fix
     font-size: 24px;
     width: 65%;
     max-width: 170px;
@@ -98,15 +80,12 @@
     @include palm {
         font-size: 54px;
         width: 80%;
-        // line-height: 60px;
         max-width: none;
     }
 }
 .modal-status {
     width: 90%;
     margin: 15px auto;
-    // text-align: left;
-    // 010308 Fix
     text-align: center;
 
     @include palm {
@@ -116,7 +95,6 @@
     li {
         display: inline-block;
         margin-right: 5px;
-        // 010318 Fix
         font-size:13px;
 
         @include palm {
@@ -175,11 +153,7 @@
     }
 }
 .modal-share {
-    // padding: 15px 0 0 15px;
     text-align: left;
-    // font-size: 16px;
-
-    // 010318 Fix
     padding: 10px 0 0 15px;
     font-size: 12px;
 
@@ -241,12 +215,10 @@ a.twitter-share {
   fill: white;
   position: absolute;
   right: 0;
-  /* Bring above video */
   top: -30px;
 }
 
 .modal-close:hover {
-  /* 50% opacity white */
   fill: rgba(255,255,255,0.5);
   cursor: pointer;
 }

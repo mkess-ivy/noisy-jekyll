@@ -69,10 +69,23 @@ body.noScroll { /* ...or body.dialogShowing */
 	height: 125vh !important;
 }
 
+// Not working out for Firefox
 .flex-centered {
 	height: 100%;
 	justify-content: flex-start !important;
 	align-items: center;
+}
+
+// Work around for Frow Firefox
+.wrap-frow-content {
+	@extend .wrap_my_slide_primary;
+	height: 100vh !important;
+	width: 100%;
+}
+.wrap-frow-content-work {
+	@extend .wrap_my_slide_primary;
+	width: 100%;
+	height: calc(100vh - 88px) !important;
 }
 
 // HERO

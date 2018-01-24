@@ -48,17 +48,22 @@
 	}
 }
 .brand_list {
-	margin: 0 30px;
+	// margin: 0 30px;
 
 	@include tablet {
-		margin-left: 50px;
+		// margin-left: 50px;
 	}
 
 	li {
-		font-size: 35px;
+		font-size: 28px;
 		line-height: 1;
 		width: auto;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
+		// margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		@include small {
 			font-size: 44px;

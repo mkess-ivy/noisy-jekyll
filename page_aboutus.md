@@ -173,7 +173,7 @@ video: /video/monuments.mp4
 				padding: 0;
 			}
 			#mc_embed_signup h2 {
-				font-family: 'Hand Originals', Helvetica, sans-serif;
+				font-family: 'HandOriginals', Helvetica, sans-serif;
 				font-size: 22px;
 				font-weight: normal;
 				text-align: center;

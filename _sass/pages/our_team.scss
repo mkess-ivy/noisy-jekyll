@@ -2,23 +2,61 @@
 .team_row_2 {
 	position: relative;
 	@extend .clearfix;
+	margin-top: 25px;
+
+	@include widescreen {
+		margin-top: 0;
+	}
+
+	// margin-top: 50px;
 
 	.team_member_mk {
 		width: 100%;
 
+		// visible on mobile
+		// height: 70vh;
+		height: 100vh;
+		position: relative;
+		margin-bottom: 100px;
+
+		// hidden on desktop
+
+		@include tablet {
+			margin-bottom: 0;
+		}
+
 		@include widescreen {
 			float: left;
 			width: 50%;
+			position: initial;
+			height: auto;
 		}
 
 		.team_member_img_wrapper_mk {
-			position: relative;
+
+			// visible on mobile
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 70vh;
+
+			@include widescreen {
+				// hidden on desktop
+				position: relative;
+				height: auto;
+			}
 
 			.team_member_img_mk {
 				background-position: top center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				height: calc(55vh - 55px);
+				// height: calc(55vh - 55px);
+				height: 70vh;
+
+				// visible on mobile
+
+
+				// hidden on desktop
 
 				@include widescreen {
 					height: 90vh;
@@ -27,29 +65,46 @@
 		}
 	}
 	.team_member_info_mk {
-		background: $black;
-		height: 50vh;
-		position: absolute;
-		right: 0;
-		top:40vh;
+
+		// visible on mobile
+		// display: block !important;
+		display: block;
+		position: relative;
+		// top:20vh;
+		top:55vh;
 		width: 100%;
+		clear: both;
 		z-index: 2;
 
 		@include tablet {
 			top: 45vh;
 		}
+
 		@include widescreen {
 			height: 90vh;
 			top:0;
 			width: 50%;
+			// display: none !important;
+
+			// hidden on desktop 1200px
+			position: absolute;
+			// height: 70vh;
+			right: 0;
+			// top:40vh;
+			background: $black;
 		}
 	}
 	.team_member_info_even_mk {
 		@extend .team_member_info_mk;
 		left: 0;
 		right: auto;
-		top:0;
+
 		height: 50vh;
+
+		// visible on mobile
+
+		// hidden on desktop
+		// top:0;
 
 		@include widescreen {
 			height: 90vh;
@@ -58,7 +113,7 @@
 		}
 	}
 	.team_member_meta {
-		padding: 15px 0px;
+		// padding: 15px 0px;
 		width:85%;
 
 		@include tablet {
@@ -72,9 +127,15 @@
 		}
 
 		.team_member_name_mk {
-			font-size: 20px;
-			line-height: 30px;
+			// font-size: 20px;
+			font-size: 28px;
+			line-height: 1.1;
 			padding-bottom: 15px;
+			padding-right: 50px;
+
+			@include tiny {
+				font-size: 34px;
+			}
 
 			@include small {
 				font-size: 40px;
@@ -102,13 +163,17 @@
 		}
 		.team_member_summary_mk {
 			font-size: 14px;
-			line-height: 20px;
+			line-height: 1.2;
 			padding-bottom: 25px;
 			text-transform: initial;
 
-			@include small {
-				font-size: 16px;
+			@include tiny {
+				font-size: 18px;
 			}
+
+			// @include small {
+			// 	font-size: 16px;
+			// }
 
 			@include tablet {
 				font-size: 22px;
@@ -141,11 +206,17 @@
 	}
 }
 .btn_more {
-	background: transparent;
-	border: 0;
-	left: 20px;
-	position: absolute;
-	top: 40px;
+
+	// display: none;
+
+	@include widescreen {
+		// display: block;
+		background: transparent;
+		border: 0;
+		left: 20px;
+		position: absolute;
+		top: 40px;
+	}
 
 	@include widescreen {
 		left: 60px;
@@ -162,5 +233,21 @@
 		@include widescreen {
 			width: auto;
 		}
+	}
+}
+#btn_moreA,
+#btn_moreB {
+	display: none;
+
+	@include widescreen {
+		display: block;
+	}
+}
+#btn_more_close,
+#btn_more_closeB {
+	display: none;
+
+	@include widescreen {
+		// display: inherit;
 	}
 }

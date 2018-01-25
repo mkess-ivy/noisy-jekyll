@@ -78,41 +78,92 @@ $(document).ready(function(){
 
     // Team Member Information
     // see refactored codepen: https://codepen.io/mkess-ivy/pen/LOjxqb
-    $('.js-openModalA').hide();
-    $('#btn_more_close',this).hide();
-    $('#btn_moreA').click(function(e) {
-        e.preventDefault();
-        $('.js-openModalA').fadeIn('show');
-        $(this).fadeOut('hide');
-        $('#btn_more_close').fadeIn('show');
-    });
-    $('#btn_more_close').click(function(e) {
-        e.preventDefault();
-        $('.js-openModalA').fadeOut('hide');
-        $(this).fadeOut('hide');
-        $('#btn_moreA').fadeIn('show');
-    });
-    $('.js-openModalB').hide();
-    $('#btn_more_closeB',this).hide();
-    $('#btn_moreB').click(function(e) {
-        e.preventDefault();
-        $('.js-openModalB').fadeIn('show');
-        $(this).fadeOut('hide');
-        $('#btn_more_closeB').fadeIn('show');
-    });
-    $('#btn_more_closeB').click(function(e) {
-        e.preventDefault();
-        $('.js-openModalB').fadeOut('hide');
-        $(this).fadeOut('hide');
-        $('#btn_moreB').fadeIn('show');
-    });
+    
+    // $('.js-openModalA').hide();
+    // $('#btn_more_close',this).hide();
+    // $('#btn_moreA').click(function(e) {
+    //     e.preventDefault();
+    //     $('.js-openModalA').fadeIn('show');
+    //     $(this).fadeOut('hide');
+    //     $('#btn_more_close').fadeIn('show');
+    // });
+    // $('#btn_more_close').click(function(e) {
+    //     e.preventDefault();
+    //     $('.js-openModalA').fadeOut('hide');
+    //     $(this).fadeOut('hide');
+    //     $('#btn_moreA').fadeIn('show');
+    // });
+    // $('.js-openModalB').hide();
+    // $('#btn_more_closeB',this).hide();
+    // $('#btn_moreB').click(function(e) {
+    //     e.preventDefault();
+    //     $('.js-openModalB').fadeIn('show');
+    //     $(this).fadeOut('hide');
+    //     $('#btn_more_closeB').fadeIn('show');
+    // });
+    // $('#btn_more_closeB').click(function(e) {
+    //     e.preventDefault();
+    //     $('.js-openModalB').fadeOut('hide');
+    //     $(this).fadeOut('hide');
+    //     $('#btn_moreB').fadeIn('show');
+    // });
+
+    // media query event handler
+    if (matchMedia) {
+      const mq = window.matchMedia("(min-width: 1200px)");
+      mq.addListener(WidthChange);
+      WidthChange(mq);
+    }
+
+    // media query change
+    function WidthChange(mq) {
+      if (mq.matches) {
+        // window width is at least 1200px
+
+        // Team Member Information
+        // see refactored codepen: https://codepen.io/mkess-ivy/pen/LOjxqb
+
+        $('.js-openModalA').hide();
+        $('#btn_more_close',this).hide();
+        $('#btn_moreA').click(function(e) {
+            e.preventDefault();
+            $('.js-openModalA').fadeIn('show');
+            $(this).fadeOut('hide');
+            $('#btn_more_close').fadeIn('show');
+        });
+        $('#btn_more_close').click(function(e) {
+            e.preventDefault();
+            $('.js-openModalA').fadeOut('hide');
+            $(this).fadeOut('hide');
+            $('#btn_moreA').fadeIn('show');
+        });
+        $('.js-openModalB').hide();
+        $('#btn_more_closeB',this).hide();
+        $('#btn_moreB').click(function(e) {
+            e.preventDefault();
+            $('.js-openModalB').fadeIn('show');
+            $(this).fadeOut('hide');
+            $('#btn_more_closeB').fadeIn('show');
+        });
+        $('#btn_more_closeB').click(function(e) {
+            e.preventDefault();
+            $('.js-openModalB').fadeOut('hide');
+            $(this).fadeOut('hide');
+            $('#btn_moreB').fadeIn('show');
+        });
+
+      } else {
+        // window width is less than 1200px
+      }
+
+    }
 
     // site preloader
     $(window).load(function(){
     	$('#preloader').fadeOut('slow',function(){$(this).remove();});
     });
 
-    // Background Image Change on scroll
+    // Background Image Change on scroll - ABOUT PAGE
     $(window).scroll(function(){
         // var fromTopPx = 50; // distance to trigger
         var scroll = $(window).scrollTop();

@@ -119,6 +119,10 @@
 	font-weight: bold;
 	text-decoration: none;
 
+	@include tiny {
+		font-size: 38px;
+	}
+
 	@include small {
 		font-size: 48px;
 		// line-height: 54px;

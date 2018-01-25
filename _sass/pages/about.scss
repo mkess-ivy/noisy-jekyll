@@ -1,9 +1,12 @@
 // About
 
 // - Masthead
+.nt_hero_bg_mobile {
+
+}
 .nt_hero_bg {
     @extend %background-image;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-image: url('/img/hero_1.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -13,6 +16,7 @@
     position: relative;
 
     @include laptop {
+        background-attachment: fixed;
         height: calc(90vh - 88px);
     }
 }
@@ -68,7 +72,7 @@
     }
 
     .hero_text_italic {
-        font-family: $font-italic;
+        @extend %font-italic;
         font-weight: normal;
     }
     .hero_text_bold {
@@ -170,8 +174,9 @@
             }
         }
         .about_text {
-            font-family: $font-italic;
+            @extend %font-italic;
             font-size: 22px;
+            font-style: italic;
             font-weight: normal;
             line-height: 1.5;
             text-transform: initial;
@@ -190,7 +195,7 @@
             }
         }
         .about_name {
-            font-family: $font-italic;
+            @extend %font-italic;
             font-weight: normal;
             padding-top: 40px;
             text-align: left;
@@ -255,7 +260,7 @@
             }
         }
         .video_text {
-            font-family: $font-italic;
+            @extend %font-italic;
             font-weight: normal;
             padding-top: 30px;
             text-align: center;

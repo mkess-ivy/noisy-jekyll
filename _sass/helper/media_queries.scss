@@ -1,3 +1,4 @@
+$on-tiny            : 375px;
 $on-small           : 400px;
 $on-palm            : 500px;
 $on-tablet          : 750px;
@@ -10,6 +11,12 @@ $on-tv-1920         : 1920px;
 
 // Media Query Mixins
 
+@mixin tiny {
+  @media screen and (min-width: #{$on-tiny}) {
+    @content;
+  }
+}
+
 @mixin small {
   @media screen and (min-width: #{$on-small}) {
     @content;
@@ -18,7 +25,7 @@ $on-tv-1920         : 1920px;
 
 @mixin palm {
   @media screen and (min-width: #{$on-palm}) {
-    @content; 
+    @content;
   }
 }
 

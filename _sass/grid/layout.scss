@@ -57,7 +57,7 @@ body.noScroll { /* ...or body.dialogShowing */
 		margin-top: 0;
 	}
 	@include widescreen {
-		margin-top: -15vh;
+		margin-top: -8vh;
 	}
 }
 .wrapper_overlay_photofeed {
@@ -77,15 +77,49 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 
 // Work around for Frow Firefox
+// Home Hero
+.wrap_my_slide_primary {
+	height: calc(100vh - 110px) !important;
+	margin: 0 15px !important;
+	z-index: 100;
+
+	@include palm {
+		width: 425px;
+	}
+	@include tablet {
+		// margin-left: 60px;
+		// margin-left: 100px;
+		width: 630px;
+		margin: 0 50px !important;
+	}
+	@include laptop {
+		height: calc(100vh - 85px) !important;
+	}
+	@include tv {
+		margin-left: 150px;
+	}
+}
 .wrap-frow-content {
-	@extend .wrap_my_slide_primary;
+	@extend .wrap-frow-content-work;
 	height: 100vh !important;
-	width: 100%;
+	width: auto !important;
+	margin: 0 15px !important;
+
+	@include tablet {
+		margin: 0 50px !important;
+	}
 }
 .wrap-frow-content-work {
-	@extend .wrap_my_slide_primary;
-	width: 100%;
-	height: calc(100vh - 88px) !important;
+	height: calc(100vh - 88px);
+	margin: 0 15px;
+
+	@include tablet {
+		margin: 0 50px;
+	}
+
+	@include desktop {
+		width: 850px;
+	}
 }
 
 // HERO

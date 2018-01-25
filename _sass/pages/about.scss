@@ -1,9 +1,5 @@
 // About
-
 // - Masthead
-.nt_hero_bg_mobile {
-
-}
 .nt_hero_bg {
     @extend %background-image;
     background-attachment: inherit;
@@ -20,6 +16,7 @@
         height: calc(90vh - 88px);
     }
 }
+
 // - Background Image Change on Scroll
 .nt_hero_bg.scrolled{
     background-image: url('/img/bg_mervo.jpg');

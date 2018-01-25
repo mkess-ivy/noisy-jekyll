@@ -87,8 +87,6 @@ body.noScroll { /* ...or body.dialogShowing */
 		width: 425px;
 	}
 	@include tablet {
-		// margin-left: 60px;
-		// margin-left: 100px;
 		width: 630px;
 		margin: 0 50px !important;
 	}

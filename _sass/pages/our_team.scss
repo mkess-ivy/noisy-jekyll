@@ -49,12 +49,8 @@
 		}
 	}
 	.team_member_info_mk {
-
-		// visible on mobile
-		// display: block !important;
 		display: block;
 		position: relative;
-		// top:20vh;
 		top:55vh;
 		width: 100%;
 		clear: both;
@@ -68,27 +64,17 @@
 			height: 90vh;
 			top:0;
 			width: 50%;
-			// display: none !important;
-
-			// hidden on desktop 1200px
 			position: absolute;
-			// height: 70vh;
 			right: 0;
-			// top:40vh;
 			background: $black;
 		}
 	}
+
 	.team_member_info_even_mk {
 		@extend .team_member_info_mk;
 		left: 0;
 		right: auto;
-
 		height: 50vh;
-
-		// visible on mobile
-
-		// hidden on desktop
-		// top:0;
 
 		@include widescreen {
 			height: 90vh;
@@ -97,21 +83,21 @@
 		}
 	}
 	.team_member_meta {
-		// padding: 15px 0px;
 		width:85%;
 
 		@include tablet {
 			padding: 50px;
 		}
+
 		@include desktop {
 			width: 85%;
 		}
+
 		@include widescreen {
 			padding: 20px;
 		}
 
 		.team_member_name_mk {
-			// font-size: 20px;
 			font-size: 28px;
 			line-height: 1.1;
 			padding-bottom: 15px;
@@ -155,15 +141,12 @@
 				font-size: 18px;
 			}
 
-			// @include small {
-			// 	font-size: 16px;
-			// }
-
 			@include tablet {
 				font-size: 22px;
 				line-height: 28px;
 				padding-bottom: 15px;
 			}
+
 			@include widescreen {
 				font-size: 28px;
 				line-height: 34px;
@@ -191,10 +174,7 @@
 }
 .btn_more {
 
-	// display: none;
-
 	@include widescreen {
-		// display: block;
 		background: transparent;
 		border: 0;
 		left: 20px;
@@ -230,8 +210,4 @@
 #btn_more_close,
 #btn_more_closeB {
 	display: none;
-
-	@include widescreen {
-		// display: inherit;
-	}
 }

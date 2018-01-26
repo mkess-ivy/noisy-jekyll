@@ -1,4 +1,4 @@
-/* Home */
+// Home
 .red_span {
 	color: $red;
 }
@@ -6,14 +6,14 @@
 	@extend %background-image;
 }
 
-/* Thank You */
+// Thank You
 .thank_you_wrapper {
   text-align: center;
   width: 70%;
   margin: auto;
 }
 
-/* Docs */
+// Docs
 .docs_item {
 	border: 1px solid #000;
 	padding: 15px;

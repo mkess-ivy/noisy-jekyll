@@ -1,4 +1,4 @@
-/* Work */
+// Work
 .work_item_wrapper {
 	margin-bottom: 3em;
 	width: 90%;
@@ -21,22 +21,28 @@
 		width: 220px;
 	}
 }
+
 .work_picture {
 	margin-bottom: 20px;
 }
+
 .work_picture img {
 	width: 100%;
 }
+
 .page_copy_wrapper {
 	width: 90%;
 }
+
 .page_copy_section {
 	margin-bottom: 100px;
 }
+
 .page_copy_title {
 	font-size: 28px;
 	margin-bottom: 40px;
 }
+
 .page_copy_text {
 	font-size: 18px;
 	text-transform: initial;
@@ -47,19 +53,14 @@
 		width: 85%;
 	}
 }
-.brand_list {
-	// margin: 0 30px;
 
-	@include tablet {
-		// margin-left: 50px;
-	}
+.brand_list {
 
 	li {
 		font-size: 28px;
 		line-height: 1;
 		width: auto;
 		margin-bottom: 20px;
-		// margin-bottom: 25px;
 
 		&:last-child {
 			margin-bottom: 0;

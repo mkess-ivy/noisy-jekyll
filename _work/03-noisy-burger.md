@@ -5,7 +5,7 @@ title 					: "Noisy Burger"
 
 [//]: # (Background Video)
 video_poster			: /img/hero-noisyburger-1.png
-video 					: /video/nb.mp4
+video 					: http://www.svncrwns.com/noisytenants_content/nb.mp4
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyburger.png

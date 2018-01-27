@@ -1,11 +1,12 @@
 <div class="wrapper_overlay ">
 	<div class="press_group clearfix">
 		<div class="press_group_title">press</div>
-		{% for single-press in site.data[page.component_data] %}
+
+		{% for single-press in site.press %}
 		<div class="press_single clear">
-			<div class="press_single_title"><a href="{{ single-press.url }}">{{ single-press.title }}</a></div>
+			<div class="press_single_title"><a href="{{ single-press.permalink }}">{{ single-press.title }}</a></div>
 			<div class="press_single_highlight">{{ single-press.publication }}</div>
-			<div class="press_single_highlight">{{ single-press.date }}</div>
+			<div class="press_single_highlight">{{ single-press.date | date:  "%B %d, %Y" }}</div>
 		</div>
 		{% endfor %}
 	</div>

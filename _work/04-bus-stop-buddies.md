@@ -5,7 +5,7 @@ title 					: "Bus Stop Buddies"
 
 [//]: # (Background Video)
 video_poster			: /img/hero-busstopbuddies-2.png
-video 					: /video/bsb.mp4
+video 					: http://www.svncrwns.com/noisytenants_content/bsb.mp4
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-busstopbuddies.png

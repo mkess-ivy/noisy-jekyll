@@ -5,7 +5,7 @@ title 					: "Bradford"
 
 [//]: # (Background Video)
 video_poster			: /img/bradford.jpg
-video 					: /video/bradford.mp4
+video 					: http://www.svncrwns.com/noisytenants_content/bradford.mp4
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/bradford.jpg

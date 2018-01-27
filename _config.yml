@@ -19,6 +19,10 @@ collections:
     output: true
     permalink: /work/:title/
 
+  press:
+    output: false
+
+
 
 # Extra Misc Stuff
 theme: minima

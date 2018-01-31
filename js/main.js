@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+    // Accordion
+    $('.accordion-item .heading').on('click', function(e) {
+        e.preventDefault();
+
+        // Add the correct active class
+        if($(this).closest('.accordion-item').hasClass('active')) {
+            // Remove active classes
+            $('.accordion-item').removeClass('active');
+        } else {
+            // Remove active classes
+            $('.accordion-item').removeClass('active');
+
+            // Add the active class
+            $(this).closest('.accordion-item').addClass('active');
+        }
+
+        // Show the content
+        var $content = $(this).next();
+        $content.slideToggle(100);
+        $('.accordion-item .content').not($content).slideUp('slow');
+    });
+
     // Smooth Scroll
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -78,7 +100,7 @@ $(document).ready(function(){
 
     // Team Member Information
     // see refactored codepen: https://codepen.io/mkess-ivy/pen/LOjxqb
-    
+
     // $('.js-openModalA').hide();
     // $('#btn_more_close',this).hide();
     // $('#btn_moreA').click(function(e) {

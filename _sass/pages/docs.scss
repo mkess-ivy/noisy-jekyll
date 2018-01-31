@@ -1,0 +1,224 @@
+// FAQs Section
+@function random-color($min: 0, $max: 255, $alpha: 1) {
+	@if $min < 0 {
+		$min: -1;
+	} @else {
+		$min: $min - 1;
+	}
+	@if $max > 255 {
+		$max: 256;
+	} @else {
+		$max: $max + 1;
+	}
+	$red: random($max) + $min;
+	$green: random($max) + $min;
+	$blue: random($max) + $min;
+	@return rgba($red, $green, $blue, $alpha);
+}
+
+$ultralight: #fefefe;
+$primary: random-color($min: 100, $max: 100);
+$primary-light: mix(#ffffff, $primary, 25%);
+$primary-dark: mix(#000000, $primary, 25%);
+
+
+.docs_wrapper {
+    width: 75%;
+    margin: 100px auto;
+}
+
+.docs_masthead {
+    .docs_masthead_title {
+        font-size: 40px;
+    }
+
+    p {
+        text-transform: initial;
+        font-size: 28px;
+        font-weight: 300;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            padding-bottom: 4px;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+
+.accordion_wrapper {
+    margin-top: 150px;
+
+    .accordion_title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .accordion-group {
+        margin-bottom: 75px;
+
+        .accordion-item {
+            // margin-bottom: 0px;
+
+            // .heading {
+            //     color: $white;
+            //     text-decoration: none;
+            //     text-transform: initial;
+            //     font-weight: 300;
+            //     font-size: 24px;
+            // }
+            // .content {
+            //     text-transform: initial;
+            //     font-weight: 300;
+            //     border: 1px solid;
+            //     padding: 5px 5px 5px 15px;
+            //     margin-top: 20px;
+            // }
+        }
+    }
+}
+
+// FAQ Section -- Accordion
+.accordion {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    position: relative;
+
+    &.active {
+        .heading {
+            color: $white;
+        }
+
+        .icon {
+            background: $ultralight;
+
+            &:before {
+                background: $primary-light;
+            }
+
+            &:after {
+                width: 0;
+            }
+        }
+    }
+
+    .heading {
+        display: block;
+        text-transform: initial;
+        text-decoration: none;
+        color: $white;
+        font-weight: 700;
+        font-size: 18px;
+		line-height: 1.4;
+        position: relative;
+        padding: 1.5rem 0.5rem 1.5rem 3.5rem;
+        transition: 0.3s ease-in-out;
+
+        @include palm {
+            font-size: 22px;
+        }
+
+		@include widescreen {
+			font-size: 24px;
+		}
+
+        &:hover {
+            color: $red;
+
+            .icon {
+                &:before,
+                &:after {
+                    background: $red;
+                }
+            }
+        }
+    }
+    .title {
+        margin-left: 20px;
+        color: $white;
+            text-decoration: none;
+            text-transform: initial;
+            font-weight: 300;
+            font-size: 24px;
+    }
+	.content {
+        display: none;
+        text-transform: initial;
+            font-weight: 300;
+            border: 1px solid;
+            padding: 5px 5px 5px 15px;
+            margin-top: 20px;
+
+		@include tablet {
+			margin-left: 5em;
+		}
+
+        p {
+            margin-top: 0;
+            font-size: 16px;
+			line-height: 1.4;
+			color: $white;
+
+			@include palm {
+				font-size: 18px;
+			}
+
+            @include laptop {
+                font-size: 22px;
+            }
+
+			@include widescreen {
+				font-size: 24px;
+			}
+
+			img {
+				width: 100%;
+			}
+        }
+
+        @include laptop {
+            line-height: 1.75;
+        }
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid $ultralight;
+        border-radius: 30px;
+        transform: translateY(-50%);
+
+        &:before,
+        &:after {
+            content: '';
+            width: .75rem;
+            height: 0.15rem;
+            background: $white;
+            position: absolute;
+            border-radius: 3px;
+            left: 50%;
+            top: 50%;
+            transition: 0.3s ease-in-out;
+            transform: translate(-50%, -50%);
+        }
+
+        &:after {
+            transform: translate(-50%, -50%)
+                       rotate(90deg);
+            z-index: -1;
+        }
+    }
+
+
+}

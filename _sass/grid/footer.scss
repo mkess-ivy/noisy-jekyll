@@ -72,3 +72,32 @@
 		padding-top: 4px;
 	}
 }
+
+.site_credits {
+	@include laptop {
+		width: auto;
+		display: inline-block;
+		margin-left: 10px;
+	}
+}
+.site_credits2 {
+	background-image: url('/img/crwn.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	width: 18px;
+	height: 19px;
+	margin: auto;
+
+	@include laptop {
+		display: inline-block;
+		margin: 0 0 0 10px;
+		vertical-align: middle;
+	}
+
+
+	&:hover {
+		background-image: url('/img/crwn_logo_animation.gif');
+	}
+}

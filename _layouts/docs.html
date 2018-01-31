@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    {% include layouts/head.html %}
+
+    <body>
+
+        {% include components/preloader.html %}
+
+        <div class="container clear">
+            <div class="hero-bg-black clearfix">
+
+                {% include layouts/header.html %}
+                <div class="docs_wrapper">
+
+                    <div class="docs_masthead">
+
+                        <div class="docs_masthead_title">{{ page.title }}</div>
+
+                        <p>
+                            A guide to managing the Noisy Tenants site.  Check below for a list of items that can be added or modified.  For any questions, <a href="mailto:montier.kess@gmail.com">email the site developer</a>.
+                        </p>
+                        <p>
+                            To make any updates, first you need to access: <a href="http://www.siteleaf.com">Siteleaf</a> and login with your github account.
+                        </p>
+                    </div>
+
+                    <section class="accordion_wrapper">
+
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">home</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","home" %}
+                                    <section class="accordion">
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                    </section>
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">
+
+                                    work</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","work" %}
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                </div>
+
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">
+
+                                    single work pages</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","single-work" %}
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">
+
+                                    about</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","about" %}
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">
+
+                                    our team</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","team" %}
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">
+
+                                    tracker</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","tracker" %}
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion_title">
+
+                                    social</div>
+                                    {% assign docs-category = site.docs | where:"docs-category","social" %}
+                                    {% for item in docs-category %}
+                                        {% include components/accordion-item.html %}
+                                    {% endfor %}
+                                </div>
+
+                    </section>
+
+                </div>
+
+            </div><!-- .hero-bg -->
+        </div> <!-- .container -->
+
+        {% include layouts/footer.html %}
+
+    </body>
+
+</html>

@@ -11,6 +11,9 @@ newsletter_bg: /img/emailbg.png
 [//]: #Video
 video_poster: /img/gwbg@2x_red.jpg
 video: /video/monuments.mp4
+
+[//]: #About Video ID
+about_video_id: '201795592'
 ---
 <div class="nt_hero_bg">
 	<div class="frow centered">
@@ -58,7 +61,7 @@ video: /video/monuments.mp4
 
 					<button class="html5_close"><img src="/img/close-icon.png" /></button>
 
-					<iframe id="video" src="https://player.vimeo.com/video/201795592?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe id="video" src="https://player.vimeo.com/video/{{ page.about_video_id }}?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
 			</div>
 

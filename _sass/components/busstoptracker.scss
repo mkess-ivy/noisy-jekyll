@@ -14,7 +14,7 @@
     bottom: 0;
     z-index: 400;
     top: 0;
-    height: 400px;
+    height: 430px;
 
     @include palm {
         width: 470px;
@@ -125,13 +125,13 @@
         margin: 8px 0 8px 10px;
     }
 }
-.green-light {
+.ontime-light {
     background: $tracker-green;
 }
-.yellow-light {
+.late-light {
     background: $tracker-yellow;
 }
-.red-light {
+.noshow-light {
     background: $tracker-red;
 }
 .modal-weekly-log {
@@ -154,12 +154,10 @@
 }
 .modal-share {
     text-align: left;
-    padding: 10px 0 0 15px;
     font-size: 12px;
 
     @include palm {
         font-size: 18px;
-        padding: 15px 0 0 15px;
     }
 
     @include tablet {
@@ -224,4 +222,44 @@ a.twitter-share {
 }
 .modal-show {
   opacity: 1;
+}
+
+// This is included in lower section of tracker
+.lower_tracker_grp {
+    padding: 10px 15px;
+
+    @include tablet {
+        padding: 15px;
+    }
+}
+.archive_link {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-size: 12px;
+    text-transform: lowercase;
+    font-weight: normal;
+
+    @include tablet {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $red;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        border: 1px solid;
+        padding: 2px 5px;
+
+        @include tablet {
+            padding: 3px 10px 5px;
+        }
+
+        &:hover {
+            color: $red;
+        }
+    }
 }

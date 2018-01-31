@@ -6,7 +6,7 @@ permalink: /our-team/
 
 <!-- Member 1 + 2 -->
 <section class="team_row_2">
-	{% for member in site.data.our-team limit:2 %}
+	{% for member in site.team limit:2 %}
 
 	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 	{% if thecycle == 'odd' %}

@@ -97,17 +97,17 @@
 	margin:0;
 	padding: 0;
 	width: 100%;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	padding-right: 10px;
 
-	@include palm {
-		padding-bottom: 20px;
-	}
+	// @include palm {
+	// 	padding-bottom: 20px;
+	// }
 }
 .overlay ul li a {
 	color: #fff;
 	font-size: 34px;
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: bold;
 	text-decoration: none;
 
@@ -128,7 +128,7 @@
 		font-size: 70px;
 	}
 
-	@include desktop {
+	@include widescreen {
 		font-size: 90px;
 	}
 }
@@ -143,15 +143,15 @@
 	height: 35px !important;
 	outline: none;
 	overflow: hidden !important;
-	position: absolute !important;
-	right: 29px !important;
+	// position: absolute !important;
+	// right: 29px !important;
 	text-indent: 200% !important;
 	top: 10px !important;
 	width: 25px !important;
 	z-index: 100 !important;
 
 	@include tablet {
-		right: 61px !important;
+		// right: 61px !important;
 	}
 }
 .overlay-data {
@@ -165,4 +165,12 @@
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
 	visibility: visible;
+}
+
+.overlay-close-wrapper {
+	padding: 10px 30px 0 0;
+
+	@include tablet {
+		padding: 10px 59px 0 0;
+	}
 }

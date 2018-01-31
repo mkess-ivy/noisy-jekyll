@@ -8,6 +8,9 @@ hero_img				: /img/bigcity.png
 
 [//]: # (Background for Work Page)
 work_hover_img			: /img/hero-noisyfilms.jpg
+
+[//]: # Film Video ID
+film-video-id: '201795592'
 ---
 <div class="single_post_wrapper noisyfilms_wrapper">
 	{% 	include components/single_post_meta.html

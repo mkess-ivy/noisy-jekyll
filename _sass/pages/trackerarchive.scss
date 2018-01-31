@@ -1,0 +1,139 @@
+.bsbtracker_masthead_wrapper {
+    background-color: rgba(228,77,78,0.60);
+
+    .bsbtracker_masthead {
+        padding: 50px 20px 20px;
+
+
+
+    }
+}
+
+.group_alpha {
+    width: 100%;
+
+    @include tablet {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .week {
+        font-size: 12px;
+    }
+    .week-header {
+        font-size: 28px;
+        line-height: 1.1;
+        padding: 10px 0;
+
+        @include widescreen {
+            font-size: 34px;
+            line-height: 1;
+            padding: 10px 0 25px;
+        }
+    }
+}
+
+.group_beta {
+    width: 100%;
+    margin: 10px 0 20px;
+
+    @include tablet {
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    @include widescreen {
+        width: 50%;
+    }
+
+    .bsbday {
+        display: inline-block;
+        margin-right: 10px;
+
+        @include widescreen {
+            font-size: 20px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+        div {
+            display: block;
+        }
+    }
+}
+
+
+.bsbtracker_wrapper {
+    padding: 50px 20px;
+
+    @include tiny {
+        padding: 40px;
+    }
+
+    @include palm {
+        width: 500px;
+        margin: auto;
+    }
+
+    @include tablet {
+        width: 650px;
+    }
+
+    @include desktop {
+        width: 800px;
+    }
+
+    @include widescreen {
+        width: 1050px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 1;
+        width: 60%;
+
+        @include desktop {
+            font-size: 50px;
+            width: 40%;
+        }
+    }
+    .summary {
+        @extend %font-italic;
+        text-transform: initial;
+        padding-top: 10px;
+        line-height: 1.4;
+        font-weight: normal;
+
+        @include desktop {
+            width: 50%;
+            padding-top: 0;
+        }
+
+        p {
+            @include desktop {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.bsbtracker_single {
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+
+#tracker_archive_height {
+    @include tablet {
+        min-height: calc(100vh - 410px);
+    }
+    @include desktop {
+        min-height: calc(100vh - 420px);
+    }
+
+}
+.archive-light-log {
+    @include widescreen {
+        margin-left: 15px; 
+    }
+}

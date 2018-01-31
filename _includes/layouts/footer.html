@@ -1,27 +1,37 @@
 <!-- Footer -->
-    <footer class="site_footer clearfix">
-      <div class="frow justify-between">
+<footer class="site_footer clearfix">
+    <div class="frow justify-between">
         <div class="left_footer">
           <div class="copy">&copy; 2018 Noisy Tenants.  All&nbsp;Rights&nbsp;Reserved.</div>
         </div>
         <div class="right_footer">
           <div class="social-icons">
-            <a href="http://www.facebook.com/noisytenants"><i class="fa fa-facebook-official fa-med" aria-hidden="true"></i></a>
-            <a href="http://www.instagram.com/noisytenants"><i class="fa fa-instagram fa-med" aria-hidden="true"></i></a>
-            <a href="http://www.twitter.com/noisytenants"><i class="fa fa-twitter fa-med" aria-hidden="true"></i></a>
-            <a href="mailto:info@noisytenants.com"><i class="fa fa-envelope-o fa-med" aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com/{{ site.facebook_handle }}" alt="Noisy Tenants Facebook"><i class="fa fa-facebook-official fa-med" aria-hidden="true"></i></a>
+            <a href="http://www.instagram.com/{{ site.instagram_handle }}" alt="Noisy Tenants Instagram"><i class="fa fa-instagram fa-med" aria-hidden="true"></i></a>
+            <a href="http://www.twitter.com/{{ site.twitter_handle }}" alt="Noisy Tenants Twitter"><i class="fa fa-twitter fa-med" aria-hidden="true"></i></a>
+            <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o fa-med" aria-hidden="true"></i></a>
           </div>
           <div class="footer_text">
             housed in Greenmount West &ndash; Baltimore Md
           </div>
+
+          <a href="http://www.svncrwns.com" target="_blank" title="Site Credits: @SVNCRWNS">
+              <div class="site_credits2">
+
+              </div>
+          </a>
         </div>
-      </div>
+    </div>
 
 </footer><!-- #Footer -->
 
 
     <!-- Javascript -->
-    <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+    <!-- <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.12.0.min.js"><\/script>')</script> -->
+
     <script src="https://use.fontawesome.com/d476a27cae.js"></script>
     <script src="{{ site.baseurl }}/js/main.js"></script>
 

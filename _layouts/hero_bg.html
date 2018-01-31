@@ -11,7 +11,7 @@
 
     	{% include layouts/header.html %}
 
-        {% unless page.title == "Work" or page.url == "/" %}
+        {% unless page.title == "Work" or page.url == "/" or page.title == "Bus Stop Tracker Archive" %}
             {% include components/return-work.html %}
         {% endunless %}
 

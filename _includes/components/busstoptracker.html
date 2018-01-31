@@ -4,7 +4,7 @@
 
 <div class="modal-overlay" id="js-modal-overlay">
     <div>
-        
+
         <div id="openModal" class="openModal">
             <button type="button" class="tracker-close" id="tracker-close"><img src="/img/tracker-close.png"  />
             </button>
@@ -13,14 +13,15 @@
                 <div class="modal-title">Greenmount West Bus Tracker</div>
                 <div class="modal-img"><img src="/img/school-bus.png" width="100" /></div>
             </div>
-            {% for track in site.data.busstoptracker limit: 1 %}
+            {% assign sorted = (site.bsbtracker | sort: 'week') | reverse %}
+            {% for track in sorted limit: 1 %}
             <div class="modal-week">
-                {{ track.week }}
+                {{ track.week-start | date: "%b %d" }} &ndash;<br /> {{ track.week-end | date: "%b %d" }}
             </div>
             <ul class="modal-status">
-                <li><span class="light green-light"></span> on time</li>
-                <li><span class="light yellow-light"></span> late</li>
-                <li><span class="light red-light"></span> no show</li>
+                <li><span class="light ontime-light"></span> on time</li>
+                <li><span class="light late-light"></span> late</li>
+                <li><span class="light noshow-light"></span> no show</li>
             </ul>
             <div class="modal-weekly-log">
 
@@ -55,10 +56,17 @@
             </div>
             {% endfor %}
 
-            <div class="modal-share">
-                Share with <br/>
-                <img src="/img/twitter.png" width="15" /> <a href="https://twitter.com/intent/tweet?text=Hi+%40BaltCitySchools+Check+out+Bus+Stop+Tracker+in+Greenmount+West+Community+via%3A+http%3A%2F%2Fwww.noisytenants.com%2Fwork%2F04-bus-stop-buddies+%23busstopbuddies" target="_blank" class="twitter-share">@BaltCitySchools</a>
+            <div class="frow justify-between lower_tracker_grp">
+                <div class="modal-share">
+                    Share with <br/>
+                    <img src="/img/twitter.png" width="15" /> <a href="https://twitter.com/intent/tweet?text=Hi+%40BaltCitySchools+Check+out+Bus+Stop+Tracker+in+Greenmount+West+Community+via%3A+http%3A%2F%2Fwww.noisytenants.com%2Fwork%2F04-bus-stop-buddies+%23busstopbuddies" target="_blank" class="twitter-share">@BaltCitySchools</a>
+                </div>
+                <div class="archive_link">
+                    <a href="{{ site.baseurl }}/busstoptracker">view archive</a>
+                </div>
             </div>
+
+
         </div>
     </div>
 </div>
